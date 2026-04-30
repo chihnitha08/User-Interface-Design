@@ -1,0 +1,31 @@
+body{
+    background-image:url('IMAGES/background.jpeg');
+    background-size: cover;
+    color: black;
+}
+
+nav{
+    position:fixed;
+    top: 0;
+    right: 0;
+    padding:25px 35px;
+    background:rgb(255, 255, 255,0.7);
+    z-index:1000;
+    border:5px groove grey;
+}
+nav a{
+    color:black;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+    
+}
+
+.container,#Suprise{
+    border: 2px groove grey;
+    padding:10px;
+    margin: 5px;
+    background-color: rgb(193, 180, 180);
+    text-align: center;
+    width: 800px;
+}
