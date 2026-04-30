@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Explorer - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="updateWishCount()">
+
+<header>
+    <h1>🌍 Interactive Travel Explorer</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="search.html">Search</a>
+        <a href="wishlist.html">Wishlist (<span id="wishCount">0</span>)</a>
+    </nav>
+</header>
+
+<main class="center">
+    <!-- INSERT GLOBE IMAGE HERE -->
+    <!-- <img src="images/globe.png" width="300"> -->
+
+    <h2>Find your perfect destination</h2>
+
+    <form id="moodForm">
+        <label>Select Mood:</label>
+        <select id="mood">
+            <option>Adventurous</option>
+            <option>Relaxing</option>
+            <option>Cultural</option>
+            <option>Romantic</option>
+            <option>Foodie</option>
+        </select>
+
+        <label>Travel Companion:</label>
+        <select id="companion">
+            <option>Solo</option>
+            <option>Friends</option>
+            <option>Family</option>
+            <option>Pets</option>
+        </select>
+
+        <button type="submit">Explore Destinations</button><br>
+        <button type="button" onclick="surpriseMe()">🎲 Surprise Me</button>
+    </form>
+</main>
+
+<footer>UID Project – Travel Explorer</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

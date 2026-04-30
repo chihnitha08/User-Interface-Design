@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Explore</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body {
+        background-color: black;
+        color: white;
+    }
+    .map-image {
+             width: 960px;
+             height: auto;
+            display: block;
+            margin: auto;
+        }
+</style>
+</head>
+<body onload="initExplore(); updateWishCount();">
+
+<header>
+    <h1>Explore the World</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="wishlist.html">Wishlist (<span id="wishCount">0</span>)</a>
+    </nav>
+</header>
+  <h2 style = " text-align: center; font-family: papyrus;">The world is too big to stay in one place.<br> Travel far enough to meet yourself.</h2>
+     <!-- Added usemap -->
+    <img src="IMAGES/worldmap.jpeg"
+         alt="Map Image"
+         class="map-image"
+         usemap="#worldmap">
+         
+    <map name="worldmap">
+
+    <!-- North America -->
+    <area alt="North America"
+        title="North America"
+        href="NorthAmerica.html"
+        shape="poly"
+        coords="32,112,115,116,191,104,299,96,401,84,445,94,436,130,399,168,322,203,309,228,281,245,225,267,220,296,228,317,194,338,153,340,115,352,89,341,38,333,19,294,6,205,8,134">
+
+    <!-- South America -->
+    <area shape="rect"
+        coords="131,354,343,528"
+        href="southamerica.html"
+        alt="South America">
+
+    <!-- Europe -->
+    <area shape="poly"
+        coords="503,121,456,129,425,174,417,237,476,237,513,247,536,254,525,200,515,156"
+        href="europe.html"
+        alt="Europe">
+
+    <!-- Africa -->
+    <area shape="poly"
+        coords="443,246,498,252,544,264,578,310,630,356,630,383,607,398,619,414,631,444,623,464,594,488,568,492,547,507,499,506,470,438,449,398,412,374,375,342,376,289,405,254"
+        href="africa.html"
+        alt="Africa">
+
+    <!-- Asia -->
+    <area shape="poly"
+        coords="509,114,546,258,602,339,673,366,759,400,857,429,929,298,934,238,931,179,893,106,746,88,618,70,548,78"
+        href="asia.html"
+        alt="Asia">
+
+    <!-- Australia -->
+    <area shape="rect"
+        coords="842,440,956,528"
+        href="australia.html"
+        alt="Australia">
+
+    
+
+</map>
+
+<script src="js/script.js"></script>
+</body>
+</html>
