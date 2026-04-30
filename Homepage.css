@@ -1,0 +1,104 @@
+body{
+    background-image:url('IMAGES/background.jpeg');
+    background-size: cover;
+    color: black;
+}
+
+nav{
+    position:fixed;
+    top: 0;
+    right: 0;
+    padding:25px 35px;
+    background:rgb(255, 255, 255,0.7);
+    z-index:1000;
+    border:5px groove grey;
+}
+nav a{
+    color:black;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+    
+}
+
+.container,#Suprise{
+    border: 2px groove grey;
+    padding:10px;
+    margin: 5px;
+    background-color: rgb(193, 180, 180);
+    text-align: center;
+    width: 800px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(0,0,0,0.5);
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-group {
+    margin: 15px 0;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.primary-btn {
+    background: #28a745;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #218838;
+}
+
+.secondary-btn {
+    background: #ffc107;
+}
+
+.secondary-btn:hover {
+    background: #e0a800;
+}
