@@ -3,12 +3,13 @@
 <head>
     <title>Travel Explorer - Home</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="Homepage.css">
+     <link rel="stylesheet" href="Homepage.css">
 </head>
-<body onload="updateWishCount()" >
+
+<body onload="updateWishCount()">
 
 <header>
-   <em><h1>🌍 Interactive Travel Explorer</h1></em> 
+    <h1>🌍 Interactive Travel Explorer</h1>
     <nav>
         <a href="index.html">Home</a>
         <a href="explore.html">Explore</a>
@@ -17,30 +18,36 @@
     </nav>
 </header>
 
-<main class="center">
-     <h2>Find your perfect destination</h2>
+<main>
+    <div class="card">
+        <h2>Find your perfect destination</h2>
 
-    <form id="moodForm">
-        <label>Select Mood:</label>
-        <select id="mood">
-            <option>Adventurous</option>
-            <option>Relaxing</option>
-            <option>Cultural</option>
-            <option>Romantic</option>
-            <option>Foodie</option>
-        </select>
+        <form id="moodForm">
+            <div class="form-group">
+                <label>Select Mood</label>
+                <select id="mood">
+                    <option>Adventurous</option>
+                    <option>Relaxing</option>
+                    <option>Cultural</option>
+                    <option>Romantic</option>
+                    <option>Foodie</option>
+                </select>
+            </div>
 
-        <label>Travel Companion:</label>
-        <select id="companion">
-            <option>Solo</option>
-            <option>Friends</option>
-            <option>Family</option>
-            <option>Pets</option>
-        </select>
+            <div class="form-group">
+                <label>Travel Companion</label>
+                <select id="companion">
+                    <option>Solo</option>
+                    <option>Friends</option>
+                    <option>Family</option>
+                    <option>Pets</option>
+                </select>
+            </div>
 
-        <button type="submit">Explore Destinations</button><br>
-        <button type="button" onclick="surpriseMe()">🎲 Surprise Me</button>
-    </form>
+            <button type="submit" class="primary-btn">Explore Destinations</button>
+            <button type="button" class="secondary-btn" onclick="surpriseMe()">🎲 Surprise Me</button>
+        </form>
+    </div>
 </main>
 
 <script src="js/script.js"></script>
