@@ -1,55 +1,251 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Travel Explorer - Home</title>
-    <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="Homepage.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interactive Travel Explorer</title>
+
+    <link rel="stylesheet" href="Homepage.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
 </head>
 
-<body onload="updateWishCount()">
+<body onload="updateWishlistCount()">
 
-<header>
-    <h1>🌍 Interactive Travel Explorer</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="explore.html">Explore</a>
-        <a href="search.html">Search</a>
-        <a href="wishlist.html">Wishlist (<span id="wishCount">0</span>)</a>
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🌍 Interactive Travel Explorer
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">🏚️Home</a></li>
+
+            <li><a href="explore.html">🗺️Explore</a></li>
+
+            <li><a href="search.html">🔍Search</a></li>
+
+            <li>
+                <a href="wishlist.html">
+                    Wishlist (<span id="wishlist-count">0</span>)
+                </a>
+            </li>
+
+        </ul>
+
     </nav>
-</header>
 
-<main>
-    <div class="card">
-        <h2>Find your perfect destination</h2>
+    <!-- HERO SECTION -->
 
-        <form id="moodForm">
-            <div class="form-group">
-                <label>Select Mood</label>
-                <select id="mood">
-                    <option>Adventurous</option>
-                    <option>Relaxing</option>
-                    <option>Cultural</option>
-                    <option>Romantic</option>
-                    <option>Foodie</option>
-                </select>
+    <section class="hero">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <h1>Discover Your Next Adventure</h1>
+
+            <p>
+                Explore breathtaking destinations based on your mood,
+                travel style and dream experiences.
+            </p>
+
+            <!-- SEARCH CARD -->
+
+            <div class="card">
+
+                <h2>Find Your Perfect Destination</h2>
+
+                <form id="moodForm">
+
+                    <div class="form-group">
+
+                        <label>Select Mood</label>
+
+                        <select id="mood">
+
+                            <option>Adventurous</option>
+                            <option>Relaxing</option>
+                            <option>Cultural</option>
+                            <option>Romantic</option>
+                            <option>Foodie</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Travel Companion</label>
+
+                        <select id="companion">
+
+                            <option>Solo</option>
+                            <option>Friends</option>
+                            <option>Family</option>
+                            <option>Partner</option>
+
+                        </select>
+
+                    </div>
+
+                    <button type="submit" class="primary-btn">
+                        Explore Destinations
+                    </button>
+
+                    <button type="button"
+                        class="secondary-btn"
+                        onclick="surpriseMe()">
+
+                        🎲 Surprise Me
+
+                    </button>
+
+                </form>
+
             </div>
 
-            <div class="form-group">
-                <label>Travel Companion</label>
-                <select id="companion">
-                    <option>Solo</option>
-                    <option>Friends</option>
-                    <option>Family</option>
-                    <option>Pets</option>
-                </select>
+        </div>
+
+    </section>
+
+    <!-- POPULAR DESTINATIONS -->
+
+    <section class="popular-section">
+
+        <h2 class="section-title">Popular Destinations</h2>
+
+        <div class="destination-container">
+
+            <div class="destination-card">
+
+                <img src="IMAGES/bali.jpg">
+
+                <div class="destination-content">
+
+                    <h3>Bali</h3>
+
+                    <p>Tropical paradise with beaches and temples.</p>
+
+                </div>
+
             </div>
 
-            <button type="submit" class="primary-btn">Explore Destinations</button>
-            <button type="button" class="secondary-btn" onclick="surpriseMe()">🎲 Surprise Me</button>
-        </form>
+            <div class="destination-card">
+
+                <img src="IMAGES/japan.jpg">
+
+                <div class="destination-content">
+
+                    <h3>Japan</h3>
+
+                    <p>Beautiful culture, technology and landscapes.</p>
+
+                </div>
+
+            </div>
+
+            <div class="destination-card">
+
+                <img src="IMAGES/maldives.jpg">
+
+                <div class="destination-content">
+
+                    <h3>Maldives</h3>
+
+                    <p>Luxury islands and crystal clear beaches.</p>
+
+                </div>
+
+            </div>
+
+            <div class="destination-card">
+
+                <img src="IMAGES/switzerland.jpg">
+
+                <div class="destination-content">
+
+                    <h3>Switzerland</h3>
+
+                    <p>Snow mountains and scenic train journeys.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+<section class="features-section">
+
+    <h2 class="section-title">
+        Why Choose Us
+    </h2>
+
+    <div class="features-container">
+
+        <div class="feature-box">
+
+            <h3>😎 Personalized Travel</h3>
+
+            <p>
+                Get destination suggestions based on your mood and travel style.
+            </p>
+
+        </div>
+
+        <div class="feature-box">
+
+            <h3>❤️ Wishlist System</h3>
+
+            <p>
+                Save dream destinations and explore them anytime.
+            </p>
+
+        </div>
+
+        <div class="feature-box">
+
+            <h3>🎲 Surprise Generator</h3>
+
+            <p>
+                Discover random hidden gems around the world instantly.
+            </p>
+
+        </div>
+
     </div>
-</main>
 
-<script src="js/script.js"></script>
+</section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h2>Interactive Travel Explorer</h2>
+
+        <p>
+            Explore the world with personalized travel experiences.
+        </p>
+
+        <p class="copyright">
+            © 2026 All Rights Reserved
+        </p>
+
+    </footer>
+
+    <script src="js/home.js"></script>
+
 </body>
+
 </html>
