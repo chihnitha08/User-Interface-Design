@@ -1,64 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="Asia/Aimg\Screenshot 2026-04-19 065754.png" type="image/png">
-    <title>Travel</title>
-    <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    h2 {
-        text-align: center;
-        font-family: papyrus;
-    }
-    p{
-        font-family: papyrus;
-    }
+<link rel="icon" href="Asia/Aimg/Screenshot 2026-04-19 065754.png" type="image/png">
 
+<title>Mood Based Travel</title>
 
-.place-img {
-    width: 180px;
-    height: 180px;   /* controls image size */
-    object-fit: cover; /* keeps image neat */
-    border-radius: 12px;
-}
-.places-container {
-    display: flex;
-    flex-direction: row;   /* horizontal */
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 20px;
-    flex-wrap: nowrap;     /* prevents moving to next line */
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.card {
-    text-align: center;
-    width: 200px;
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #f5f7fa, #d7e1ec);
+    color:#222;
 }
-    </style>
+
+/* HERO SECTION */
+
+.hero{
+    height:100vh;
+    background-image: url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    background: rgba(0,0,0,0.55);
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:70px;
+    margin-bottom:20px;
+    letter-spacing:3px;
+}
+
+.hero p{
+    font-size:22px;
+    max-width:700px;
+    margin:auto;
+    line-height:1.6;
+}
+
+/* SECTION TITLES */
+
+.section-title{
+    text-align:center;
+    margin-top:70px;
+    margin-bottom:40px;
+    font-size:42px;
+    color:#1f3c88;
+}
+
+/* CARDS */
+
+.places-container{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+    padding:20px 50px 80px;
+}
+
+.card{
+    width:260px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-12px) scale(1.03);
+}
+
+.place-img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:18px;
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#1f3c88;
+}
+
+.card p{
+    font-size:14px;
+    line-height:1.5;
+    color:#555;
+}
+
+/* FOOTER */
+
+footer{
+    background:#1f3c88;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:45px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+}
+
+</style>
 </head>
+
 <body>
-    <h2>India is not just a destination, it’s an emotion waiting to be explored.</h2>
-    <p>India is a country rich in culture, history, landscapes, and unforgettable experiences. Whether you love mountains, beaches, historical monuments, or spiritual journeys, India offers something magical for every traveler.</p>
-    <h2>Serenity and Reflection 🌙</h2>
-    <div class="places-container">
-    <div class="card">
-     <h3>Taj Mahal</h3>
-     <a href="TajMahal/TajMahal.html"><img src="TajMahal/tajmahal.jpg" alt="Taj Mahal" class="place-img"></a>
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+    <h1>Explore India</h1>
+
+    <p>
+        Discover places that match your mood — from peaceful escapes 
+        to thrilling adventures across the incredible landscapes of India.
+    </p>
 </div>
-<div class="card">
-        <h3>Darjeeling, West Bengal</h3>
-        <a href="Darjeeling, West Bengal/Darjeeling.html"><img src="Darjeeling, West Bengal/Quaint-Towns-Around-Darjeeling-West-Bengal.jpg" alt="Darjeeling" class="place-img"></a>
+
+</section>
+
+<!-- INTRO -->
+
+<h2 class="section-title">🌙 Serenity & Reflection</h2>
+
+<div class="places-container">
+
+    <!-- Taj Mahal -->
+
+    <div class="card">
+
+        <a href="TajMahal/TajMahal.html">
+            <img src="TajMahal/tajmahal.jpg" 
+            alt="Taj Mahal" 
+            class="place-img">
+        </a>
+
+        <div class="card-content">
+            <h3>Taj Mahal</h3>
+
+            <p>
+                Experience timeless beauty, peace, and romance at one of 
+                the world’s most iconic monuments.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Darjeeling -->
+
+    <div class="card">
+
+        <a href="Darjeeling, West Bengal/Darjeeling.html">
+            <img src="Darjeeling, West Bengal/Quaint-Towns-Around-Darjeeling-West-Bengal.jpg" 
+            alt="Darjeeling" 
+            class="place-img">
+        </a>
+
+        <div class="card-content">
+            <h3>Darjeeling</h3>
+
+            <p>
+                Misty mountains, tea gardens, and calm weather perfect for 
+                peaceful relaxation.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Gokarna -->
+
+    <div class="card">
+
+        <a href="Gokarna/Gokarna.html">
+            <img src="Gokarna/OIP.webp" 
+            alt="Gokarna" 
+            class="place-img">
+        </a>
+
+        <div class="card-content">
+            <h3>Gokarna</h3>
+
+            <p>
+                A quiet beach paradise with peaceful sunsets, calm vibes, 
+                and scenic coastlines.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Mirik -->
+
+    <div class="card">
+
+        <a href="Mirki/Mriki.html">
+            <img src="Mirki/Mirik2.jpg" 
+            alt="Mirik" 
+            class="place-img">
+        </a>
+
+        <div class="card-content">
+            <h3>Mirik</h3>
+
+            <p>
+                Escape into nature with beautiful lakes, hills, and serene 
+                mountain air.
+            </p>
+        </div>
+
+    </div>
 
 </div>
-<div class="card">
-        <h3>Gokarna</h3>
-        <a href="Gokarna/Gokarna.html"><img src="Gokarna/OIP.webp" alt="Gokarna" class="place-img"></a>
+
+<!-- ADVENTURE SECTION -->
+
+<h2 class="section-title">🔥 Adventure Mood</h2>
+
+<div class="places-container">
+
+    <!-- Ladakh -->
+
+    <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1581793745862-99fde7fa73d2" 
+        class="place-img">
+
+        <div class="card-content">
+            <h3>Leh-Ladakh</h3>
+
+            <p>
+                Bike rides, snowy mountains, and thrilling road adventures 
+                through rugged landscapes.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Rishikesh -->
+
+    <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23" 
+        class="place-img">
+
+        <div class="card-content">
+            <h3>Rishikesh</h3>
+
+            <p>
+                River rafting, bungee jumping, camping, and endless adrenaline.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Andaman -->
+
+    <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" 
+        class="place-img">
+
+        <div class="card-content">
+            <h3>Andaman</h3>
+
+            <p>
+                Dive into crystal clear waters and explore marine adventures.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Meghalaya -->
+
+    <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86" 
+        class="place-img">
+
+        <div class="card-content">
+            <h3>Meghalaya</h3>
+
+            <p>
+                Discover caves, waterfalls, forests, and thrilling trekking routes.
+            </p>
+        </div>
+
+    </div>
+
 </div>
-<div class="card">
-        <h3>Mirik, West Bengal</h3>
-        <a href="Mirki/Mriki.html"><img src="Mirki/Mirik2.jpg" alt="Mirik" class="place-img"></a>
-</div>
-</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h3>Mood Based Travel Recommendation 🌍</h3>
+
+    <p>
+        Travel based on how you feel, not just where you want to go.
+    </p>
+
+</footer>
+
 </body>
 </html>
