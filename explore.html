@@ -3,7 +3,7 @@
 <head>
     <title>Explore</title>
     <link rel="stylesheet" href="style.css">
-    <style>
+    <!--<style>
     body {
         background-color: black;
         color: white;
@@ -14,7 +14,8 @@
             display: block;
             margin: auto;
         }
-</style>
+</style>-->
+<link rel="stylesheet" href="maps.css">
 </head>
 <body onload="initExplore(); updateWishCount();">
 
@@ -25,56 +26,22 @@
         <a href="wishlist.html">Wishlist (<span id="wishCount">0</span>)</a>
     </nav>
 </header>
-  <h2 style = " text-align: center; font-family: papyrus;">The world is too big to stay in one place.<br> Travel far enough to meet yourself.</h2>
-     <!-- Added usemap -->
-    <img src="IMAGES/worldmap.jpeg"
-         alt="Map Image"
-         class="map-image"
-         usemap="#worldmap">
-         
-    <map name="worldmap">
+  <h2 style = " text-align: center; font-family: papyrus;">The world is too big to stay in one place.
+    <br> Travel far enough to meet yourself.</h2>
 
-    <!-- North America -->
-    <area alt="North America"
-        title="North America"
-        href="NorthAmerica.html"
-        shape="poly"
-        coords="32,112,115,116,191,104,299,96,401,84,445,94,436,130,399,168,322,203,309,228,281,245,225,267,220,296,228,317,194,338,153,340,115,352,89,341,38,333,19,294,6,205,8,134">
 
-    <!-- South America -->
-    <area shape="rect"
-        coords="131,354,343,528"
-        href="southamerica.html"
-        alt="South America">
+<img src="IMAGES/WorldMap.png" usemap="#image-map">
 
-    <!-- Europe -->
-    <area shape="poly"
-        coords="503,121,456,129,425,174,417,237,476,237,513,247,536,254,525,200,515,156"
-        href="europe.html"
-        alt="Europe">
-
-    <!-- Africa -->
-    <area shape="poly"
-        coords="443,246,498,252,544,264,578,310,630,356,630,383,607,398,619,414,631,444,623,464,594,488,568,492,547,507,499,506,470,438,449,398,412,374,375,342,376,289,405,254"
-        href="africa.html"
-        alt="Africa">
-
-    <!-- Asia -->
-    <area shape="poly"
-        coords="509,114,546,258,602,339,673,366,759,400,857,429,929,298,934,238,931,179,893,106,746,88,618,70,548,78"
-        href="Asia\asia.html"
-        alt="Asia">
-
-    <!-- Australia -->
-    <area shape="rect"
-        coords="842,440,956,528"
-        href="australia.html"
-        alt="Australia">
-
-    
-
+<map name="image-map">
+    <area target="_self" alt="North America " title="North America " href="NorthAmerica/North America.html" coords="52,308,79,142,207,180,448,74,435,143,500,286,505,371,420,459,447,495,406,511,403,542,227,595" shape="poly">
+    <area target="_self" alt="South America" title="South America" href="SouthAmerica/South America.html" coords="296,615,481,496,597,609,513,756,428,872" shape="poly">
+    <area target="_self" alt="Europe" title="Europe" href="Europe/Europe.html" coords="654,320,766,188,926,204,937,261,863,398,774,432,661,438" shape="poly">
+    <area target="_self" alt="Asia" title="Asia" href="Asia/asia.html" coords="839,417,881,397,1025,97,1418,185,1089,593,994,568,859,524" shape="poly">
+    <area target="_self" alt="Africa" title="Africa" href="Africa/Africa.html" coords="638,455,815,440,854,531,876,569,908,707,796,736,752,741,621,534" shape="poly">
+    <area target="_self" alt="Oceania" title="Oceania" href="Oceania/Oceania.html" coords="952,727,1273,438,1448,704,1403,890,1178,981" shape="poly">
 </map>
 
 <script src="js/script.js"></script>
 </body>
 </html>
+
