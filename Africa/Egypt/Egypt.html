@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Egypt</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(to bottom,#fff3d6,#e6f3ff);
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1503174971373-b1f69850bded?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+}
+
+.hero-content{
+    position:relative;
+    color:white;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:72px;
+    color:#ffd88a;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:800px;
+    margin:auto;
+    margin-top:15px;
+}
+
+/* TITLE */
+.section-title{
+    text-align:center;
+    margin:70px 0 40px;
+    font-size:40px;
+    color:#7a4b00;
+}
+
+/* GRID */
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    padding:20px 50px 80px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card h3{
+    color:#7a4b00;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+    .places-container{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:600px){
+    .places-container{grid-template-columns:1fr;}
+    .hero h1{font-size:42px;}
+}
+
+footer{
+    background:#7a4b00;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="overlay"></div>
+<div class="hero-content">
+    <h1>Explore Egypt 🇪🇬</h1>
+    <p>Discover ancient pyramids, the Nile River, desert temples, Pharaoh history, Red Sea beaches, and one of the world’s oldest civilizations.</p>
+</div>
+</section>
+
+<!-- CITY & CULTURE -->
+<h2 class="section-title">🏙️ Cities & Culture</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="cairo.html"><img src="https://images.unsplash.com/photo-1526403223230-4d3c8f1a1b7a"></a>
+<div class="card-content">
+<h3>Cairo</h3>
+<p>Vibrant capital with bazaars, museums, and ancient wonders nearby.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="giza.html"><img src="https://images.unsplash.com/photo-1503174971373-b1f69850bded"></a>
+<div class="card-content">
+<h3>Giza</h3>
+<p>Home to the Great Pyramids and the Sphinx.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="alexandria.html"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"></a>
+<div class="card-content">
+<h3>Alexandria</h3>
+<p>Mediterranean city with libraries, forts, and coastline.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="luxor-city.html"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2"></a>
+<div class="card-content">
+<h3>Luxor City</h3>
+<p>Open-air museum filled with temples and ancient ruins.</p>
+</div>
+</div>
+
+</div>
+
+<!-- ANCIENT MONUMENTS -->
+<h2 class="section-title">🏺 Ancient Monuments</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="pyramids-of-giza.html"><img src="https://images.unsplash.com/photo-1503174971373-b1f69850bded"></a>
+<div class="card-content">
+<h3>Pyramids of Giza</h3>
+<p>One of the Seven Wonders of the Ancient World.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="sphinx.html"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"></a>
+<div class="card-content">
+<h3>Great Sphinx</h3>
+<p>Legendary limestone statue guarding the pyramids.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="karnak-temple.html"><img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66"></a>
+<div class="card-content">
+<h3>Karnak Temple</h3>
+<p>Massive temple complex dedicated to ancient gods.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="valley-of-kings.html"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"></a>
+<div class="card-content">
+<h3>Valley of the Kings</h3>
+<p>Burial site of Pharaohs including Tutankhamun.</p>
+</div>
+</div>
+
+</div>
+
+<!-- NILE & NATURE -->
+<h2 class="section-title">🌊 Nile & Nature</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="nile-river.html"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"></a>
+<div class="card-content">
+<h3>Nile River</h3>
+<p>World’s longest river flowing through ancient lands.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="aswan.html"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"></a>
+<div class="card-content">
+<h3>Aswan</h3>
+<p>Peaceful river city with temples and Nubian culture.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="white-desert.html"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2"></a>
+<div class="card-content">
+<h3>White Desert</h3>
+<p>Surreal chalk rock formations in the desert.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="siwa-oasis.html"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e"></a>
+<div class="card-content">
+<h3>Siwa Oasis</h3>
+<p>Hidden desert oasis with lakes and palm groves.</p>
+</div>
+</div>
+
+</div>
+
+<!-- RED SEA -->
+<h2 class="section-title">🏖️ Red Sea & Beaches</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="sharm-el-sheikh.html"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"></a>
+<div class="card-content">
+<h3>Sharm El Sheikh</h3>
+<p>Diving paradise with coral reefs and luxury resorts.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="hurghada.html"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"></a>
+<div class="card-content">
+<h3>Hurghada</h3>
+<p>Beach resort city with snorkeling and marine life.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="dahab.html"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"></a>
+<div class="card-content">
+<h3>Dahab</h3>
+<p>Relaxed coastal town popular with divers and backpackers.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="ras-mohammed.html"><img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66"></a>
+<div class="card-content">
+<h3>Ras Mohammed</h3>
+<p>National park with coral reefs and marine biodiversity.</p>
+</div>
+</div>
+
+</div>
+
+<footer>
+<p>🌍 Egypt Travel Guide | Ancient Wonders Explorer</p>
+</footer>
+
+</body>
+</html>

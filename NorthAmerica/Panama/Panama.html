@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Panama</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(to bottom,#e6fff5,#fff3e6);
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,40,60,0.55);
+}
+
+.hero-content{
+    position:relative;
+    color:white;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:72px;
+    color:#ffd166;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:800px;
+    margin:auto;
+    margin-top:15px;
+}
+
+/* TITLE */
+.section-title{
+    text-align:center;
+    margin:70px 0 40px;
+    font-size:40px;
+    color:#0b5d4c;
+}
+
+/* GRID */
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    padding:20px 50px 80px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card h3{
+    color:#0b5d4c;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+    .places-container{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:600px){
+    .places-container{grid-template-columns:1fr;}
+    .hero h1{font-size:42px;}
+}
+
+footer{
+    background:#0b5d4c;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="overlay"></div>
+<div class="hero-content">
+    <h1>Explore Panama 🇵🇦</h1>
+    <p>Discover the Panama Canal, tropical rainforests, Caribbean islands, Pacific beaches, and rich cultural fusion.</p>
+</div>
+</section>
+
+<!-- CITIES -->
+<h2 class="section-title">🏙️ Cities & Culture</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="panama-city.html">
+<img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc">
+</a>
+<div class="card-content">
+<h3>Panama City</h3>
+<p>Modern skyline meets historic Casco Viejo district.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="colon.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Colón</h3>
+<p>Caribbean port city near the Panama Canal entrance.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="boquete.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Boquete</h3>
+<p>Cool mountain town known for coffee plantations.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="bocas-town.html">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+</a>
+<div class="card-content">
+<h3>Bocas Town</h3>
+<p>Colorful island town with Caribbean vibes.</p>
+</div>
+</div>
+
+</div>
+
+<!-- CANAL -->
+<h2 class="section-title">🚢 Panama Canal & Engineering</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="panama-canal.html">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+</a>
+<div class="card-content">
+<h3>Panama Canal</h3>
+<p>One of the world’s greatest engineering marvels.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="miraflores-locks.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Miraflores Locks</h3>
+<p>Best viewpoint to watch ships pass through the canal.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="gatun-lake.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Gatun Lake</h3>
+<p>Artificial lake surrounded by rainforest.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="aguila-islands.html">
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2">
+</a>
+<div class="card-content">
+<h3>Agua Clara Locks</h3>
+<p>Modern expansion of the Panama Canal.</p>
+</div>
+</div>
+
+</div>
+
+<!-- BEACHES -->
+<h2 class="section-title">🏖️ Beaches & Islands</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="san-blas.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>San Blas Islands</h3>
+<p>Paradise islands owned by the Guna people.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="bocas-del-toro.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Bocas del Toro</h3>
+<p>Turquoise waters and coral reefs.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="playa-blanca.html">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+</a>
+<div class="card-content">
+<h3>Playa Blanca</h3>
+<p>White sand beach resort destination.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="taboga-island.html">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+</a>
+<div class="card-content">
+<h3>Taboga Island</h3>
+<p>Island getaway near Panama City.</p>
+</div>
+</div>
+
+</div>
+
+<!-- NATURE -->
+<h2 class="section-title">🌿 Rainforests & Wildlife</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="darien-national-park.html">
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2">
+</a>
+<div class="card-content">
+<h3>Darién National Park</h3>
+<p>One of the most biodiverse jungles in the world.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="soberania-park.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Soberanía Park</h3>
+<p>Rainforest near the Panama Canal.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="chiriqui.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Chiriquí Highlands</h3>
+<p>Cloud forests and volcano landscapes.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="coiba-island.html">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+</a>
+<div class="card-content">
+<h3>Coiba Island</h3>
+<p>Marine national park with rich wildlife.</p>
+</div>
+</div>
+
+</div>
+
+<footer>
+<p>🌍 Panama Travel Guide | Canal, Islands & Rainforest Explorer</p>
+</footer>
+
+</body>
+</html>

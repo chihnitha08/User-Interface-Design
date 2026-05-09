@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Rwanda</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(to bottom,#e8fff0,#e6f3ff);
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+}
+
+.hero-content{
+    position:relative;
+    color:white;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:72px;
+    color:#bfffd0;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:800px;
+    margin:auto;
+    margin-top:15px;
+}
+
+/* TITLE */
+.section-title{
+    text-align:center;
+    margin:70px 0 40px;
+    font-size:40px;
+    color:#1b5e3b;
+}
+
+/* GRID */
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    padding:20px 50px 80px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card h3{
+    color:#1b5e3b;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+    .places-container{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:600px){
+    .places-container{grid-template-columns:1fr;}
+    .hero h1{font-size:42px;}
+}
+
+footer{
+    background:#1b5e3b;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="overlay"></div>
+<div class="hero-content">
+    <h1>Explore Rwanda 🇷🇼</h1>
+    <p>Discover misty mountains, gorilla trekking forests, stunning lakes, rolling green hills, and one of Africa’s cleanest and most scenic countries.</p>
+</div>
+</section>
+
+<!-- CITIES -->
+<h2 class="section-title">🏙️ Cities & Culture</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="kigali.html"><img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff"></a>
+<div class="card-content">
+<h3>Kigali</h3>
+<p>Clean and modern capital city surrounded by green hills.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="huye.html"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"></a>
+<div class="card-content">
+<h3>Huye</h3>
+<p>University town with cultural heritage and museums.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="musanze.html"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"></a>
+<div class="card-content">
+<h3>Musanze</h3>
+<p>Gateway to volcanoes and gorilla trekking region.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="rubavu.html"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"></a>
+<div class="card-content">
+<h3>Rubavu</h3>
+<p>Lakeside town on Lake Kivu with beach vibes.</p>
+</div>
+</div>
+
+</div>
+
+<!-- NATURE -->
+<h2 class="section-title">🌿 Nature & Volcanoes</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="volcanoes-national-park.html"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2"></a>
+<div class="card-content">
+<h3>Volcanoes National Park</h3>
+<p>Famous for mountain gorillas and misty volcanoes.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="nyungwe-forest.html"><img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66"></a>
+<div class="card-content">
+<h3>Nyungwe Forest</h3>
+<p>Ancient rainforest with chimpanzees and canopy walks.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="akagera-national-park.html"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"></a>
+<div class="card-content">
+<h3>Akagera National Park</h3>
+<p>Savanna park with lions, elephants, and lakes.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="lake-kivu.html"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"></a>
+<div class="card-content">
+<h3>Lake Kivu</h3>
+<p>One of Africa’s Great Lakes with calm beaches.</p>
+</div>
+</div>
+
+</div>
+
+<!-- ADVENTURE -->
+<h2 class="section-title">🧭 Adventure & Wildlife</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="gorilla-trekking.html"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"></a>
+<div class="card-content">
+<h3>Gorilla Trekking</h3>
+<p>Rare close encounter with mountain gorillas.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="kigali-genocide-memorial.html"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2"></a>
+<div class="card-content">
+<h3>Kigali Memorial</h3>
+<p>Important historical site and remembrance center.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="bisoke-volcano.html"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"></a>
+<div class="card-content">
+<h3>Mount Bisoke</h3>
+<p>Volcanic hike with crater lake at the summit.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="lake-muhazi.html"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"></a>
+<div class="card-content">
+<h3>Lake Muhazi</h3>
+<p>Peaceful lake ideal for boating and relaxation.</p>
+</div>
+</div>
+
+</div>
+
+<!-- SCENIC HILLS -->
+<h2 class="section-title">🏔️ Scenic Hills & Views</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="hundred-hills.html"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"></a>
+<div class="card-content">
+<h3>Land of a Thousand Hills</h3>
+<p>Rolling green landscapes across Rwanda.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="kibuye.html"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"></a>
+<div class="card-content">
+<h3>Kibuye</h3>
+<p>Scenic lakeside town with peaceful views.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="gisenyi.html"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"></a>
+<div class="card-content">
+<h3>Gisenyi</h3>
+<p>Beach town on Lake Kivu with mountain backdrop.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="rwanda-tea-plantations.html"><img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66"></a>
+<div class="card-content">
+<h3>Tea Plantations</h3>
+<p>Green hills covered in scenic tea farms.</p>
+</div>
+</div>
+
+</div>
+
+<footer>
+<p>🌍 Rwanda Travel Guide | Nature & Gorilla Explorer</p>
+</footer>
+
+</body>
+</html>

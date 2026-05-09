@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Zimbabwe</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(to bottom,#fff3e0,#e8fff3);
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+}
+
+.hero-content{
+    position:relative;
+    color:white;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:72px;
+    color:#ffd27a;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:800px;
+    margin:auto;
+    margin-top:15px;
+}
+
+/* TITLE */
+.section-title{
+    text-align:center;
+    margin:70px 0 40px;
+    font-size:40px;
+    color:#1f4d2e;
+}
+
+/* GRID */
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    padding:20px 50px 80px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card h3{
+    color:#1f4d2e;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+    .places-container{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:600px){
+    .places-container{grid-template-columns:1fr;}
+    .hero h1{font-size:42px;}
+}
+
+footer{
+    background:#1f4d2e;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="overlay"></div>
+<div class="hero-content">
+    <h1>Explore Zimbabwe 🇿🇼</h1>
+    <p>Discover powerful waterfalls, ancient ruins, safari parks, massive lakes, and breathtaking African landscapes.</p>
+</div>
+</section>
+
+<!-- CITIES -->
+<h2 class="section-title">🏙️ Cities & Culture</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="harare.html">
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+</a>
+<div class="card-content">
+<h3>Harare</h3>
+<p>Capital city with modern life, markets, and gardens.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="bulawayo.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Bulawayo</h3>
+<p>Cultural hub with colonial history and museums.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="mutare.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Mutare</h3>
+<p>Gateway to eastern highlands and scenic mountains.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="masvingo.html">
+<img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66">
+</a>
+<div class="card-content">
+<h3>Masvingo</h3>
+<p>Historic town near Great Zimbabwe ruins.</p>
+</div>
+</div>
+
+</div>
+
+<!-- WILDLIFE -->
+<h2 class="section-title">🦁 Safari & Wildlife</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="hwange.html">
+<img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d">
+</a>
+<div class="card-content">
+<h3>Hwange National Park</h3>
+<p>Largest park in Zimbabwe with elephants and lions.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="mana-pools.html">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+</a>
+<div class="card-content">
+<h3>Mana Pools</h3>
+<p>UNESCO park along the Zambezi River.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="zambezi-national-park.html">
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2">
+</a>
+<div class="card-content">
+<h3>Zambezi National Park</h3>
+<p>Wildlife near Victoria Falls river basin.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="matobo.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Matobo Hills</h3>
+<p>Rock formations with rhinos and ancient art.</p>
+</div>
+</div>
+
+</div>
+
+<!-- NATURAL WONDERS -->
+<h2 class="section-title">🌊 Natural Wonders</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="victoria-falls.html">
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+</a>
+<div class="card-content">
+<h3>Victoria Falls</h3>
+<p>One of the world’s largest and most powerful waterfalls.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="lake-kariba.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Lake Kariba</h3>
+<p>Huge man-made lake with fishing and sunsets.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="eastern-highlands.html">
+<img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66">
+</a>
+<div class="card-content">
+<h3>Eastern Highlands</h3>
+<p>Mountains, forests, and misty valleys.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="chinhoyi-caves.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Chinhoyi Caves</h3>
+<p>Blue limestone caves with deep crystal pools.</p>
+</div>
+</div>
+
+</div>
+
+<!-- HISTORY -->
+<h2 class="section-title">🏛️ Heritage & History</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="great-zimbabwe.html">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ed">
+</a>
+<div class="card-content">
+<h3>Great Zimbabwe Ruins</h3>
+<p>Ancient stone city and UNESCO World Heritage Site.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="khami-ruins.html">
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2">
+</a>
+<div class="card-content">
+<h3>Khami Ruins</h3>
+<p>Historic stone ruins near Bulawayo.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="national-gallery.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>National Gallery</h3>
+<p>Art and cultural exhibitions of Zimbabwe.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="railway-museum.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Railway Museum</h3>
+<p>Historic trains and colonial transport history.</p>
+</div>
+</div>
+
+</div>
+
+<footer>
+<p>🌍 Zimbabwe Travel Guide | Waterfalls, Safari & Heritage Explorer</p>
+</footer>
+
+</body>
+</html>

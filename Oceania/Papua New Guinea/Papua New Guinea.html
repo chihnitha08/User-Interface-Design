@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Papua New Guinea</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(to bottom,#e9fff3,#e6f0ff);
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,50,30,0.55);
+}
+
+.hero-content{
+    position:relative;
+    color:white;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:72px;
+    color:#b7ffe2;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:800px;
+    margin:auto;
+    margin-top:15px;
+}
+
+/* TITLE */
+.section-title{
+    text-align:center;
+    margin:70px 0 40px;
+    font-size:40px;
+    color:#1b4d3e;
+}
+
+/* GRID */
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    padding:20px 50px 80px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card h3{
+    color:#1b4d3e;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+    .places-container{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:600px){
+    .places-container{grid-template-columns:1fr;}
+    .hero h1{font-size:42px;}
+}
+
+footer{
+    background:#1b4d3e;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="overlay"></div>
+<div class="hero-content">
+    <h1>Explore Papua New Guinea 🇵🇬</h1>
+    <p>Discover untouched jungles, tribal cultures, volcanic islands, WWII history, and some of the world’s most remote natural wonders.</p>
+</div>
+</section>
+
+<!-- CITY & CULTURE -->
+<h2 class="section-title">🏙️ Cities & Culture</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="port-moresby.html"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"></a>
+<div class="card-content">
+<h3>Port Moresby</h3>
+<p>Capital city with museums, coastline views, and cultural centers.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="goroka.html"><img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66"></a>
+<div class="card-content">
+<h3>Goroka</h3>
+<p>Highland town famous for coffee and cultural festivals.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="mount-hagen.html"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"></a>
+<div class="card-content">
+<h3>Mount Hagen</h3>
+<p>Mountain city surrounded by lush valleys and tribes.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="lae.html"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"></a>
+<div class="card-content">
+<h3>Lae</h3>
+<p>Industrial hub with coastal access and botanical gardens.</p>
+</div>
+</div>
+
+</div>
+
+<!-- NATURE -->
+<h2 class="section-title">🌿 Nature & Highlands</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="mount-wilhelm.html"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2"></a>
+<div class="card-content">
+<h3>Mount Wilhelm</h3>
+<p>Highest peak in PNG with alpine trekking routes.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="sepik-river.html"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"></a>
+<div class="card-content">
+<h3>Sepik River</h3>
+<p>Long river system with tribal villages and carvings.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="karawari-river.html"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"></a>
+<div class="card-content">
+<h3>Karawari River</h3>
+<p>Remote jungle river with rich wildlife and culture.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="varirata-national-park.html"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"></a>
+<div class="card-content">
+<h3>Varirata National Park</h3>
+<p>Rainforest park near Port Moresby with birdwatching views.</p>
+</div>
+</div>
+
+</div>
+
+<!-- ISLANDS -->
+<h2 class="section-title">🏝️ Islands & Beaches</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="milne-bay.html"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"></a>
+<div class="card-content">
+<h3>Milne Bay</h3>
+<p>Crystal clear waters and diving paradise.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="madang.html"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"></a>
+<div class="card-content">
+<h3>Madang</h3>
+<p>Coastal town with lagoons, reefs, and tropical islands.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="new-britain.html"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2"></a>
+<div class="card-content">
+<h3>New Britain</h3>
+<p>Volcanic island with rainforests and beaches.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="tufi.html"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e"></a>
+<div class="card-content">
+<h3>Tufi Fjords</h3>
+<p>Rare tropical fjords with coral reefs.</p>
+</div>
+</div>
+
+</div>
+
+<!-- ADVENTURE -->
+<h2 class="section-title">🧭 Adventure & History</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="kokoda-track.html"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"></a>
+<div class="card-content">
+<h3>Kokoda Track</h3>
+<p>Historic WWII trekking route through mountains and jungle.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="rabaul.html"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2"></a>
+<div class="card-content">
+<h3>Rabaul</h3>
+<p>Volcanic town with war history and active volcano views.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="bismarck-sea.html"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"></a>
+<div class="card-content">
+<h3>Bismarck Sea</h3>
+<p>Diving and marine biodiversity hotspot.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="tari-valley.html"><img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66"></a>
+<div class="card-content">
+<h3>Tari Valley</h3>
+<p>Famous for Huli wigmen tribes and mountain scenery.</p>
+</div>
+</div>
+
+</div>
+
+<footer>
+<p>Papua New Guinea Travel Guide 🌴</p>
+</footer>
+
+</body>
+</html>

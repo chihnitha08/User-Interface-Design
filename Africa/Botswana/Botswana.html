@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Botswana</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(to bottom,#fff7e6,#e8fff3);
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+}
+
+.hero-content{
+    position:relative;
+    color:white;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:72px;
+    color:#ffe08a;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:800px;
+    margin:auto;
+    margin-top:15px;
+}
+
+/* TITLE */
+.section-title{
+    text-align:center;
+    margin:70px 0 40px;
+    font-size:40px;
+    color:#2f5d3a;
+}
+
+/* GRID */
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    padding:20px 50px 80px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card h3{
+    color:#2f5d3a;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+    .places-container{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:600px){
+    .places-container{grid-template-columns:1fr;}
+    .hero h1{font-size:42px;}
+}
+
+footer{
+    background:#2f5d3a;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="overlay"></div>
+<div class="hero-content">
+    <h1>Explore Botswana 🇧🇼</h1>
+    <p>Discover vast savannas, the Okavango Delta, wildlife safaris, salt pans, deserts, and some of Africa’s most untouched natural wonders.</p>
+</div>
+</section>
+
+<!-- CITY & CULTURE -->
+<h2 class="section-title">🏙️ Cities & Culture</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="gaborone.html"><img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff"></a>
+<div class="card-content">
+<h3>Gaborone</h3>
+<p>Capital city with modern culture and local markets.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="francistown.html"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"></a>
+<div class="card-content">
+<h3>Francistown</h3>
+<p>Historic mining city and gateway to northern Botswana.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="maun.html"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"></a>
+<div class="card-content">
+<h3>Maun</h3>
+<p>Safari capital and entry point to the Okavango Delta.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="kasane.html"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"></a>
+<div class="card-content">
+<h3>Kasane</h3>
+<p>River town near Chobe National Park and wildlife zones.</p>
+</div>
+</div>
+
+</div>
+
+<!-- SAFARI -->
+<h2 class="section-title">🦁 Safari & Wildlife</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="chobe-national-park.html"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"></a>
+<div class="card-content">
+<h3>Chobe National Park</h3>
+<p>Home to elephants, lions, and river safaris.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="moremi-game-reserve.html"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2"></a>
+<div class="card-content">
+<h3>Moremi Game Reserve</h3>
+<p>Rich biodiversity inside the Okavango Delta.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="okavango-delta.html"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"></a>
+<div class="card-content">
+<h3>Okavango Delta</h3>
+<p>World-famous inland delta and wildlife paradise.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="savuti.html"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"></a>
+<div class="card-content">
+<h3>Savuti</h3>
+<p>Predator-rich region known for lion and hyena encounters.</p>
+</div>
+</div>
+
+</div>
+
+<!-- DESERT -->
+<h2 class="section-title">🏜️ Desert & Salt Pans</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="kalahari-desert.html"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2"></a>
+<div class="card-content">
+<h3>Kalahari Desert</h3>
+<p>Endless sand dunes and unique desert wildlife.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="makgadikgadi-pans.html"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"></a>
+<div class="card-content">
+<h3>Makgadikgadi Pans</h3>
+<p>Vast salt flats that glow under the sun and stars.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="nxai-pan.html"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"></a>
+<div class="card-content">
+<h3>Nxai Pan</h3>
+<p>Seasonal wildlife migration and baobab trees.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="tsodilo-hills.html"><img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66"></a>
+<div class="card-content">
+<h3>Tsodilo Hills</h3>
+<p>Ancient rock art site and spiritual heritage landmark.</p>
+</div>
+</div>
+
+</div>
+
+<!-- ADVENTURE -->
+<h2 class="section-title">🧭 Adventure & Nature</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="tuli-block.html"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"></a>
+<div class="card-content">
+<h3>Tuli Block</h3>
+<p>Remote wilderness with elephants and rugged landscapes.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="khama-rhino-sanctuary.html"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"></a>
+<div class="card-content">
+<h3>Khama Rhino Sanctuary</h3>
+<p>Conservation area protecting endangered rhinos.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="boteti-river.html"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"></a>
+<div class="card-content">
+<h3>Boteti River</h3>
+<p>Wildlife corridor with seasonal animal migrations.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="central-kalahari.html"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2"></a>
+<div class="card-content">
+<h3>Central Kalahari</h3>
+<p>One of the largest game reserves in the world.</p>
+</div>
+</div>
+
+</div>
+
+<footer>
+<p>🌍 Botswana Travel Guide | Safari & Desert Explorer</p>
+</footer>
+
+</body>
+</html>

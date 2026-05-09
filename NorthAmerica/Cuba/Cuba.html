@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Cuba</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(to bottom,#e6f7ff,#fff2e6);
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,30,60,0.55);
+}
+
+.hero-content{
+    position:relative;
+    color:white;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:72px;
+    color:#ffcc70;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:800px;
+    margin:auto;
+    margin-top:15px;
+}
+
+/* TITLE */
+.section-title{
+    text-align:center;
+    margin:70px 0 40px;
+    font-size:40px;
+    color:#1d4e89;
+}
+
+/* GRID */
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    padding:20px 50px 80px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card h3{
+    color:#1d4e89;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+    .places-container{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:600px){
+    .places-container{grid-template-columns:1fr;}
+    .hero h1{font-size:42px;}
+}
+
+footer{
+    background:#1d4e89;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="overlay"></div>
+<div class="hero-content">
+    <h1>Explore Cuba 🇨🇺</h1>
+    <p>Discover vintage cars, colorful colonial cities, Caribbean beaches, salsa rhythms, and timeless cultural heritage.</p>
+</div>
+</section>
+
+<!-- CITIES -->
+<h2 class="section-title">🏙️ Cities & Culture</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="havana.html">
+<img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc">
+</a>
+<div class="card-content">
+<h3>Havana</h3>
+<p>Colorful capital with classic cars and colonial architecture.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="santiago-de-cuba.html">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ed">
+</a>
+<div class="card-content">
+<h3>Santiago de Cuba</h3>
+<p>Cultural heart of music, salsa, and revolution history.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="trinidad.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Trinidad</h3>
+<p>UNESCO city with cobblestone streets and pastel houses.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="cienfuegos.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Cienfuegos</h3>
+<p>Elegant coastal city known as the Pearl of the South.</p>
+</div>
+</div>
+
+</div>
+
+<!-- BEACHES -->
+<h2 class="section-title">🏖️ Beaches & Islands</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="varadero.html">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+</a>
+<div class="card-content">
+<h3>Varadero Beach</h3>
+<p>Famous white sand beach with crystal clear water.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="cayo-coco.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Cayo Coco</h3>
+<p>Tropical island with coral reefs and resorts.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="cayo-largo.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Cayo Largo</h3>
+<p>Remote island paradise with untouched beaches.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="guardalavaca.html">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ed">
+</a>
+<div class="card-content">
+<h3>Guardalavaca</h3>
+<p>Relaxed beach destination with turquoise waters.</p>
+</div>
+</div>
+
+</div>
+
+<!-- NATURE -->
+<h2 class="section-title">🌿 Nature & Landscapes</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="viñales-valley.html">
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2">
+</a>
+<div class="card-content">
+<h3>Viñales Valley</h3>
+<p>Lush tobacco fields and limestone hills.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="sierra-maestra.html">
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+</a>
+<div class="card-content">
+<h3>Sierra Maestra</h3>
+<p>Highest mountain range in Cuba.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="zapata-swamp.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Zapata Swamp</h3>
+<p>Wetlands with rare birds and wildlife.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="topes-de-collantes.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Topes de Collantes</h3>
+<p>Mountain waterfalls and forest trails.</p>
+</div>
+</div>
+
+</div>
+
+<!-- CULTURE -->
+<h2 class="section-title">🎷 Culture & Heritage</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="malecon-havana.html">
+<img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc">
+</a>
+<div class="card-content">
+<h3>Malecón</h3>
+<p>Iconic seaside boulevard in Havana.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="revolution-museum.html">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ed">
+</a>
+<div class="card-content">
+<h3>Museum of Revolution</h3>
+<p>Historic site of Cuba’s revolutionary past.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="capitolio.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>El Capitolio</h3>
+<p>Grand historic building in Havana.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="salsa-clubs.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Salsa Clubs</h3>
+<p>Live music and vibrant Cuban nightlife.</p>
+</div>
+</div>
+
+</div>
+
+<footer>
+<p>🌍 Cuba Travel Guide | Culture, Beaches & History Explorer</p>
+</footer>
+
+</body>
+</html>

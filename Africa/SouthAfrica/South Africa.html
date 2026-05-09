@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore South Africa</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(to bottom,#fff4e6,#e6f7ff);
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+}
+
+.hero-content{
+    position:relative;
+    color:white;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:72px;
+    color:#ffd27a;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:800px;
+    margin:auto;
+    margin-top:15px;
+}
+
+/* TITLE */
+.section-title{
+    text-align:center;
+    margin:70px 0 40px;
+    font-size:40px;
+    color:#1e4d3b;
+}
+
+/* GRID */
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    padding:20px 50px 80px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card h3{
+    color:#1e4d3b;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+    .places-container{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:600px){
+    .places-container{grid-template-columns:1fr;}
+    .hero h1{font-size:42px;}
+}
+
+footer{
+    background:#1e4d3b;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="overlay"></div>
+<div class="hero-content">
+    <h1>Explore South Africa 🇿🇦</h1>
+    <p>Discover iconic safaris, Table Mountain, Cape Town beaches, wine regions, wildlife parks, and vibrant multicultural cities.</p>
+</div>
+</section>
+
+<!-- CITIES -->
+<h2 class="section-title">🏙️ Cities & Culture</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="cape-town.html"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"></a>
+<div class="card-content">
+<h3>Cape Town</h3>
+<p>One of the world’s most beautiful cities with mountains and ocean views.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="johannesburg.html"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"></a>
+<div class="card-content">
+<h3>Johannesburg</h3>
+<p>Economic hub with history, museums, and urban energy.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="durban.html"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"></a>
+<div class="card-content">
+<h3>Durban</h3>
+<p>Coastal city with warm beaches and Indian Ocean vibes.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="pretoria.html"><img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66"></a>
+<div class="card-content">
+<h3>Pretoria</h3>
+<p>Capital city known for jacaranda trees and government buildings.</p>
+</div>
+</div>
+
+</div>
+
+<!-- SAFARI -->
+<h2 class="section-title">🦁 Safari & Wildlife</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="kruger-national-park.html"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"></a>
+<div class="card-content">
+<h3>Kruger National Park</h3>
+<p>One of Africa’s largest safari parks with Big Five wildlife.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="addo-elephant-park.html"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2"></a>
+<div class="card-content">
+<h3>Addo Elephant Park</h3>
+<p>Protected habitat for elephants and other wildlife.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="pilanesberg.html"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"></a>
+<div class="card-content">
+<h3>Pilanesberg</h3>
+<p>Safari park inside an ancient volcanic crater.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="hluhluwe-imfolozi.html"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"></a>
+<div class="card-content">
+<h3>Hluhluwe–Imfolozi</h3>
+<p>Oldest game reserve in Africa, famous for rhinos.</p>
+</div>
+</div>
+
+</div>
+
+<!-- NATURE -->
+<h2 class="section-title">🏔️ Nature & Landscapes</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="table-mountain.html"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"></a>
+<div class="card-content">
+<h3>Table Mountain</h3>
+<p>Iconic flat-topped mountain overlooking Cape Town.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="drakensberg.html"><img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66"></a>
+<div class="card-content">
+<h3>Drakensberg</h3>
+<p>Dramatic mountain range with hiking trails and cliffs.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="blyde-river-canyon.html"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"></a>
+<div class="card-content">
+<h3>Blyde River Canyon</h3>
+<p>One of the largest green canyons in the world.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="kalahari-sa.html"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2"></a>
+<div class="card-content">
+<h3>Kalahari Basin</h3>
+<p>Red desert landscapes with unique wildlife.</p>
+</div>
+</div>
+
+</div>
+
+<!-- COAST -->
+<h2 class="section-title">🏖️ Beaches & Coast</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="garden-route.html"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"></a>
+<div class="card-content">
+<h3>Garden Route</h3>
+<p>Scenic coastal drive with forests, beaches, and cliffs.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="jeffreys-bay.html"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e"></a>
+<div class="card-content">
+<h3>Jeffreys Bay</h3>
+<p>World-famous surfing destination.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="plettenberg-bay.html"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"></a>
+<div class="card-content">
+<h3>Plettenberg Bay</h3>
+<p>Whale watching and pristine beaches.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="cape-point.html"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ed"></a>
+<div class="card-content">
+<h3>Cape Point</h3>
+<p>Dramatic cliffs where oceans meet.</p>
+</div>
+</div>
+
+</div>
+
+<footer>
+<p>🌍 South Africa Travel Guide | Safari & Coastal Explorer</p>
+</footer>
+
+</body>
+</html>

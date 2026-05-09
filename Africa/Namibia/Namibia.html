@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Namibia</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(to bottom,#fff4e1,#e6fff7);
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+}
+
+.hero-content{
+    position:relative;
+    color:white;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:72px;
+    color:#ffd27a;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:800px;
+    margin:auto;
+    margin-top:15px;
+}
+
+/* TITLE */
+.section-title{
+    text-align:center;
+    margin:70px 0 40px;
+    font-size:40px;
+    color:#6b3d1d;
+}
+
+/* GRID */
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    padding:20px 50px 80px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card h3{
+    color:#6b3d1d;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+    .places-container{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:600px){
+    .places-container{grid-template-columns:1fr;}
+    .hero h1{font-size:42px;}
+}
+
+footer{
+    background:#6b3d1d;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="overlay"></div>
+<div class="hero-content">
+    <h1>Explore Namibia 🇳🇦</h1>
+    <p>Discover towering dunes, endless deserts, wildlife safaris, coastal shipwrecks, and some of Africa’s most surreal landscapes.</p>
+</div>
+</section>
+
+<!-- CITIES -->
+<h2 class="section-title">🏙️ Cities & Towns</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="windhoek.html"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"></a>
+<div class="card-content">
+<h3>Windhoek</h3>
+<p>Capital city blending African and German colonial heritage.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="swakopmund.html"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"></a>
+<div class="card-content">
+<h3>Swakopmund</h3>
+<p>Coastal desert town with German architecture and adventure sports.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="walvis-bay.html"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"></a>
+<div class="card-content">
+<h3>Walvis Bay</h3>
+<p>Harbor city famous for flamingos and dunes meeting the ocean.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="luderitz.html"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2"></a>
+<div class="card-content">
+<h3>Lüderitz</h3>
+<p>Atlantic coastal town with colonial buildings and shipwrecks.</p>
+</div>
+</div>
+
+</div>
+
+<!-- DESERT -->
+<h2 class="section-title">🏜️ Desert Landscapes</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="sossusvlei.html"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"></a>
+<div class="card-content">
+<h3>Sossusvlei</h3>
+<p>Iconic red sand dunes among the tallest in the world.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="dead-vlei.html"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2"></a>
+<div class="card-content">
+<h3>Dead Vlei</h3>
+<p>Ancient white clay pan with dead camel thorn trees.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="namib-desert.html"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"></a>
+<div class="card-content">
+<h3>Namib Desert</h3>
+<p>One of the oldest deserts on Earth with vast dunes.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="spitzkoppe.html"><img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66"></a>
+<div class="card-content">
+<h3>Spitzkoppe</h3>
+<p>Granite mountain formations rising from desert plains.</p>
+</div>
+</div>
+
+</div>
+
+<!-- SAFARI -->
+<h2 class="section-title">🦁 Wildlife & Safari</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="etosha-national-park.html"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"></a>
+<div class="card-content">
+<h3>Etosha National Park</h3>
+<p>Premier safari park with elephants, lions, and salt pans.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="caprivi-strip.html"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"></a>
+<div class="card-content">
+<h3>Caprivi Strip</h3>
+<p>Lush river region with hippos and crocodiles.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="waterberg-plateau.html"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2"></a>
+<div class="card-content">
+<h3>Waterberg Plateau</h3>
+<p>Cliff-top sanctuary for rare wildlife species.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="khaudum-national-park.html"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"></a>
+<div class="card-content">
+<h3>Khaudum Park</h3>
+<p>Remote wilderness with untouched safari experience.</p>
+</div>
+</div>
+
+</div>
+
+<!-- COAST -->
+<h2 class="section-title">🏖️ Coast & Shipwrecks</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="skelton-coast.html"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"></a>
+<div class="card-content">
+<h3>Skeleton Coast</h3>
+<p>Foggy coastline with whale bones and shipwrecks.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="cape-cross.html"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2"></a>
+<div class="card-content">
+<h3>Cape Cross</h3>
+<p>Seal colony with thousands of Cape fur seals.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="sandwich-harbour.html"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e"></a>
+<div class="card-content">
+<h3>Sandwich Harbour</h3>
+<p>Dunes dropping directly into the Atlantic Ocean.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="kolmanskop.html"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"></a>
+<div class="card-content">
+<h3>Kolmanskop</h3>
+<p>Abandoned diamond mining ghost town in the desert.</p>
+</div>
+</div>
+
+</div>
+
+<footer>
+<p>🌍 Namibia Travel Guide | Desert & Wilderness Explorer</p>
+</footer>
+
+</body>
+</html>

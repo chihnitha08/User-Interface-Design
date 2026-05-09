@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore United States</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(to bottom,#e6f0ff,#fff5f5);
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,20,60,0.55);
+}
+
+.hero-content{
+    position:relative;
+    color:white;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:72px;
+    color:#ff4d4d;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:800px;
+    margin:auto;
+    margin-top:15px;
+}
+
+/* TITLE */
+.section-title{
+    text-align:center;
+    margin:70px 0 40px;
+    font-size:40px;
+    color:#0b3d91;
+}
+
+/* GRID */
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    padding:20px 50px 80px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card h3{
+    color:#0b3d91;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+    .places-container{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:600px){
+    .places-container{grid-template-columns:1fr;}
+    .hero h1{font-size:42px;}
+}
+
+footer{
+    background:#0b3d91;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="overlay"></div>
+<div class="hero-content">
+    <h1>Explore United States 🇺🇸</h1>
+    <p>Discover iconic cities, national parks, deserts, beaches, and world-famous landmarks across a vast and diverse country.</p>
+</div>
+</section>
+
+<!-- CITIES -->
+<h2 class="section-title">🏙️ Major Cities</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="new-york.html">
+<img src="https://images.unsplash.com/photo-1496449903678-68ddcb189a24">
+</a>
+<div class="card-content">
+<h3>New York City</h3>
+<p>The city that never sleeps with skyscrapers and Times Square.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="los-angeles.html">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+</a>
+<div class="card-content">
+<h3>Los Angeles</h3>
+<p>Hollywood, beaches, and entertainment capital of the world.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="chicago.html">
+<img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad">
+</a>
+<div class="card-content">
+<h3>Chicago</h3>
+<p>Windy City with skyline views and deep-dish pizza.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="miami.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Miami</h3>
+<p>Tropical city with beaches and nightlife.</p>
+</div>
+</div>
+
+</div>
+
+<!-- LANDMARKS -->
+<h2 class="section-title">🗽 Iconic Landmarks</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="statue-of-liberty.html">
+<img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29">
+</a>
+<div class="card-content">
+<h3>Statue of Liberty</h3>
+<p>Symbol of freedom in New York Harbor.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="golden-gate.html">
+<img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29">
+</a>
+<div class="card-content">
+<h3>Golden Gate Bridge</h3>
+<p>Iconic bridge in San Francisco.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="grand-canyon.html">
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+</a>
+<div class="card-content">
+<h3>Grand Canyon</h3>
+<p>Massive natural canyon in Arizona.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="yellowstone.html">
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2">
+</a>
+<div class="card-content">
+<h3>Yellowstone</h3>
+<p>World’s first national park with geysers and wildlife.</p>
+</div>
+</div>
+
+</div>
+
+<!-- NATIONAL PARKS -->
+<h2 class="section-title">🏞️ National Parks</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="yosemite.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Yosemite</h3>
+<p>Granite cliffs, waterfalls, and giant sequoias.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="zion.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Zion National Park</h3>
+<p>Red rock canyons and scenic hiking trails.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="rocky-mountain-usa.html">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+</a>
+<div class="card-content">
+<h3>Rocky Mountain NP</h3>
+<p>Snowy peaks and alpine lakes.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="everglades.html">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+</a>
+<div class="card-content">
+<h3>Everglades</h3>
+<p>Wetlands with alligators and wildlife.</p>
+</div>
+</div>
+
+</div>
+
+<!-- BEACHES -->
+<h2 class="section-title">🏖️ Beaches & Coast</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="hawaii.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Hawaii</h3>
+<p>Tropical islands with volcanoes and beaches.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="malibu.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Malibu</h3>
+<p>Luxury beach town in California.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="florida-keys.html">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+</a>
+<div class="card-content">
+<h3>Florida Keys</h3>
+<p>Tropical island chain with coral reefs.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="san-diego.html">
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+</a>
+<div class="card-content">
+<h3>San Diego</h3>
+<p>Sunny beaches and relaxed coastal city.</p>
+</div>
+</div>
+
+</div>
+
+<footer>
+<p>🌍 United States Travel Guide | Cities, Parks & Landmarks Explorer</p>
+</footer>
+
+</body>
+</html>

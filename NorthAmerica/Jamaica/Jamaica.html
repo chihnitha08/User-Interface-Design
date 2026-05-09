@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Jamaica</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(to bottom,#e8fff0,#fff4e6);
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,40,0,0.55);
+}
+
+.hero-content{
+    position:relative;
+    color:white;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:72px;
+    color:#ffd166;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:800px;
+    margin:auto;
+    margin-top:15px;
+}
+
+/* TITLE */
+.section-title{
+    text-align:center;
+    margin:70px 0 40px;
+    font-size:40px;
+    color:#1b5e20;
+}
+
+/* GRID */
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    padding:20px 50px 80px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card h3{
+    color:#1b5e20;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+    .places-container{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:600px){
+    .places-container{grid-template-columns:1fr;}
+    .hero h1{font-size:42px;}
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="overlay"></div>
+<div class="hero-content">
+    <h1>Explore Jamaica 🇯🇲</h1>
+    <p>Experience reggae rhythm, blue mountains, tropical beaches, waterfalls, and vibrant Caribbean culture.</p>
+</div>
+</section>
+
+<!-- CITIES -->
+<h2 class="section-title">🏙️ Cities & Culture</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="kingston.html">
+<img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc">
+</a>
+<div class="card-content">
+<h3>Kingston</h3>
+<p>Capital city and heart of reggae music culture.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="montego-bay.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Montego Bay</h3>
+<p>Popular resort city with beaches and nightlife.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="negril.html">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+</a>
+<div class="card-content">
+<h3>Negril</h3>
+<p>Famous for sunset cliffs and relaxed beach vibe.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="ocho-rios.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Ocho Rios</h3>
+<p>Tourist hub near waterfalls and adventure parks.</p>
+</div>
+</div>
+
+</div>
+
+<!-- BEACHES -->
+<h2 class="section-title">🏖️ Beaches & Coast</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="seven-mile-beach.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Seven Mile Beach</h3>
+<p>One of the most beautiful beaches in the Caribbean.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="doctor-cave-beach.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Doctor’s Cave Beach</h3>
+<p>Clear turquoise waters and soft white sand.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="frenchmans-cove.html">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ed">
+</a>
+<div class="card-content">
+<h3>Frenchman’s Cove</h3>
+<p>River meets ocean in a tropical paradise.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="treasure-beach.html">
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2">
+</a>
+<div class="card-content">
+<h3>Treasure Beach</h3>
+<p>Quiet, authentic Jamaican coastal village.</p>
+</div>
+</div>
+
+</div>
+
+<!-- NATURE -->
+<h2 class="section-title">🌿 Nature & Waterfalls</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="dunns-river.html">
+<img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66">
+</a>
+<div class="card-content">
+<h3>Dunn’s River Falls</h3>
+<p>Famous climbable waterfall in Ocho Rios.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="blue-mountains.html">
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+</a>
+<div class="card-content">
+<h3>Blue Mountains</h3>
+<p>Lush mountain range known for coffee plantations.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="ys-falls.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>YS Falls</h3>
+<p>Hidden waterfall surrounded by rainforest.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="reach-falls.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Reach Falls</h3>
+<p>Natural pools and jungle waterfalls.</p>
+</div>
+</div>
+
+</div>
+
+<!-- CULTURE -->
+<h2 class="section-title">🎶 Culture & Heritage</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="bob-marley-museum.html">
+<img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc">
+</a>
+<div class="card-content">
+<h3>Bob Marley Museum</h3>
+<p>Home of reggae legend Bob Marley.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="devon-house.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Devon House</h3>
+<p>Historic mansion with Jamaican ice cream.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="trench-town.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Trench Town</h3>
+<p>Birthplace of reggae music culture.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="emancipation-park.html">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+</a>
+<div class="card-content">
+<h3>Emancipation Park</h3>
+<p>Modern cultural park in Kingston.</p>
+</div>
+</div>
+
+</div>
+
+<footer>
+<p>🌍 Jamaica Travel Guide | One Love Island Experience</p>
+</footer>
+
+</body>
+</html>

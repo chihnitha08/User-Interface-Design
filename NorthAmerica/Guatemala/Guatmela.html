@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Guatemala</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(to bottom,#e8fff0,#fff3e0);
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+}
+
+.hero-content{
+    position:relative;
+    color:white;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:72px;
+    color:#ffd166;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:800px;
+    margin:auto;
+    margin-top:15px;
+}
+
+/* TITLE */
+.section-title{
+    text-align:center;
+    margin:70px 0 40px;
+    font-size:40px;
+    color:#1f5e3b;
+}
+
+/* GRID */
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    padding:20px 50px 80px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card h3{
+    color:#1f5e3b;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+    .places-container{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:600px){
+    .places-container{grid-template-columns:1fr;}
+    .hero h1{font-size:42px;}
+}
+
+footer{
+    background:#1f5e3b;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="overlay"></div>
+<div class="hero-content">
+    <h1>Explore Guatemala 🇬🇹</h1>
+    <p>Discover ancient Mayan ruins, volcanoes, colorful colonial cities, lakes, and lush rainforests.</p>
+</div>
+</section>
+
+<!-- CITIES -->
+<h2 class="section-title">🏙️ Cities & Culture</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="guatemala-city.html">
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+</a>
+<div class="card-content">
+<h3>Guatemala City</h3>
+<p>Modern capital surrounded by volcanoes and culture.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="antigua.html">
+<img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc">
+</a>
+<div class="card-content">
+<h3>Antigua</h3>
+<p>Colonial UNESCO city with cobblestone streets.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="flores.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Flores</h3>
+<p>Island town near ancient Mayan ruins.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="quetzaltenango.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Quetzaltenango</h3>
+<p>Highland city with culture and volcano views.</p>
+</div>
+</div>
+
+</div>
+
+<!-- MAYAN RUINS -->
+<h2 class="section-title">🏛️ Mayan Ruins</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="tikal.html">
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2">
+</a>
+<div class="card-content">
+<h3>Tikal</h3>
+<p>Massive ancient Mayan city deep in the jungle.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="el-mirador.html">
+<img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66">
+</a>
+<div class="card-content">
+<h3>El Mirador</h3>
+<p>Hidden pyramid complex in the rainforest.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="yaxha.html">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ed">
+</a>
+<div class="card-content">
+<h3>Yaxhá</h3>
+<p>Ancient ruins overlooking a beautiful lake.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="quirigua.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Quiriguá</h3>
+<p>Famous for giant carved stone stelae.</p>
+</div>
+</div>
+
+</div>
+
+<!-- VOLCANOES -->
+<h2 class="section-title">🌋 Volcanoes & Nature</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="pacaya.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Pacaya Volcano</h3>
+<p>Active volcano with lava hiking experience.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="fuego.html">
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+</a>
+<div class="card-content">
+<h3>Volcán de Fuego</h3>
+<p>One of the most active volcanoes in Central America.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="acatenango.html">
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2">
+</a>
+<div class="card-content">
+<h3>Acatenango</h3>
+<p>Popular volcano trekking with sunrise views.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="tajumulco.html">
+<img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66">
+</a>
+<div class="card-content">
+<h3>Tajumulco</h3>
+<p>Highest peak in Central America.</p>
+</div>
+</div>
+
+</div>
+
+<!-- LAKES & NATURE -->
+<h2 class="section-title">🌊 Lakes & Landscapes</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="lake-atitlan.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Lake Atitlán</h3>
+<p>Beautiful lake surrounded by volcanoes.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="rio-dulce.html">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ed">
+</a>
+<div class="card-content">
+<h3>Rio Dulce</h3>
+<p>River canyon with tropical scenery.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="semuc-champey.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Semuc Champey</h3>
+<p>Natural turquoise limestone pools.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="monterrico.html">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+</a>
+<div class="card-content">
+<h3>Monterrico</h3>
+<p>Pacific coast beach and sea turtle reserve.</p>
+</div>
+</div>
+
+</div>
+
+<footer>
+<p>🌍 Guatemala Travel Guide | Mayan Heritage & Nature Explorer</p>
+</footer>
+
+</body>
+</html>

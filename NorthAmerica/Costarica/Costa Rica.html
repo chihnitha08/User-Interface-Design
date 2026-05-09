@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Costa Rica</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(to bottom,#e6fff2,#fff5e6);
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+}
+
+.hero-content{
+    position:relative;
+    color:white;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:72px;
+    color:#ffd166;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:800px;
+    margin:auto;
+    margin-top:15px;
+}
+
+/* SECTION TITLE */
+.section-title{
+    text-align:center;
+    margin:70px 0 40px;
+    font-size:40px;
+    color:#1f6f4a;
+}
+
+/* GRID */
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    padding:20px 50px 80px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card h3{
+    color:#1f6f4a;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+    .places-container{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:600px){
+    .places-container{grid-template-columns:1fr;}
+    .hero h1{font-size:42px;}
+}
+
+footer{
+    background:#1f6f4a;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="overlay"></div>
+<div class="hero-content">
+    <h1>Explore Costa Rica 🇨🇷</h1>
+    <p>Discover lush rainforests, active volcanoes, tropical beaches, exotic wildlife, and eco-adventure paradise.</p>
+</div>
+</section>
+
+<!-- CITIES -->
+<h2 class="section-title">🏙️ Cities & Culture</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="san-jose.html">
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+</a>
+<div class="card-content">
+<h3>San José</h3>
+<p>Capital city surrounded by mountains and culture.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="liberia.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Liberia</h3>
+<p>Gateway city to beaches and national parks.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="puerto-viejo.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Puerto Viejo</h3>
+<p>Caribbean vibe town with surf and culture.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="cartago.html">
+<img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66">
+</a>
+<div class="card-content">
+<h3>Cartago</h3>
+<p>Historic city with colonial and religious heritage.</p>
+</div>
+</div>
+
+</div>
+
+<!-- VOLCANOES -->
+<h2 class="section-title">🌋 Volcanoes & Nature</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="arenal-volcano.html">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+</a>
+<div class="card-content">
+<h3>Arenal Volcano</h3>
+<p>One of the most active and scenic volcanoes.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="poas-volcano.html">
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2">
+</a>
+<div class="card-content">
+<h3>Poás Volcano</h3>
+<p>Famous crater volcano with turquoise lake.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="rincon-de-la-vieja.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Rincón de la Vieja</h3>
+<p>Volcanic park with geysers and hot springs.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="turrialba-volcano.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Turrialba Volcano</h3>
+<p>Active volcano with dramatic ash clouds.</p>
+</div>
+</div>
+
+</div>
+
+<!-- RAINFOREST -->
+<h2 class="section-title">🌿 Rainforests & Wildlife</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="monteverde.html">
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2">
+</a>
+<div class="card-content">
+<h3>Monteverde Cloud Forest</h3>
+<p>Misty forests with hanging bridges and wildlife.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="corcovado.html">
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+</a>
+<div class="card-content">
+<h3>Corcovado National Park</h3>
+<p>One of the most biodiverse places on Earth.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="manuel-antonio.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Manuel Antonio</h3>
+<p>Rainforest meets white sand beaches.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="tortuguero.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Tortuguero</h3>
+<p>Canals, turtles, and jungle wildlife.</p>
+</div>
+</div>
+
+</div>
+
+<!-- BEACHES -->
+<h2 class="section-title">🏖️ Beaches & Coast</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="guanacaste.html">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+</a>
+<div class="card-content">
+<h3>Guanacaste Beaches</h3>
+<p>Golden sand beaches and luxury resorts.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="cahuita.html">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ed">
+</a>
+<div class="card-content">
+<h3>Cahuita</h3>
+<p>Coral reefs and Caribbean coastline.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="nosara.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Nosara</h3>
+<p>Surf town with yoga and peaceful beaches.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="jaco-beach.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Jacó Beach</h3>
+<p>Popular surf beach with nightlife.</p>
+</div>
+</div>
+
+</div>
+
+<footer>
+<p>🌍 Costa Rica Travel Guide | Eco Adventure Paradise</p>
+</footer>
+
+</body>
+</html>

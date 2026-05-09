@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Tanzania</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(to bottom,#fff3e0,#e6fff5);
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+}
+
+.hero-content{
+    position:relative;
+    color:white;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:72px;
+    color:#ffd36b;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:800px;
+    margin:auto;
+    margin-top:15px;
+}
+
+/* SECTION TITLE */
+.section-title{
+    text-align:center;
+    margin:70px 0 40px;
+    font-size:40px;
+    color:#1f5e3b;
+}
+
+/* GRID */
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    padding:20px 50px 80px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card h3{
+    color:#1f5e3b;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+    .places-container{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:600px){
+    .places-container{grid-template-columns:1fr;}
+    .hero h1{font-size:42px;}
+}
+
+footer{
+    background:#1f5e3b;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="overlay"></div>
+<div class="hero-content">
+    <h1>Explore Tanzania 🇹🇿</h1>
+    <p>Discover the Serengeti safari plains, Mount Kilimanjaro, Zanzibar beaches, Ngorongoro crater, and breathtaking African wilderness.</p>
+</div>
+</section>
+
+<!-- CITIES -->
+<h2 class="section-title">🏙️ Cities & Culture</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="dar-es-salaam.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Dar es Salaam</h3>
+<p>Largest city and coastal gateway to Tanzania.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="arusha.html">
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+</a>
+<div class="card-content">
+<h3>Arusha</h3>
+<p>Safari capital at the foot of Mount Meru.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="mwanza.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Mwanza</h3>
+<p>Lakeside city on the shores of Lake Victoria.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="dodoma.html">
+<img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66">
+</a>
+<div class="card-content">
+<h3>Dodoma</h3>
+<p>Capital city surrounded by hills and savanna landscapes.</p>
+</div>
+</div>
+
+</div>
+
+<!-- SAFARI -->
+<h2 class="section-title">🦁 Safari & Wildlife</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="serengeti.html">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+</a>
+<div class="card-content">
+<h3>Serengeti</h3>
+<p>World-famous safari park and Great Migration site.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="ngorongoro.html">
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2">
+</a>
+<div class="card-content">
+<h3>Ngorongoro Crater</h3>
+<p>Massive volcanic caldera full of wildlife.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="tarangire.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Tarangire</h3>
+<p>Elephant-rich park with giant baobab trees.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="selous.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Nyerere (Selous)</h3>
+<p>One of Africa’s largest protected wilderness areas.</p>
+</div>
+</div>
+
+</div>
+
+<!-- BEACHES -->
+<h2 class="section-title">🏖️ Beaches & Islands</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="zanzibar.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Zanzibar</h3>
+<p>Exotic island with white sand beaches and Stone Town.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="pemba.html">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+</a>
+<div class="card-content">
+<h3>Pemba Island</h3>
+<p>Quiet tropical island with coral reefs.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="nungwi.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</a>
+<div class="card-content">
+<h3>Nungwi Beach</h3>
+<p>Turquoise waters and sunset dhow sailing.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="kendwa.html">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+</a>
+<div class="card-content">
+<h3>Kendwa Beach</h3>
+<p>Relaxed beach with soft sand and nightlife.</p>
+</div>
+</div>
+
+</div>
+
+<!-- NATURE -->
+<h2 class="section-title">🏔️ Mountains & Nature</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="kilimanjaro.html">
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+</a>
+<div class="card-content">
+<h3>Mount Kilimanjaro</h3>
+<p>Africa’s highest peak and iconic snow-capped mountain.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="lake-manyara.html">
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2">
+</a>
+<div class="card-content">
+<h3>Lake Manyara</h3>
+<p>Flamingos, forests, and tree-climbing lions.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="mount-meru.html">
+<img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66">
+</a>
+<div class="card-content">
+<h3>Mount Meru</h3>
+<p>Dramatic volcanic mountain near Arusha.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="lake-tanganyika.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Lake Tanganyika</h3>
+<p>One of the deepest and oldest lakes in the world.</p>
+</div>
+</div>
+
+</div>
+
+<footer>
+<p>🌍 Tanzania Travel Guide | Safari, Mountains & Islands Explorer</p>
+</footer>
+
+</body>
+</html>

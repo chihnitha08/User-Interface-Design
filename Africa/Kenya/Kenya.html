@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Kenya</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(to bottom,#fff6e0,#e6fff3);
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+}
+
+.hero-content{
+    position:relative;
+    color:white;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:72px;
+    color:#ffd36b;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:800px;
+    margin:auto;
+    margin-top:15px;
+}
+
+/* TITLE */
+.section-title{
+    text-align:center;
+    margin:70px 0 40px;
+    font-size:40px;
+    color:#2e5d34;
+}
+
+/* GRID */
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    padding:20px 50px 80px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card h3{
+    color:#2e5d34;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+    .places-container{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:600px){
+    .places-container{grid-template-columns:1fr;}
+    .hero h1{font-size:42px;}
+}
+
+footer{
+    background:#2e5d34;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="overlay"></div>
+<div class="hero-content">
+    <h1>Explore Kenya 🇰🇪</h1>
+    <p>Discover the Great Rift Valley, safari adventures, Mount Kenya, Maasai culture, savannas, and world-famous wildlife reserves.</p>
+</div>
+</section>
+
+<!-- CITIES -->
+<h2 class="section-title">🏙️ Cities & Culture</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="nairobi.html"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"></a>
+<div class="card-content">
+<h3>Nairobi</h3>
+<p>Capital city with wildlife parks inside urban landscapes.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="mombasa.html"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"></a>
+<div class="card-content">
+<h3>Mombasa</h3>
+<p>Coastal city with beaches, forts, and Swahili culture.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="kisumu.html"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"></a>
+<div class="card-content">
+<h3>Kisumu</h3>
+<p>Lakeside city on the shores of Lake Victoria.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="nakuru.html"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2"></a>
+<div class="card-content">
+<h3>Nakuru</h3>
+<p>Gateway to national parks and flamingo-filled lakes.</p>
+</div>
+</div>
+
+</div>
+
+<!-- SAFARI -->
+<h2 class="section-title">🦁 Safari & Wildlife</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="maasai-mara.html"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"></a>
+<div class="card-content">
+<h3>Maasai Mara</h3>
+<p>World-famous safari park and Great Migration location.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="amboseli.html"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2"></a>
+<div class="card-content">
+<h3>Amboseli</h3>
+<p>Elephants with Mount Kilimanjaro backdrop.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="tsavo-national-park.html"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"></a>
+<div class="card-content">
+<h3>Tsavo National Park</h3>
+<p>One of Africa’s largest wildlife reserves.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="lake-nakuru-park.html"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"></a>
+<div class="card-content">
+<h3>Lake Nakuru</h3>
+<p>Famous for flamingos and rhino sanctuary.</p>
+</div>
+</div>
+
+</div>
+
+<!-- NATURE -->
+<h2 class="section-title">🏔️ Nature & Landscapes</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="mount-kenya.html"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"></a>
+<div class="card-content">
+<h3>Mount Kenya</h3>
+<p>Second highest mountain in Africa with alpine views.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="great-rift-valley.html"><img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66"></a>
+<div class="card-content">
+<h3>Great Rift Valley</h3>
+<p>Massive geological trench with lakes and cliffs.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="lake-victoria.html"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"></a>
+<div class="card-content">
+<h3>Lake Victoria</h3>
+<p>Africa’s largest lake with fishing villages.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="hells-gate.html"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2"></a>
+<div class="card-content">
+<h3>Hell’s Gate</h3>
+<p>Unique park with cliffs, gorges, and cycling safaris.</p>
+</div>
+</div>
+
+</div>
+
+<!-- COAST -->
+<h2 class="section-title">🏖️ Beaches & Coast</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="diani-beach.html"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"></a>
+<div class="card-content">
+<h3>Diani Beach</h3>
+<p>White sand beach with turquoise Indian Ocean waters.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="watamu.html"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e"></a>
+<div class="card-content">
+<h3>Watamu</h3>
+<p>Marine parks, coral reefs, and snorkeling paradise.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="lamu.html"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"></a>
+<div class="card-content">
+<h3>Lamu Island</h3>
+<p>Ancient Swahili town with traditional architecture.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="malindi.html"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"></a>
+<div class="card-content">
+<h3>Malindi</h3>
+<p>Historic coastal town with coral reefs and beaches.</p>
+</div>
+</div>
+
+</div>
+
+<footer>
+<p>🌍 Kenya Travel Guide | Safari & Nature Explorer</p>
+</footer>
+
+</body>
+</html>
