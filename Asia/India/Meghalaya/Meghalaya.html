@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meghalaya Adventure Tourism</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f0fff4;
+    color:#333;
+}
+
+header{
+    background:url('https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+    height:320px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-shadow:2px 2px 6px black;
+}
+
+header h1{
+    font-size:55px;
+    background:rgba(0,0,0,0.5);
+    padding:15px 30px;
+    border-radius:10px;
+}
+
+nav{
+    background:#2d6a4f;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#d8f3dc;
+}
+
+section{
+    padding:40px;
+}
+
+h2{
+    color:#2d6a4f;
+}
+
+.places{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    width:300px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+button{
+    background:#40916c;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2d6a4f;
+}
+
+footer{
+    background:#2d6a4f;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Explore Meghalaya</h1>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#places">Adventure</a>
+    <a href="#tips">Travel Tips</a>
+</nav>
+
+<section id="about">
+
+    <h2>About Meghalaya</h2>
+
+    <p>
+        Meghalaya, known as the "Abode of Clouds", is famous for
+        green mountains, waterfalls, caves, and living root bridges.
+        It is one of India's best destinations for trekking,
+        nature exploration, and adventure tourism.
+    </p>
+
+</section>
+
+<section id="places">
+
+    <h2>Adventure Highlights</h2>
+
+    <div class="places">
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Living Root Bridge">
+
+            <div class="card-content">
+
+                <h3>Living Root Bridges</h3>
+
+                <p>
+                    Trek through dense forests to discover Meghalaya’s
+                    world-famous natural root bridges.
+                </p>
+
+                <button>Explore</button>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=800&q=80" alt="Waterfalls">
+
+            <div class="card-content">
+
+                <h3>Waterfall Trekking</h3>
+
+                <p>
+                    Explore beautiful waterfalls and enjoy adventurous
+                    trekking routes across the hills.
+                </p>
+
+                <button>Explore</button>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1517821099601-4f2c9e9f57c0?auto=format&fit=crop&w=800&q=80" alt="Caving">
+
+            <div class="card-content">
+
+                <h3>Cave Exploration</h3>
+
+                <p>
+                    Discover mysterious limestone caves and underground
+                    adventure spots.
+                </p>
+
+                <button>Explore</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="tips">
+
+    <h2>Travel Tips</h2>
+
+    <p>
+        Best time to visit: October to April.<br><br>
+
+        Carry raincoats because Meghalaya receives heavy rainfall.<br><br>
+
+        Wear comfortable trekking shoes for long walks and hikes.<br><br>
+
+        Visit Cherrapunji, Dawki River, and Shillong for unforgettable views.
+    </p>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 Meghalaya Tourism | Abode of Clouds
+    </p>
+
+</footer>
+
+</body>
+</html>
