@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore New Zealand</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(to bottom,#eef7ff,#dff3ff);
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1507699622108-4be3abd695ad?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+}
+
+.hero-content{
+    position:relative;
+    color:white;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:70px;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:800px;
+    margin:auto;
+    margin-top:15px;
+}
+
+/* SECTION TITLE */
+
+.section-title{
+    text-align:center;
+    margin:70px 0 40px;
+    font-size:40px;
+    color:#0b3c5d;
+}
+
+/* GRID */
+
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    padding:20px 50px 80px;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card h3{
+    color:#0b3c5d;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    line-height:1.6;
+    color:#555;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
+    .places-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+    .places-container{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{font-size:40px;}
+}
+
+footer{
+    background:#0b3c5d;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="overlay"></div>
+<div class="hero-content">
+    <h1>Explore New Zealand 🇳🇿</h1>
+    <p>Discover breathtaking fjords, snowy mountains, glowing caves, adventure cities, and Māori cultural heritage in the land of the long white cloud.</p>
+</div>
+</section>
+
+<!-- ================= CITY LIFE ================= -->
+
+<h2 class="section-title">🏙️ City Life</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="auckland.html">
+<img src="https://images.unsplash.com/photo-1526481280695-3c687fd5432c?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Auckland</h3>
+<p>Largest city in New Zealand with harbours, skyline views, and volcanic islands.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="wellington.html">
+<img src="https://images.unsplash.com/photo-1589395937658-0557c5c3b1a5?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Wellington</h3>
+<p>Capital city known for arts, cafés, waterfronts, and windy hills.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="christchurch.html">
+<img src="https://images.unsplash.com/photo-1598514982841-6c2b4a9c2c2d?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Christchurch</h3>
+<p>Garden City with rivers, parks, and modern rebuilt architecture.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="queenstown.html">
+<img src="https://images.unsplash.com/photo-1600195077070-0b4f5d7c6b9b?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Queenstown</h3>
+<p>Adventure capital of the world surrounded by mountains and lakes.</p>
+</div>
+</div>
+
+</div>
+
+<!-- ================= NATURE ================= -->
+
+<h2 class="section-title">🏔️ Nature & Landscapes</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="milford-sound.html">
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Milford Sound</h3>
+<p>Dramatic fjords with waterfalls, cliffs, and misty mountain scenery.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="mount-cook.html">
+<img src="https://images.unsplash.com/photo-1502780402662-acc019177e5e?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Aoraki / Mount Cook</h3>
+<p>Highest mountain in NZ with glaciers and alpine views.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="rotorua.html">
+<img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Rotorua</h3>
+<p>Geothermal wonderland with geysers, hot springs, and Māori culture.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="tongariro-national-park.html">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Tongariro National Park</h3>
+<p>Volcanic landscapes and one of the world’s best hiking trails.</p>
+</div>
+</div>
+
+</div>
+
+<!-- ================= BEACHES & ISLANDS ================= -->
+
+<h2 class="section-title">🏖️ Beaches & Islands</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="bay-of-islands.html">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Bay of Islands</h3>
+<p>Crystal clear waters, sailing, dolphins, and tropical coves.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="waiheke-island.html">
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Waiheke Island</h3>
+<p>Wine country island with beaches, vineyards, and luxury stays.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="abel-tasman-national-park.html">
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Abel Tasman National Park</h3>
+<p>Golden beaches, kayaking routes, and lush coastal forests.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="hot-water-beach.html">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Hot Water Beach</h3>
+<p>Unique beach where natural hot springs rise through the sand.</p>
+</div>
+</div>
+
+</div>
+
+<!-- ================= ADVENTURE & ICONIC ================= -->
+
+<h2 class="section-title">🧭 Adventure & Iconic Spots</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="franz-josef-glacier.html">
+<img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Franz Josef Glacier</h3>
+<p>Walkable glacier with ice caves and stunning alpine scenery.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="kaikoura.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Kaikoura</h3>
+<p>Famous for whale watching, dolphins, and marine wildlife.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="lake-tekapo.html">
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Lake Tekapo</h3>
+<p>Turquoise lake famous for star-gazing and lupin flowers.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="hobbiton.html">
+<img src="https://images.unsplash.com/photo-1613395877344-13d4a8c0b0e3?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Hobbiton</h3>
+<p>Movie set from Lord of the Rings surrounded by rolling green hills.</p>
+</div>
+</div>
+
+</div>
+
+<footer>
+<p>New Zealand Travel Guide ✈️</p>
+</footer>
+
+</body>
+</html>

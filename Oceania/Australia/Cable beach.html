@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cable Beach</title>
+
+<style>
+body{margin:0;font-family:Arial;background:#f4f7fb;color:#333;}
+
+header{
+background:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop')
+center/cover;height:400px;
+display:flex;justify-content:center;align-items:center;
+color:white;text-shadow:2px 2px 8px black;
+}
+
+header h1{
+font-size:55px;
+background:rgba(0,0,0,0.5);
+padding:15px 35px;
+border-radius:10px;
+}
+
+nav{
+background:#0d4d92;
+text-align:center;
+padding:15px;
+}
+
+nav a{
+color:white;
+margin:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#cfe8ff;
+}
+
+section{
+padding:40px;
+}
+
+h2{
+color:#0d4d92;
+}
+
+.places{
+display:flex;
+flex-wrap:wrap;
+gap:25px;
+}
+
+.card{
+width:300px;
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.03);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+button{
+background:#0d4d92;
+color:white;
+border:none;
+padding:10px 18px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#07386b;
+}
+
+footer{
+background:#0d4d92;
+color:white;
+text-align:center;
+padding:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Cable Beach 🌅</h1>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#places">Top Attractions</a>
+    <a href="#tips">Travel Tips</a>
+</nav>
+
+<section id="about">
+
+    <h2>About Cable Beach</h2>
+
+    <p>
+        Cable Beach in Broome is famous for its 22 km stretch of white sand,
+        turquoise waters, camel rides, and breathtaking sunsets over the Indian Ocean.
+    </p>
+
+</section>
+
+<section id="places">
+
+    <h2>Top Attractions</h2>
+
+    <div class="places">
+
+        <!-- SUNSET CAMEL RIDES -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+            alt="Camel Ride">
+
+            <div class="card-content">
+
+                <h3>Camel Sunset Ride</h3>
+
+                <p>
+                    Ride along the beach on camels while watching the golden sunset over the ocean.
+                </p>
+
+                <button>Explore</button>
+
+            </div>
+
+        </div>
+
+        <!-- WHITE SAND BEACH -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+            alt="Beach">
+
+            <div class="card-content">
+
+                <h3>White Sand Shore</h3>
+
+                <p>
+                    Relax on soft white sand with crystal-clear turquoise ocean views.
+                </p>
+
+                <button>Explore</button>
+
+            </div>
+
+        </div>
+
+        <!-- SUNSET VIEWPOINT -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?q=80&w=1200&auto=format&fit=crop"
+            alt="Sunset">
+
+            <div class="card-content">
+
+                <h3>Sunset Viewpoint</h3>
+
+                <p>
+                    One of Australia’s best sunset spots with magical orange skies.
+                </p>
+
+                <button>Explore</button>
+
+            </div>
+
+        </div>
+
+        <!-- WATER ACTIVITIES -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+            alt="Water Sports">
+
+            <div class="card-content">
+
+                <h3>Water Adventures</h3>
+
+                <p>
+                    Enjoy swimming, kayaking, and relaxing in calm ocean waters.
+                </p>
+
+                <button>Explore</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="tips">
+
+    <h2>Travel Tips</h2>
+
+    <p>
+        Visit during sunset for the best experience. Carry sunscreen,
+        water, and enjoy camel rides in the evening.
+    </p>
+
+</section>
+
+<footer>
+
+    <h3>Cable Beach Tourism</h3>
+
+    <p>
+        A perfect mix of desert, ocean, and sunset magic in Western Australia.
+    </p>
+
+</footer>
+
+</body>
+</html>

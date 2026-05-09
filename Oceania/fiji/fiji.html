@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore Fiji</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(to bottom,#f0fbff,#d6f0ff);
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+}
+
+.hero-content{
+    position:relative;
+    color:white;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:70px;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:750px;
+    margin:auto;
+    margin-top:15px;
+}
+
+/* SECTION TITLE */
+
+.section-title{
+    text-align:center;
+    margin:70px 0 40px;
+    font-size:40px;
+    color:#0a4a6e;
+}
+
+/* GRID */
+
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    padding:20px 50px 80px;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card h3{
+    color:#0a4a6e;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    line-height:1.6;
+    color:#555;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
+    .places-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+    .places-container{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{font-size:40px;}
+}
+
+footer{
+    background:#0a4a6e;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="overlay"></div>
+<div class="hero-content">
+    <h1>Explore Fiji 🇫🇯</h1>
+    <p>Discover tropical islands, coral reefs, lush forests, waterfalls, and warm Fijian culture in the heart of the Pacific.</p>
+</div>
+</section>
+
+<!-- ================= CITY LIFE ================= -->
+
+<h2 class="section-title">🏙️ City Life</h2>
+
+<div class="places-container">
+
+<div class="card">
+    <a href="Suva.html">
+        <img src="https://images.unsplash.com/photo-1589308078050-8329a9c9c3c6">
+    </a>
+<div class="card-content">
+<h3>Suva</h3>
+<p>Capital city of Fiji with museums, markets, harbour views, and vibrant local culture.</p>
+</div>
+</div>
+
+<div class="card">
+    <a href="Nadi.html">
+        <img src="https://images.unsplash.com/photo-1501117716987-c8e1ecb2105d">
+</a>
+<div class="card-content">
+<h3>Nadi</h3>
+<p>Main travel hub with temples, nightlife, resorts, and gateway to islands.</p>
+</div>
+</div>
+
+<div class="card">
+    <a href="Lautoka.html">
+        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da">
+    </a>
+<div class="card-content">
+<h3>Lautoka</h3>
+<p>Known as the Sugar City with ports, markets, and coastal views.</p>
+</div>
+</div>
+
+<div class="card">
+    <a href="Labasa.html">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+</a>
+<div class="card-content">
+<h3>Labasa</h3>
+<p>Peaceful northern town surrounded by sugarcane fields and rural beauty.</p>
+</div>
+</div>
+
+</div>
+
+<!-- ================= NATURE ================= -->
+
+<h2 class="section-title">🌿 Nature & Landscapes</h2>
+
+<div class="places-container">
+
+<div class="card">
+    <a href="BoumaNationalPark.html">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+    </a>
+<div class="card-content">
+<h3>Bouma National Park</h3>
+<p>Lush rainforest with waterfalls, hiking trails, and exotic birds.</p>
+</div>
+</div>
+
+<div class="card">
+<a href="SigatokaSandDunes.html">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+</a>
+<div class="card-content">
+<h3>Sigatoka Sand Dunes</h3>
+<p>Ancient sand dunes with archaeological sites and ocean views.</p>
+</div>
+</div>
+
+<div class="card">
+    <a href="ColoISuvaForestPark.html">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+    </a>
+<div class="card-content">
+<h3>Colo-i-Suva Forest Park</h3>
+<p>Tropical rainforest with swimming holes and walking trails.</p>
+</div>
+</div>
+
+<div class="card">
+    <a href="NausoriHighlands.html">
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e">
+</a>
+<div class="card-content">
+<h3>Nausori Highlands</h3>
+<p>Scenic hills, rural villages, and breathtaking landscapes.</p>
+</div>
+</div>
+
+</div>
+
+<!-- ================= BEACHES ================= -->
+
+<h2 class="section-title">🏖️ Beaches</h2>
+
+<div class="places-container">
+
+<div class="card">
+    <a href="NatadolaBeach.html">
+        <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+</a>
+<div class="card-content">
+<h3>Natadola Beach</h3>
+<p>One of Fiji’s most beautiful beaches with white sand and turquoise water.</p>
+</div>
+</div>
+
+<div class="card">
+    <a href="MamanucaIslands.html">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+</a>
+<div class="card-content">
+<h3>Mamanuca Islands</h3>
+<p>Luxury islands with resorts, coral reefs, and clear lagoons.</p>
+</div>
+</div>
+
+<div class="card">
+    <a href="YasawaIslands.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"></a>
+<div class="card-content">
+<h3>Yasawa Islands</h3>
+<p>Remote paradise islands with untouched beaches and blue waters.</p>
+</div>
+</div>
+
+<div class="card">
+    <a href="Cloud9Fiji.html">
+<img src="https://images.unsplash.com/photo-1500534623283-312aade485b7"></a>
+<div class="card-content">
+<h3>Cloud 9 Fiji</h3>
+<p>Floating bar in the ocean with music, pizza, and ocean views.</p>
+</div>
+</div>
+
+</div>
+
+<!-- ================= WILDLIFE ================= -->
+
+<h2 class="section-title">🦈 Wildlife & Adventure</h2>
+
+<div class="places-container">
+
+<div class="card">
+    <a href="BeqaLagoon.html">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"></a>
+<div class="card-content">
+<h3>Beqa Lagoon</h3>
+<p>World-famous shark diving and rich marine biodiversity.</p>
+</div>
+</div>
+
+<div class="card">
+    <a href="TaveuniIsland.html">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e"></a>
+<div class="card-content">
+<h3>Taveuni Island</h3>
+<p>Known as the Garden Island with waterfalls and rare wildlife.</p>
+</div>
+</div>
+
+<div class="card">
+    <a href="PacificHarbour.html">
+<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"></a>
+<div class="card-content">
+<h3>Pacific Harbour</h3>
+<p>Adventure capital of Fiji with rafting, diving, and extreme sports.</p>
+</div>
+</div>
+
+<div class="card">
+    <a href="CoralCoast.html">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"></a>
+<div class="card-content">
+<h3>Coral Coast</h3>
+<p>Coastal region rich in reefs, marine life, and snorkeling spots.</p>
+</div>
+</div>
+
+</div>
+
+<footer>
+<p>Fiji Travel Guide ✈️</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore Sydney</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f4f7fb;
+    color:#333;
+}
+
+header{
+    background:url('https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?q=80&w=1600&auto=format&fit=crop')
+    no-repeat center center/cover;
+    height:400px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-shadow:2px 2px 8px black;
+}
+
+header h1{
+    font-size:60px;
+    background:rgba(0,0,0,0.5);
+    padding:15px 35px;
+    border-radius:10px;
+}
+
+nav{
+    background:#0d4d92;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+section{padding:40px;}
+
+h2{color:#0d4d92;}
+
+.places{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.card{
+    width:300px;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+button{
+    background:#0d4d92;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:5px;
+}
+
+footer{
+    background:#0d4d92;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Explore Sydney 🇦🇺</h1>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#places">Attractions</a>
+<a href="#tips">Tips</a>
+</nav>
+
+<section id="about">
+<h2>About Sydney</h2>
+<p>
+Sydney is Australia’s most iconic city known for its Opera House,
+Harbour Bridge, beaches, and vibrant coastal lifestyle.
+</p>
+</section>
+
+<section id="places">
+<h2>Top Attractions</h2>
+
+<div class="places">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9">
+<div class="card-content">
+<h3>Opera House</h3>
+<p>World-famous architecture and cultural performances.</p>
+<button>Explore</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9">
+<div class="card-content">
+<h3>Harbour Bridge</h3>
+<p>Iconic bridge with breathtaking city views.</p>
+<button>Explore</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+<div class="card-content">
+<h3>Bondi Beach</h3>
+<p>Golden sands, surfing waves, and beach culture.</p>
+<button>Explore</button>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="tips">
+<h2>Travel Tips</h2>
+<p>
+Visit during summer, use ferries for transport, and explore coastal walks.
+</p>
+</section>
+
+<footer>© Sydney Tourism</footer>
+
+</body>
+</html>

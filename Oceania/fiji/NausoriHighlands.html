@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nausori Highlands</title>
+
+<style>
+body{margin:0;font-family:Arial;background:#f4f7fb;}
+header{
+background:url('https://images.unsplash.com/photo-1469474968028-56623f02e42e') center/cover;
+height:400px;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+text-shadow:2px 2px 8px black;
+}
+header h1{
+font-size:55px;
+background:rgba(0,0,0,0.5);
+padding:15px 30px;
+border-radius:10px;
+}
+
+nav{
+background:#0a4a6e;
+text-align:center;
+padding:15px;
+}
+
+nav a{
+color:white;
+margin:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+padding:40px;
+}
+
+h2{
+color:#0a4a6e;
+}
+
+.places{
+display:flex;
+flex-wrap:wrap;
+gap:25px;
+}
+
+.card{
+width:300px;
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+button{
+background:#0a4a6e;
+color:white;
+border:none;
+padding:10px 18px;
+border-radius:5px;
+cursor:pointer;
+}
+
+footer{
+background:#0a4a6e;
+color:white;
+text-align:center;
+padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Nausori Highlands 🌄</h1>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#places">Highlights</a>
+<a href="#tips">Tips</a>
+</nav>
+
+<section id="about">
+<h2>About Nausori Highlands</h2>
+<p>
+Nausori Highlands is a scenic mountainous region in Fiji known for rolling green hills,
+traditional villages, and breathtaking panoramic views of the countryside.
+</p>
+</section>
+
+<section id="places">
+<h2>Highlights</h2>
+
+<div class="places">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+<div class="card-content">
+<h3>Hilltop Views</h3>
+<p>Panoramic views of Fiji’s lush green valleys and mountains.</p>
+<button>Explore</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+<div class="card-content">
+<h3>Village Life</h3>
+<p>Experience traditional Fijian rural lifestyle and culture.</p>
+<button>Explore</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+<div class="card-content">
+<h3>Scenic Drives</h3>
+<p>Beautiful winding roads through hills and farmlands.</p>
+<button>Explore</button>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="tips">
+<h2>Tips</h2>
+<p>
+Best visited during clear weather for visibility. Carry light jackets as it can be cooler in the highlands.
+</p>
+</section>
+
+<footer>
+Fiji Nature Guide 🌿
+</footer>
+
+</body>
+</html>
