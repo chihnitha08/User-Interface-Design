@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore France</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to bottom,#fff7f7,#ffe1e1);
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+
+    background-image:url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1800&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to bottom,rgba(0,0,0,0.35),rgba(0,0,0,0.7));
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:100px;
+    margin-bottom:25px;
+    letter-spacing:5px;
+    text-shadow:4px 4px 18px rgba(0,0,0,0.7);
+}
+
+.hero p{
+    font-size:24px;
+    max-width:1000px;
+    margin:auto;
+    line-height:1.9;
+}
+
+/* TITLES */
+
+.section-title{
+    text-align:center;
+    margin-top:100px;
+    margin-bottom:60px;
+    font-size:50px;
+    color:#d90429;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:150px;
+    height:5px;
+    background:#ff4d6d;
+    display:block;
+    margin:18px auto;
+    border-radius:10px;
+}
+
+/* GRID */
+
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:38px;
+
+    padding:20px 65px 90px;
+
+    max-width:1650px;
+    margin:auto;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    border-radius:30px;
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+
+    transition:0.45s;
+}
+
+.card:hover{
+    transform:translateY(-14px) scale(1.04);
+    box-shadow:0 20px 45px rgba(0,0,0,0.24);
+}
+
+.place-img{
+    width:100%;
+    height:270px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:24px;
+}
+
+.card h3{
+    margin-bottom:14px;
+    color:#d90429;
+    font-size:28px;
+}
+
+.card p{
+    font-size:15px;
+    line-height:1.9;
+    color:#555;
+}
+
+/* FOOTER */
+
+footer{
+    background:#d90429;
+    color:white;
+    text-align:center;
+    padding:55px;
+    margin-top:50px;
+}
+
+footer h3{
+    margin-bottom:15px;
+    font-size:34px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+.places-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:58px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.places-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Explore France 🇫🇷</h1>
+
+<p>
+Step into dreamy Parisian streets, lavender fields,
+royal palaces, snowy Alps, glamorous Riviera beaches,
+world-famous art, luxury fashion,
+and magical fairytale villages across France.
+</p>
+
+</div>
+
+</section>
+
+<!-- PARISIAN DREAMS -->
+
+<h2 class="section-title">✨ Parisian Dreams & Elegance</h2>
+
+<div class="places-container">
+
+<!-- PARIS -->
+
+<div class="card">
+
+<a href="Paris/Paris.html">
+
+<img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Paris</h3>
+
+<p>
+Romantic cafés,
+fashion streets,
+iconic landmarks, and magical night views.
+</p>
+
+</div>
+
+</div>
+
+<!-- EIFFEL -->
+
+<div class="card">
+
+<a href="EiffelTower/EiffelTower.html">
+
+<img src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Eiffel Tower</h3>
+
+<p>
+France’s most iconic landmark
+with breathtaking city skyline views.
+</p>
+
+</div>
+
+</div>
+
+<!-- LOUVRE -->
+
+<div class="card">
+
+<a href="Louvre/Louvre.html">
+
+<img src="https://images.unsplash.com/photo-1565099824688-e93eb20fe622?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Louvre Museum</h3>
+
+<p>
+Home to the Mona Lisa,
+world-famous art, and stunning architecture.
+</p>
+
+</div>
+
+</div>
+
+<!-- MONTMARTRE -->
+
+<div class="card">
+
+<a href="Montmartre/Montmartre.html">
+
+<img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Montmartre</h3>
+
+<p>
+Bohemian art streets,
+cute cafés,
+and charming Parisian vibes.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ROYAL FRANCE -->
+
+<h2 class="section-title">👑 Royal Castles & Fairytale France</h2>
+
+<div class="places-container">
+
+<!-- VERSAILLES -->
+
+<div class="card">
+
+<a href="Versailles/Versailles.html">
+
+<img src="https://images.unsplash.com/photo-1558980394-34764dbfc9c7?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Palace of Versailles</h3>
+
+<p>
+Extravagant royal halls,
+golden interiors,
+and breathtaking palace gardens.
+</p>
+
+</div>
+
+</div>
+
+<!-- LOIRE -->
+
+<div class="card">
+
+<a href="Loire/Loire.html">
+
+<img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Loire Valley</h3>
+
+<p>
+Dreamy French castles,
+vineyards,
+and countryside fairytale scenery.
+</p>
+
+</div>
+
+</div>
+
+<!-- MONT SAINT -->
+
+<div class="card">
+
+<a href="MontSaintMichel/MontSaintMichel.html">
+
+<img src="https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Mont Saint-Michel</h3>
+
+<p>
+Magical medieval island
+rising dramatically from the sea.
+</p>
+
+</div>
+
+</div>
+
+<!-- COLMAR -->
+
+<div class="card">
+
+<a href="Colmar/Colmar.html">
+
+<img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Colmar</h3>
+
+<p>
+Colorful canals,
+storybook houses,
+and charming Alsace beauty.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- UNIQUE FRANCE -->
+
+<h2 class="section-title">🍷 Unique French Experiences</h2>
+
+<div class="places-container">
+
+<!-- PROVENCE -->
+
+<div class="card">
+
+<a href="Provence/Provence.html">
+
+<img src="https://images.unsplash.com/photo-1465379944081-7f47de8d74ac?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Provence Lavender Fields</h3>
+
+<p>
+Purple flower fields,
+golden sunsets,
+and dreamy countryside drives.
+</p>
+
+</div>
+
+</div>
+
+<!-- BORDEAUX -->
+
+<div class="card">
+
+<a href="Bordeaux/Bordeaux.html">
+
+<img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Bordeaux</h3>
+
+<p>
+Luxury wine culture,
+vineyards,
+and elegant French dining experiences.
+</p>
+
+</div>
+
+</div>
+
+<!-- NICE -->
+
+<div class="card">
+
+<a href="Nice/Nice.html">
+
+<img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>French Riviera</h3>
+
+<p>
+Luxury yachts,
+Mediterranean beaches,
+and glamorous coastal nightlife.
+</p>
+
+</div>
+
+</div>
+
+<!-- LYON -->
+
+<div class="card">
+
+<a href="Lyon/Lyon.html">
+
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Lyon</h3>
+
+<p>
+France’s food capital
+filled with gourmet cuisine and cozy old streets.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ADVENTURE -->
+
+<h2 class="section-title">🏔 Alps & Adventure Escapes</h2>
+
+<div class="places-container">
+
+<!-- CHAMONIX -->
+
+<div class="card">
+
+<a href="Chamonix/Chamonix.html">
+
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Chamonix</h3>
+
+<p>
+Snowy Alpine adventures,
+skiing,
+and breathtaking mountain landscapes.
+</p>
+
+</div>
+
+</div>
+
+<!-- ANNECY -->
+
+<div class="card">
+
+<a href="Annecy/Annecy.html">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Annecy</h3>
+
+<p>
+Crystal-clear lakes,
+mountain views,
+and romantic canal streets.
+</p>
+
+</div>
+
+</div>
+
+<!-- VERDON -->
+
+<div class="card">
+
+<a href="Verdon/Verdon.html">
+
+<img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Verdon Gorge</h3>
+
+<p>
+Turquoise canyon waters
+perfect for kayaking and adventure sports.
+</p>
+
+</div>
+
+</div>
+
+<!-- CORSICA -->
+
+<div class="card">
+
+<a href="Corsica/Corsica.html">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Corsica</h3>
+
+<p>
+Wild beaches,
+mountain villages,
+and hidden Mediterranean paradise vibes.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>France Travel Guide ✈️</h3>
+
+<p>
+Explore royal castles, luxury fashion,
+romantic cafés, Alpine adventures,
+lavender fields, glamorous beaches,
+and unforgettable French culture.
+</p>
+
+</footer>
+
+</body>
+</html>

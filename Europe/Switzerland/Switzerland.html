@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore Switzerland</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to bottom,#eef8ff,#dff1ff);
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+
+    background-image:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1800&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to bottom,rgba(0,0,0,0.25),rgba(0,0,0,0.72));
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:110px;
+    margin-bottom:25px;
+    letter-spacing:5px;
+    text-shadow:4px 4px 20px rgba(0,0,0,0.7);
+}
+
+.hero p{
+    font-size:24px;
+    max-width:1100px;
+    margin:auto;
+    line-height:1.9;
+}
+
+/* TITLES */
+
+.section-title{
+    text-align:center;
+    margin-top:100px;
+    margin-bottom:60px;
+    font-size:52px;
+    color:#0b4f6c;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:170px;
+    height:5px;
+    background:#01baef;
+    display:block;
+    margin:18px auto;
+    border-radius:10px;
+}
+
+/* GRID */
+
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:38px;
+
+    padding:20px 65px 90px;
+
+    max-width:1700px;
+    margin:auto;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    border-radius:32px;
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+
+    transition:0.45s;
+}
+
+.card:hover{
+    transform:translateY(-14px) scale(1.04);
+    box-shadow:0 22px 45px rgba(0,0,0,0.24);
+}
+
+.place-img{
+    width:100%;
+    height:290px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:24px;
+}
+
+.card h3{
+    margin-bottom:14px;
+    color:#0b4f6c;
+    font-size:28px;
+}
+
+.card p{
+    font-size:15px;
+    line-height:1.9;
+    color:#555;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0b4f6c;
+    color:white;
+    text-align:center;
+    padding:60px;
+    margin-top:50px;
+}
+
+footer h3{
+    margin-bottom:15px;
+    font-size:34px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+.places-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.places-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Explore Switzerland 🇨🇭</h1>
+
+<p>
+Discover snowy Alps, luxury mountain villages,
+panoramic train journeys,
+glacial lakes, fairytale towns,
+Swiss chocolates, ski adventures,
+and breathtaking scenery straight out of a dream.
+</p>
+
+</div>
+
+</section>
+
+<!-- ALPINE WONDERS -->
+
+<h2 class="section-title">🏔 Alpine Wonders</h2>
+
+<div class="places-container">
+
+<!-- ZERMATT -->
+
+<div class="card">
+
+<a href="Zermatt/Zermatt.html">
+
+<img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Zermatt</h3>
+
+<p>
+Home to the legendary Matterhorn
+with luxury ski resorts and magical alpine scenery.
+</p>
+
+</div>
+
+</div>
+
+<!-- JUNGFRAU -->
+
+<div class="card">
+
+<a href="Jungfrau/Jungfrau.html">
+
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Jungfraujoch</h3>
+
+<p>
+The “Top of Europe”
+with glaciers, snow adventures, and epic mountain views.
+</p>
+
+</div>
+
+</div>
+
+<!-- GRINDELWALD -->
+
+<div class="card">
+
+<a href="Grindelwald/Grindelwald.html">
+
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Grindelwald</h3>
+
+<p>
+Dreamy alpine village
+surrounded by waterfalls and dramatic mountains.
+</p>
+
+</div>
+
+</div>
+
+<!-- ST MORITZ -->
+
+<div class="card">
+
+<a href="StMoritz/StMoritz.html">
+
+<img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>St. Moritz</h3>
+
+<p>
+Luxury winter paradise
+famous for skiing, frozen lakes, and elite resorts.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- UNIQUE SWISS EXPERIENCES -->
+
+<h2 class="section-title">🚆 Unique Swiss Experiences</h2>
+
+<div class="places-container">
+
+<!-- GLACIER EXPRESS -->
+
+<div class="card">
+
+<a href="GlacierExpress/GlacierExpress.html">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Glacier Express</h3>
+
+<p>
+One of the world’s most scenic train rides
+through snowy Swiss Alps.
+</p>
+
+</div>
+
+</div>
+
+<!-- BERNINA -->
+
+<div class="card">
+
+<a href="Bernina/Bernina.html">
+
+<img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Bernina Express</h3>
+
+<p>
+Spectacular panoramic railway
+crossing glaciers, bridges, and alpine valleys.
+</p>
+
+</div>
+
+</div>
+
+<!-- LUCERNE -->
+
+<div class="card">
+
+<a href="Lucerne/Lucerne.html">
+
+<img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Lucerne</h3>
+
+<p>
+Charming lakeside city
+with medieval bridges and mountain views.
+</p>
+
+</div>
+
+</div>
+
+<!-- RHINE FALLS -->
+
+<div class="card">
+
+<a href="RhineFalls/RhineFalls.html">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Rhine Falls</h3>
+
+<p>
+Europe’s most powerful waterfall
+with thrilling boat experiences.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- LAKES & FAIRYTALE -->
+
+<h2 class="section-title">🌊 Lakes & Fairytale Towns</h2>
+
+<div class="places-container">
+
+<!-- INTERLAKEN -->
+
+<div class="card">
+
+<a href="Interlaken/Interlaken.html">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Interlaken</h3>
+
+<p>
+Adventure paradise
+between two crystal-clear alpine lakes.
+</p>
+
+</div>
+
+</div>
+
+<!-- LAUTERBRUNNEN -->
+
+<div class="card">
+
+<a href="Lauterbrunnen/Lauterbrunnen.html">
+
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Lauterbrunnen</h3>
+
+<p>
+A magical valley
+with waterfalls and fairytale scenery.
+</p>
+
+</div>
+
+</div>
+
+<!-- LAKE GENEVA -->
+
+<div class="card">
+
+<a href="LakeGeneva/LakeGeneva.html">
+
+<img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Lake Geneva</h3>
+
+<p>
+Luxury lakeside beauty
+surrounded by vineyards and mountains.
+</p>
+
+</div>
+
+</div>
+
+<!-- LUGANO -->
+
+<div class="card">
+
+<a href="Lugano/Lugano.html">
+
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Lugano</h3>
+
+<p>
+Swiss elegance mixed with Italian vibes
+and stunning lakeside views.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- SWISS LIFESTYLE -->
+
+<h2 class="section-title">🍫 Luxury, Chocolate & Romance</h2>
+
+<div class="places-container">
+
+<!-- ZURICH -->
+
+<div class="card">
+
+<a href="Zurich/Zurich.html">
+
+<img src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Zurich</h3>
+
+<p>
+Luxury shopping,
+cafés,
+and modern Swiss city elegance.
+</p>
+
+</div>
+
+</div>
+
+<!-- CHOCOLATE -->
+
+<div class="card">
+
+<a href="ChocolateFactory/ChocolateFactory.html">
+
+<img src="https://images.unsplash.com/photo-1511381939415-e44015466834?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Swiss Chocolate Tours</h3>
+
+<p>
+Taste world-famous Swiss chocolates
+and visit iconic chocolate factories.
+</p>
+
+</div>
+
+</div>
+
+<!-- MONTREUX -->
+
+<div class="card">
+
+<a href="Montreux/Montreux.html">
+
+<img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Montreux</h3>
+
+<p>
+Romantic lakeside promenades
+and beautiful Swiss Riviera vibes.
+</p>
+
+</div>
+
+</div>
+
+<!-- CHILLON -->
+
+<div class="card">
+
+<a href="ChillonCastle/ChillonCastle.html">
+
+<img src="https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Château de Chillon</h3>
+
+<p>
+A magical medieval castle
+on the shores of Lake Geneva.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>Switzerland Travel Guide ✈️</h3>
+
+<p>
+Explore snowy Alps, luxury trains,
+glacial lakes, fairytale villages,
+Swiss chocolates, and breathtaking mountain adventures.
+</p>
+
+</footer>
+
+</body>
+</html>

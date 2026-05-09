@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore Greece</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to bottom,#eef8ff,#d9efff);
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* HERO SECTION */
+
+.hero{
+    height:100vh;
+
+    background-image:url('https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=1800&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.72));
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:100px;
+    margin-bottom:25px;
+    letter-spacing:5px;
+    text-shadow:4px 4px 20px rgba(0,0,0,0.7);
+}
+
+.hero p{
+    font-size:24px;
+    max-width:1000px;
+    margin:auto;
+    line-height:1.9;
+}
+
+/* TITLES */
+
+.section-title{
+    text-align:center;
+    margin-top:100px;
+    margin-bottom:60px;
+    font-size:50px;
+    color:#0077b6;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:150px;
+    height:5px;
+    background:#00b4d8;
+    display:block;
+    margin:18px auto;
+    border-radius:10px;
+}
+
+/* GRID */
+
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:38px;
+
+    padding:20px 65px 90px;
+
+    max-width:1650px;
+    margin:auto;
+}
+
+/* CARDS */
+
+.card{
+    background:white;
+    border-radius:30px;
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+
+    transition:0.45s;
+}
+
+.card:hover{
+    transform:translateY(-14px) scale(1.04);
+    box-shadow:0 20px 45px rgba(0,0,0,0.24);
+}
+
+.place-img{
+    width:100%;
+    height:270px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:24px;
+}
+
+.card h3{
+    margin-bottom:14px;
+    color:#0077b6;
+    font-size:28px;
+}
+
+.card p{
+    font-size:15px;
+    line-height:1.9;
+    color:#555;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0077b6;
+    color:white;
+    text-align:center;
+    padding:55px;
+    margin-top:50px;
+}
+
+footer h3{
+    margin-bottom:15px;
+    font-size:34px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+.places-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:58px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.places-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Explore Greece 🇬🇷</h1>
+
+<p>
+Discover whitewashed island villages, ancient mythology,
+blue-domed churches, cliffside sunsets,
+Mediterranean beaches, hidden ruins,
+luxury yacht escapes, and magical Greek culture.
+</p>
+
+</div>
+
+</section>
+
+<!-- ISLAND DREAMS -->
+
+<h2 class="section-title">🏝 Dreamy Greek Islands</h2>
+
+<div class="places-container">
+
+<!-- SANTORINI -->
+
+<div class="card">
+
+<a href="Santorini/Santorini.html">
+
+<img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Santorini</h3>
+
+<p>
+Blue domes, white cliffside houses,
+and legendary sunset views over the Aegean Sea.
+</p>
+
+</div>
+
+</div>
+
+<!-- MYKONOS -->
+
+<div class="card">
+
+<a href="Mykonos/Mykonos.html">
+
+<img src="https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Mykonos</h3>
+
+<p>
+Luxury beach clubs,
+vibrant nightlife,
+and stunning island beauty.
+</p>
+
+</div>
+
+</div>
+
+<!-- CRETE -->
+
+<div class="card">
+
+<a href="Crete/Crete.html">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Crete</h3>
+
+<p>
+Ancient ruins,
+beautiful beaches,
+and authentic Greek island culture.
+</p>
+
+</div>
+
+</div>
+
+<!-- ZAKYNTHOS -->
+
+<div class="card">
+
+<a href="Zakynthos/Zakynthos.html">
+
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Zakynthos</h3>
+
+<p>
+Famous shipwreck beach
+with unreal turquoise waters and sea caves.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ANCIENT GREECE -->
+
+<h2 class="section-title">🏛 Ancient Mythology & History</h2>
+
+<div class="places-container">
+
+<!-- ATHENS -->
+
+<div class="card">
+
+<a href="Athens/Athens.html">
+
+<img src="https://images.unsplash.com/photo-1555993539-1732b0258235?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Athens</h3>
+
+<p>
+Birthplace of democracy
+filled with ancient ruins and modern Greek life.
+</p>
+
+</div>
+
+</div>
+
+<!-- ACROPOLIS -->
+
+<div class="card">
+
+<a href="Acropolis/Acropolis.html">
+
+<img src="https://images.unsplash.com/photo-1603565816030-6b389eeb23cb?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Acropolis</h3>
+
+<p>
+Legendary hilltop ruins
+that shaped ancient Greek civilization.
+</p>
+
+</div>
+
+</div>
+
+<!-- DELPHI -->
+
+<div class="card">
+
+<a href="Delphi/Delphi.html">
+
+<img src="https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Delphi</h3>
+
+<p>
+Ancient sanctuary believed
+to be the mystical center of the world.
+</p>
+
+</div>
+
+</div>
+
+<!-- OLYMPIA -->
+
+<div class="card">
+
+<a href="Olympia/Olympia.html">
+
+<img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Olympia</h3>
+
+<p>
+The birthplace of the Olympic Games
+surrounded by ancient ruins.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- UNIQUE GREECE -->
+
+<h2 class="section-title">🌅 Unique Greek Experiences</h2>
+
+<div class="places-container">
+
+<!-- METEORA -->
+
+<div class="card">
+
+<a href="Meteora/Meteora.html">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Meteora</h3>
+
+<p>
+Monasteries floating above giant rock pillars
+creating one of Earth’s most surreal landscapes.
+</p>
+
+</div>
+
+</div>
+
+<!-- NAVAGIO -->
+
+<div class="card">
+
+<a href="Navagio/Navagio.html">
+
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Navagio Beach</h3>
+
+<p>
+Hidden shipwreck paradise
+surrounded by dramatic cliffs and crystal waters.
+</p>
+
+</div>
+
+</div>
+
+<!-- PAROS -->
+
+<div class="card">
+
+<a href="Paros/Paros.html">
+
+<img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Paros</h3>
+
+<p>
+Traditional Greek villages,
+windmills,
+and peaceful island charm.
+</p>
+
+</div>
+
+</div>
+
+<!-- CORFU -->
+
+<div class="card">
+
+<a href="Corfu/Corfu.html">
+
+<img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Corfu</h3>
+
+<p>
+Venetian-style architecture,
+lush greenery,
+and dreamy coastal beauty.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ROMANTIC GREECE -->
+
+<h2 class="section-title">💖 Romantic Greek Escapes</h2>
+
+<div class="places-container">
+
+<!-- OIA -->
+
+<div class="card">
+
+<a href="Oia/Oia.html">
+
+<img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Oia Sunsets</h3>
+
+<p>
+World-famous romantic sunsets
+painting the sky in magical colors.
+</p>
+
+</div>
+
+</div>
+
+<!-- MILOS -->
+
+<div class="card">
+
+<a href="Milos/Milos.html">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Milos</h3>
+
+<p>
+Moon-like beaches,
+hidden caves,
+and peaceful romantic escapes.
+</p>
+
+</div>
+
+</div>
+
+<!-- HYDRA -->
+
+<div class="card">
+
+<a href="Hydra/Hydra.html">
+
+<img src="https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Hydra</h3>
+
+<p>
+A car-free island paradise
+with artistic charm and elegant harbor views.
+</p>
+
+</div>
+
+</div>
+
+<!-- YACHT -->
+
+<div class="card">
+
+<a href="YachtCruise/YachtCruise.html">
+
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Aegean Yacht Cruises</h3>
+
+<p>
+Luxury sailing adventures
+through Greece’s stunning island chains.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>Greece Travel Guide ✈️</h3>
+
+<p>
+Explore ancient mythology, island sunsets,
+Mediterranean beaches, cliffside villages,
+luxury yacht escapes, and magical Greek culture.
+</p>
+
+</footer>
+
+</body>
+</html>
