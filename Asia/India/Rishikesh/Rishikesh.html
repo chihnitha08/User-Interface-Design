@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rishikesh Adventure Tourism</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#fff8f0;
+    color:#333;
+}
+
+header{
+    background:url('https://images.unsplash.com/photo-1583147610149-1a4f9b8e8c5d?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+    height:320px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-shadow:2px 2px 6px black;
+}
+
+header h1{
+    font-size:55px;
+    background:rgba(0,0,0,0.5);
+    padding:15px 30px;
+    border-radius:10px;
+}
+
+nav{
+    background:#bc6c25;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffe6a7;
+}
+
+section{
+    padding:40px;
+}
+
+h2{
+    color:#bc6c25;
+}
+
+.places{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    width:300px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+button{
+    background:#dda15e;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#bc6c25;
+}
+
+footer{
+    background:#bc6c25;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Explore Rishikesh</h1>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#places">Adventure</a>
+    <a href="#tips">Travel Tips</a>
+</nav>
+
+<section id="about">
+
+    <h2>About Rishikesh</h2>
+
+    <p>
+        Rishikesh, located on the banks of the Ganga River,
+        is India's adventure capital. Famous for river rafting,
+        bungee jumping, camping, and yoga retreats,
+        Rishikesh attracts adventure seekers from all around the world.
+    </p>
+
+</section>
+
+<section id="places">
+
+    <h2>Adventure Highlights</h2>
+
+    <div class="places">
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80" alt="River Rafting">
+
+            <div class="card-content">
+
+                <h3>River Rafting</h3>
+
+                <p>
+                    Experience thrilling white water rafting adventures
+                    in the Ganga river.
+                </p>
+
+                <button>Explore</button>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Bungee Jumping">
+
+            <div class="card-content">
+
+                <h3>Bungee Jumping</h3>
+
+                <p>
+                    Jump from one of India’s highest bungee platforms
+                    for an unforgettable thrill.
+                </p>
+
+                <button>Explore</button>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=800&q=80" alt="Camping">
+
+            <div class="card-content">
+
+                <h3>Riverside Camping</h3>
+
+                <p>
+                    Relax beside the Ganga river with bonfires,
+                    music, and adventure camps.
+                </p>
+
+                <button>Explore</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="tips">
+
+    <h2>Travel Tips</h2>
+
+    <p>
+        Best time to visit: September to April.<br><br>
+
+        Carry light jackets for cool evenings near the river.<br><br>
+
+        Book rafting and bungee activities in advance during peak season.<br><br>
+
+        Visit Lakshman Jhula and Triveni Ghat for the complete Rishikesh experience.
+    </p>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 Rishikesh Tourism | Adventure Capital of India
+    </p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ladakh Adventure Tourism</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f5f5f5;
+    color:#333;
+}
+
+header{
+    background:url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+    height:320px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-shadow:2px 2px 6px black;
+}
+
+header h1{
+    font-size:55px;
+    background:rgba(0,0,0,0.5);
+    padding:15px 30px;
+    border-radius:10px;
+}
+
+nav{
+    background:#6c584c;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffe8d6;
+}
+
+section{
+    padding:40px;
+}
+
+h2{
+    color:#6c584c;
+}
+
+.places{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    width:300px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+button{
+    background:#a98467;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#6c584c;
+}
+
+footer{
+    background:#6c584c;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Explore Ladakh</h1>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#places">Adventure</a>
+    <a href="#tips">Travel Tips</a>
+</nav>
+
+<section id="about">
+
+    <h2>About Ladakh</h2>
+
+    <p>
+        Ladakh is one of India's most breathtaking adventure destinations,
+        famous for snow-covered mountains, high-altitude passes, crystal-clear lakes,
+        and thrilling road trips. Located in the Himalayas, Ladakh attracts
+        bikers, trekkers, campers, and nature lovers from around the world.
+    </p>
+
+</section>
+
+<section id="places">
+
+    <h2>Adventure Highlights</h2>
+
+    <div class="places">
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=800&q=80" alt="Bike Trip">
+
+            <div class="card-content">
+
+                <h3>Leh Bike Trip</h3>
+
+                <p>
+                    Ride through dangerous mountain roads and stunning valleys
+                    on one of the world's most adventurous bike journeys.
+                </p>
+
+                <button>Explore</button>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Trekking">
+
+            <div class="card-content">
+
+                <h3>Mountain Trekking</h3>
+
+                <p>
+                    Experience thrilling Himalayan trekking trails with beautiful
+                    landscapes and snowy peaks.
+                </p>
+
+                <button>Explore</button>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Pangong Lake">
+
+            <div class="card-content">
+
+                <h3>Pangong Lake</h3>
+
+                <p>
+                    Witness the magical blue waters of Pangong Lake surrounded
+                    by majestic mountains.
+                </p>
+
+                <button>Explore</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="tips">
+
+    <h2>Travel Tips</h2>
+
+    <p>
+        Best time to visit: May to September.<br><br>
+
+        Carry warm clothes because temperatures can drop suddenly.<br><br>
+
+        Acclimatize properly before visiting high-altitude areas.<br><br>
+
+        Do not miss Nubra Valley, Magnetic Hill, and Khardung La Pass.
+    </p>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 Ladakh Tourism | Land of High Passes
+    </p>
+
+</footer>
+
+</body>
+</html>

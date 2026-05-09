@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andaman Adventure Tourism</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#eef7fb;
+    color:#333;
+}
+
+header{
+    background:url('https://images.unsplash.com/photo-1589308454676-22a6f16f4f0d?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+    height:320px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-shadow:2px 2px 6px black;
+}
+
+header h1{
+    font-size:55px;
+    background:rgba(0,0,0,0.5);
+    padding:15px 30px;
+    border-radius:10px;
+}
+
+nav{
+    background:#005f73;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+section{
+    padding:40px;
+}
+
+h2{
+    color:#005f73;
+}
+
+.places{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    width:300px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+button{
+    background:#0a9396;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#005f73;
+}
+
+footer{
+    background:#005f73;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Explore Andaman</h1>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#places">Adventure</a>
+    <a href="#tips">Travel Tips</a>
+</nav>
+
+<section id="about">
+    <h2>About Andaman</h2>
+    <p>
+        The Andaman Islands are famous for crystal clear beaches,
+        scuba diving, coral reefs, and thrilling water sports.
+        It is one of India's best destinations for adventure lovers.
+    </p>
+</section>
+
+<section id="places">
+    <h2>Adventure Highlights</h2>
+
+    <div class="places">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Scuba Diving">
+            <div class="card-content">
+                <h3>Scuba Diving</h3>
+                <p>Explore colorful coral reefs and marine life at Havelock Island.</p>
+                <button>Explore</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=800&q=80" alt="Sea Walking">
+            <div class="card-content">
+                <h3>Sea Walking</h3>
+                <p>Walk under the sea and experience marine beauty up close.</p>
+                <button>Explore</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=80" alt="Jet Ski">
+            <div class="card-content">
+                <h3>Jet Ski Adventure</h3>
+                <p>Enjoy thrilling speed rides across the blue waters.</p>
+                <button>Explore</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="tips">
+    <h2>Travel Tips</h2>
+    <p>
+        Best time to visit: October to May.<br>
+        Carry light cotton clothes and sunscreen.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Andaman Tourism</p>
+</footer>
+
+</body>
+</html>
