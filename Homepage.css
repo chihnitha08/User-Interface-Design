@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    background:#000;
+    background:#080c1d;
     color:white;
     overflow-x:hidden;
 }
@@ -42,8 +42,8 @@ body{
 
 .logo{
 
-    font-size:34px;
-    font-weight:700;
+    font-size:30px;
+    font-weight:600;
     color:white;
 }
 
@@ -93,8 +93,9 @@ body{
 
     background:
     linear-gradient(
-    rgba(0,0,0,0.6),
-    rgba(0,0,0,0.7));
+        rgba(5,8,22,0.75)
+        rgba(5,8,22,0.88));
+
 }
 
 /* Add background image separately */
@@ -106,9 +107,10 @@ body{
 
 .hero h1{
 
-    font-size:70px;
-    font-weight:600px;
-
+    font-size:50px;
+    font-weight:400px;
+text-shadow:0 0 25px rgba(255,255,255,0.08);
+    letter-spacing:-2px;
     line-height:1.1;
 
     margin-bottom:25px;
@@ -156,7 +158,7 @@ body{
 
 .card h2{
 
-    font-size:42px;
+    font-size:32px;
 
     margin-bottom:35px;
 
@@ -223,6 +225,7 @@ body{
     margin-top:12px;
 }
 
+
 .primary-btn{
 
     background:
@@ -231,10 +234,8 @@ body{
     #00c6ff,
     #0072ff);
 
-    color:white;
-
     box-shadow:
-    0 0 22px rgba(0,198,255,0.35);
+    0 0 25px rgba(0,198,255,0.45);
 }
 
 .secondary-btn{
