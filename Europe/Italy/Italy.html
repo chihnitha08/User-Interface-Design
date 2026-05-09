@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore Italy</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to bottom,#fff8f2,#ffe6d5);
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+
+    background-image:url('https://images.unsplash.com/photo-1525874684015-58379d421a52?q=80&w=1800&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.72));
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:105px;
+    margin-bottom:25px;
+    letter-spacing:5px;
+    text-shadow:4px 4px 20px rgba(0,0,0,0.7);
+}
+
+.hero p{
+    font-size:24px;
+    max-width:1050px;
+    margin:auto;
+    line-height:1.9;
+}
+
+/* SECTION TITLE */
+
+.section-title{
+    text-align:center;
+    margin-top:100px;
+    margin-bottom:60px;
+    font-size:52px;
+    color:#c1121f;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:160px;
+    height:5px;
+    background:#ff7b54;
+    display:block;
+    margin:18px auto;
+    border-radius:10px;
+}
+
+/* GRID */
+
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:38px;
+
+    padding:20px 65px 90px;
+
+    max-width:1700px;
+    margin:auto;
+}
+
+/* CARDS */
+
+.card{
+    background:white;
+    border-radius:30px;
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+
+    transition:0.45s;
+}
+
+.card:hover{
+    transform:translateY(-14px) scale(1.04);
+    box-shadow:0 20px 45px rgba(0,0,0,0.24);
+}
+
+.place-img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:24px;
+}
+
+.card h3{
+    margin-bottom:14px;
+    color:#c1121f;
+    font-size:28px;
+}
+
+.card p{
+    font-size:15px;
+    line-height:1.9;
+    color:#555;
+}
+
+/* FOOTER */
+
+footer{
+    background:#c1121f;
+    color:white;
+    text-align:center;
+    padding:60px;
+    margin-top:50px;
+}
+
+footer h3{
+    margin-bottom:15px;
+    font-size:34px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+.places-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.places-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Explore Italy 🇮🇹</h1>
+
+<p>
+Discover ancient Roman wonders, dreamy coastal villages,
+luxury lakes, Renaissance cities,
+Ferrari culture, pasta heaven,
+romantic gondola rides,
+and breathtaking Mediterranean beauty across Italy.
+</p>
+
+</div>
+
+</section>
+
+<!-- CLASSIC ITALY -->
+
+<h2 class="section-title">🏛 Ancient & Iconic Italy</h2>
+
+<div class="places-container">
+
+<!-- ROME -->
+
+<div class="card">
+
+<a href="Rome/Rome.html">
+
+<img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Rome</h3>
+
+<p>
+The Eternal City filled with gladiator history,
+ancient ruins,
+and magical Italian streets.
+</p>
+
+</div>
+
+</div>
+
+<!-- COLOSSEUM -->
+
+<div class="card">
+
+<a href="Colosseum/Colosseum.html">
+
+<img src="https://images.unsplash.com/photo-1531572753322-ad063cecc140?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Colosseum</h3>
+
+<p>
+One of the world’s most legendary monuments
+from the Roman Empire.
+</p>
+
+</div>
+
+</div>
+
+<!-- FLORENCE -->
+
+<div class="card">
+
+<a href="Florence/Florence.html">
+
+<img src="https://images.unsplash.com/photo-1543429776-2782fcdbd595?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Florence</h3>
+
+<p>
+The birthplace of the Renaissance
+filled with art, culture, and stunning cathedrals.
+</p>
+
+</div>
+
+</div>
+
+<!-- VENICE -->
+
+<div class="card">
+
+<a href="Venice/Venice.html">
+
+<img src="https://images.unsplash.com/photo-1514890547357-a9ee288728e0?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Venice</h3>
+
+<p>
+Romantic canals,
+gondola rides,
+and dreamy floating city vibes.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- COASTAL DREAMS -->
+
+<h2 class="section-title">🌊 Mediterranean Coastal Dreams</h2>
+
+<div class="places-container">
+
+<!-- AMALFI -->
+
+<div class="card">
+
+<a href="Amalfi/Amalfi.html">
+
+<img src="https://images.unsplash.com/photo-1612698093158-e07ac200d44e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Amalfi Coast</h3>
+
+<p>
+Colorful cliffside villages,
+luxury seaside cafés,
+and breathtaking coastal drives.
+</p>
+
+</div>
+
+</div>
+
+<!-- CINQUE -->
+
+<div class="card">
+
+<a href="CinqueTerre/CinqueTerre.html">
+
+<img src="https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Cinque Terre</h3>
+
+<p>
+Five colorful seaside villages
+with postcard-perfect Italian beauty.
+</p>
+
+</div>
+
+</div>
+
+<!-- SICILY -->
+
+<div class="card">
+
+<a href="Sicily/Sicily.html">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Sicily</h3>
+
+<p>
+Ancient ruins,
+Mediterranean beaches,
+and incredible island culture.
+</p>
+
+</div>
+
+</div>
+
+<!-- CAPRI -->
+
+<div class="card">
+
+<a href="Capri/Capri.html">
+
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Capri</h3>
+
+<p>
+Luxury island escapes,
+blue caves,
+and glamorous yacht experiences.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- UNIQUE ITALY -->
+
+<h2 class="section-title">🍝 Unique Italian Experiences</h2>
+
+<div class="places-container">
+
+<!-- TUSCANY -->
+
+<div class="card">
+
+<a href="Tuscany/Tuscany.html">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Tuscany</h3>
+
+<p>
+Rolling vineyards,
+golden sunsets,
+and dreamy countryside roads.
+</p>
+
+</div>
+
+</div>
+
+<!-- COMO -->
+
+<div class="card">
+
+<a href="LakeComo/LakeComo.html">
+
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Lake Como</h3>
+
+<p>
+Luxury lakeside villas,
+mountain scenery,
+and elegant Italian charm.
+</p>
+
+</div>
+
+</div>
+
+<!-- FERRARI -->
+
+<div class="card">
+
+<a href="Ferrari/Ferrari.html">
+
+<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Ferrari World</h3>
+
+<p>
+Experience Italy’s legendary supercar culture
+and high-speed automotive passion.
+</p>
+
+</div>
+
+</div>
+
+<!-- BOLOGNA -->
+
+<div class="card">
+
+<a href="Bologna/Bologna.html">
+
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Bologna</h3>
+
+<p>
+The ultimate pasta paradise
+filled with authentic Italian food culture.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ROMANTIC ITALY -->
+
+<h2 class="section-title">💖 Romantic Italian Escapes</h2>
+
+<div class="places-container">
+
+<!-- VERONA -->
+
+<div class="card">
+
+<a href="Verona/Verona.html">
+
+<img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Verona</h3>
+
+<p>
+The city of Romeo & Juliet
+filled with romantic streets and timeless charm.
+</p>
+
+</div>
+
+</div>
+
+<!-- POSITANO -->
+
+<div class="card">
+
+<a href="Positano/Positano.html">
+
+<img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Positano</h3>
+
+<p>
+Luxury cliffside hotels,
+Mediterranean sunsets,
+and dreamy honeymoon vibes.
+</p>
+
+</div>
+
+</div>
+
+<!-- DOLOMITES -->
+
+<div class="card">
+
+<a href="Dolomites/Dolomites.html">
+
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Dolomites</h3>
+
+<p>
+Snowy mountains,
+Alpine villages,
+and breathtaking scenic adventures.
+</p>
+
+</div>
+
+</div>
+
+<!-- VATICAN -->
+
+<div class="card">
+
+<a href="Vatican/Vatican.html">
+
+<img src="https://images.unsplash.com/photo-1531572753322-ad063cecc140?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Vatican City</h3>
+
+<p>
+Magnificent churches,
+art masterpieces,
+and spiritual beauty in the heart of Rome.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>Italy Travel Guide ✈️</h3>
+
+<p>
+Explore Roman history, luxury lakes,
+Mediterranean coastlines,
+Italian cuisine, Renaissance art,
+supercar culture, and unforgettable romance.
+</p>
+
+</footer>
+
+</body>
+</html>

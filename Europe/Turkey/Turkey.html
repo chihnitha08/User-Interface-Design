@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore Turkey</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to bottom,#fff4ea,#ffe0cc);
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+
+    background-image:url('https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?q=80&w=1800&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.75));
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:110px;
+    margin-bottom:25px;
+    letter-spacing:5px;
+    text-shadow:4px 4px 20px rgba(0,0,0,0.7);
+}
+
+.hero p{
+    font-size:24px;
+    max-width:1100px;
+    margin:auto;
+    line-height:1.9;
+}
+
+/* TITLES */
+
+.section-title{
+    text-align:center;
+    margin-top:100px;
+    margin-bottom:60px;
+    font-size:52px;
+    color:#a4133c;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:170px;
+    height:5px;
+    background:#ff7b00;
+    display:block;
+    margin:18px auto;
+    border-radius:10px;
+}
+
+/* GRID */
+
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:38px;
+
+    padding:20px 65px 90px;
+
+    max-width:1700px;
+    margin:auto;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    border-radius:32px;
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+
+    transition:0.45s;
+}
+
+.card:hover{
+    transform:translateY(-14px) scale(1.04);
+    box-shadow:0 22px 45px rgba(0,0,0,0.24);
+}
+
+.place-img{
+    width:100%;
+    height:290px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:24px;
+}
+
+.card h3{
+    margin-bottom:14px;
+    color:#a4133c;
+    font-size:28px;
+}
+
+.card p{
+    font-size:15px;
+    line-height:1.9;
+    color:#555;
+}
+
+/* FOOTER */
+
+footer{
+    background:#a4133c;
+    color:white;
+    text-align:center;
+    padding:60px;
+    margin-top:50px;
+}
+
+footer h3{
+    margin-bottom:15px;
+    font-size:34px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+.places-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.places-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Explore Turkey 🇹🇷</h1>
+
+<p>
+Discover magical hot air balloons,
+Ottoman palaces,
+vibrant bazaars,
+Mediterranean beaches,
+ancient ruins,
+whirling dervishes,
+and breathtaking landscapes where Europe meets Asia.
+</p>
+
+</div>
+
+</section>
+
+<!-- CULTURE -->
+
+<h2 class="section-title">🕌 Ottoman & Cultural Wonders</h2>
+
+<div class="places-container">
+
+<!-- ISTANBUL -->
+
+<div class="card">
+
+<a href="Istanbul/Istanbul.html">
+
+<img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Istanbul</h3>
+
+<p>
+A magical city connecting Europe and Asia
+with mosques, bazaars, and Bosphorus views.
+</p>
+
+</div>
+
+</div>
+
+<!-- HAGIA -->
+
+<div class="card">
+
+<a href="HagiaSophia/HagiaSophia.html">
+
+<img src="https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Hagia Sophia</h3>
+
+<p>
+One of the world’s most iconic landmarks
+with breathtaking Byzantine architecture.
+</p>
+
+</div>
+
+</div>
+
+<!-- TOPKAPI -->
+
+<div class="card">
+
+<a href="Topkapi/Topkapi.html">
+
+<img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Topkapi Palace</h3>
+
+<p>
+Explore the luxurious palace
+of the mighty Ottoman sultans.
+</p>
+
+</div>
+
+</div>
+
+<!-- GRAND BAZAAR -->
+
+<div class="card">
+
+<a href="GrandBazaar/GrandBazaar.html">
+
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Grand Bazaar</h3>
+
+<p>
+A colorful maze of lanterns,
+spices,
+carpets, and Turkish souvenirs.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- UNIQUE TURKEY -->
+
+<h2 class="section-title">🎈 Unique Turkish Experiences</h2>
+
+<div class="places-container">
+
+<!-- CAPPADOCIA -->
+
+<div class="card">
+
+<a href="Cappadocia/Cappadocia.html">
+
+<img src="https://images.unsplash.com/photo-1641128327957-35b0d2683c6f?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Cappadocia</h3>
+
+<p>
+Hot air balloons floating above
+fairy chimneys and magical valleys.
+</p>
+
+</div>
+
+</div>
+
+<!-- PAMUKKALE -->
+
+<div class="card">
+
+<a href="Pamukkale/Pamukkale.html">
+
+<img src="https://images.unsplash.com/photo-1578922746465-3a80a228f223?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Pamukkale</h3>
+
+<p>
+Dreamy white thermal terraces
+with turquoise mineral pools.
+</p>
+
+</div>
+
+</div>
+
+<!-- WHIRLING -->
+
+<div class="card">
+
+<a href="WhirlingDervishes/WhirlingDervishes.html">
+
+<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Whirling Dervishes</h3>
+
+<p>
+Experience Turkey’s mesmerizing spiritual dance
+and Sufi traditions.
+</p>
+
+</div>
+
+</div>
+
+<!-- BOSPHORUS -->
+
+<div class="card">
+
+<a href="Bosphorus/Bosphorus.html">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Bosphorus Cruise</h3>
+
+<p>
+Sail between two continents
+with stunning skyline views.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- BEACHES -->
+
+<h2 class="section-title">🌊 Mediterranean & Coastal Beauty</h2>
+
+<div class="places-container">
+
+<!-- ANTALYA -->
+
+<div class="card">
+
+<a href="Antalya/Antalya.html">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Antalya</h3>
+
+<p>
+Turquoise beaches,
+luxury resorts,
+and Mediterranean paradise vibes.
+</p>
+
+</div>
+
+</div>
+
+<!-- BODRUM -->
+
+<div class="card">
+
+<a href="Bodrum/Bodrum.html">
+
+<img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Bodrum</h3>
+
+<p>
+Whitewashed houses,
+beach clubs,
+and lively nightlife by the sea.
+</p>
+
+</div>
+
+</div>
+
+<!-- FETHIYE -->
+
+<div class="card">
+
+<a href="Fethiye/Fethiye.html">
+
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Fethiye</h3>
+
+<p>
+Blue lagoons,
+paragliding,
+and stunning turquoise coastlines.
+</p>
+
+</div>
+
+</div>
+
+<!-- OLUDENIZ -->
+
+<div class="card">
+
+<a href="Oludeniz/Oludeniz.html">
+
+<img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Ölüdeniz</h3>
+
+<p>
+One of the world’s most beautiful beaches
+with crystal-clear blue waters.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOD -->
+
+<h2 class="section-title">🍢 Turkish Food & Nightlife</h2>
+
+<div class="places-container">
+
+<!-- TURKISH FOOD -->
+
+<div class="card">
+
+<a href="TurkishCuisine/TurkishCuisine.html">
+
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Turkish Cuisine</h3>
+
+<p>
+Kebabs,
+baklava,
+Turkish tea,
+and rich Ottoman flavors.
+</p>
+
+</div>
+
+</div>
+
+<!-- GALATA -->
+
+<div class="card">
+
+<a href="Galata/Galata.html">
+
+<img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Galata Tower</h3>
+
+<p>
+Romantic city views
+and glowing Istanbul nights.
+</p>
+
+</div>
+
+</div>
+
+<!-- TROJAN -->
+
+<div class="card">
+
+<a href="Troy/Troy.html">
+
+<img src="https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Ancient Troy</h3>
+
+<p>
+Walk through legendary ruins
+from the famous Trojan War myths.
+</p>
+
+</div>
+
+</div>
+
+<!-- EPHESUS -->
+
+<div class="card">
+
+<a href="Ephesus/Ephesus.html">
+
+<img src="https://images.unsplash.com/photo-1549893074-4bcf8b4d0b2c?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Ephesus</h3>
+
+<p>
+One of the best-preserved ancient cities
+from the Roman Empire.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>Turkey Travel Guide ✈️</h3>
+
+<p>
+Explore Ottoman palaces, hot air balloons,
+Mediterranean beaches,
+ancient ruins, Turkish bazaars,
+and unforgettable cultural adventures.
+</p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore Chile</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to bottom,#e6f7ff,#f0f8ff);
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    background-image:url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1800&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to bottom,rgba(0,0,0,0.25),rgba(0,0,0,0.85));
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:100px;
+    letter-spacing:6px;
+}
+
+.hero p{
+    font-size:22px;
+    max-width:1000px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* TITLE */
+
+.section-title{
+    text-align:center;
+    margin-top:90px;
+    margin-bottom:60px;
+    font-size:50px;
+    color:#003566;
+}
+
+.section-title::after{
+    content:'';
+    width:160px;
+    height:5px;
+    background:#0077b6;
+    display:block;
+    margin:15px auto;
+    border-radius:10px;
+}
+
+/* GRID */
+
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:35px;
+    padding:20px 65px 90px;
+    max-width:1700px;
+    margin:auto;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    border-radius:28px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-12px) scale(1.03);
+}
+
+.place-img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:22px;
+}
+
+.card h3{
+    color:#003566;
+    margin-bottom:10px;
+    font-size:26px;
+}
+
+.card p{
+    color:#555;
+    font-size:15px;
+    line-height:1.8;
+}
+
+/* FOOTER */
+
+footer{
+    background:#003566;
+    color:white;
+    text-align:center;
+    padding:60px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+.places-container{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:768px){
+.hero h1{font-size:55px;}
+.places-container{grid-template-columns:1fr;}
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+<div class="overlay"></div>
+<div class="hero-content">
+<h1>Explore Chile 🇨🇱</h1>
+<p>
+A land of deserts, glaciers, mountains, islands, and one of the longest coastlines on Earth.
+</p>
+</div>
+</section>
+
+<h2 class="section-title">🏔️ Nature & Landscapes</h2>
+
+<div class="places-container">
+
+<div class="card">
+<img class="place-img" src="https://images.unsplash.com/photo-1589395937772-f6e4f3c9d4b7">
+<div class="card-content">
+<h3>Atacama Desert</h3>
+<p>World’s driest desert with alien landscapes and salt flats.</p>
+</div>
+</div>
+
+<div class="card">
+<img class="place-img" src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+<div class="card-content">
+<h3>Torres del Paine</h3>
+<p>Epic mountains, glaciers, and Patagonia wilderness.</p>
+</div>
+</div>
+
+<div class="card">
+<img class="place-img" src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+<div class="card-content">
+<h3>Lake District</h3>
+<p>Lakes, volcanoes, and lush green landscapes.</p>
+</div>
+</div>
+
+<div class="card">
+<img class="place-img" src="https://images.unsplash.com/photo-1519681393784-d120267933ba">
+<div class="card-content">
+<h3>Easter Island</h3>
+<p>Mystical Moai statues in the middle of the Pacific Ocean.</p>
+</div>
+</div>
+
+</div>
+
+<h2 class="section-title">🔥 Experiences</h2>
+
+<div class="places-container">
+
+<div class="card">
+<img class="place-img" src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6">
+<div class="card-content">
+<h3>Santiago City</h3>
+<p>Modern capital surrounded by Andes mountains.</p>
+</div>
+</div>
+
+<div class="card">
+<img class="place-img" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+<div class="card-content">
+<h3>Andes Trekking</h3>
+<p>High-altitude adventures across dramatic peaks.</p>
+</div>
+</div>
+
+<div class="card">
+<img class="place-img" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+<div class="card-content">
+<h3>Pacific Coast</h3>
+<p>Wild waves and endless ocean views.</p>
+</div>
+</div>
+
+<div class="card">
+<img class="place-img" src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1">
+<div class="card-content">
+<h3>Chilean Cuisine</h3>
+<p>Seafood, empanadas, and bold Latin flavors.</p>
+</div>
+</div>
+
+</div>
+
+<footer>
+<h3>Chile Travel Guide ✈️</h3>
+<p>Deserts to glaciers — Chile is pure vertical magic.</p>
+</footer>
+
+</body>
+</html>

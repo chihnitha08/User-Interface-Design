@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Ecuador</title>
+
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(to bottom,#e6fff9,#e6f0ff);
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+background-image:url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+text-align:center;
+}
+
+.overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:linear-gradient(to bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.85));
+}
+
+.hero-content{
+position:relative;
+color:white;
+z-index:2;
+}
+
+.hero h1{font-size:100px;}
+.hero p{font-size:22px;max-width:900px;margin:auto;}
+
+.section-title{
+text-align:center;
+margin:90px 0 60px;
+font-size:48px;
+color:#0b5d4c;
+}
+
+.places-container{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+padding:30px 60px;
+}
+
+.card{
+background:white;
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+transition:0.4s;
+}
+
+.card:hover{transform:translateY(-10px);}
+
+.place-img{width:100%;height:270px;object-fit:cover;}
+
+.card-content{padding:20px;}
+
+.card h3{color:#0b5d4c;}
+
+footer{
+background:#0b5d4c;
+color:white;
+text-align:center;
+padding:50px;
+margin-top:60px;
+}
+
+@media(max-width:900px){
+.places-container{grid-template-columns:1fr;}
+.hero h1{font-size:55px;}
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+<div class="overlay"></div>
+<div class="hero-content">
+<h1>Ecuador 🇪🇨</h1>
+<p>Where the Equator splits the Earth — Andes peaks, Amazon jungle, Pacific coast, and Galápagos magic.</p>
+</div>
+</section>
+
+<h2 class="section-title">🌋 Unique Nature Zones</h2>
+
+<div class="places-container">
+
+<div class="card">
+<img class="place-img" src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+<div class="card-content">
+<h3>Galápagos Islands</h3>
+<p>Wildlife evolution paradise — giant tortoises & blue-footed boobies.</p>
+</div>
+</div>
+
+<div class="card">
+<img class="place-img" src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+<div class="card-content">
+<h3>Andes Volcanoes</h3>
+<p>Snow peaks + active volcano landscapes.</p>
+</div>
+</div>
+
+<div class="card">
+<img class="place-img" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+<div class="card-content">
+<h3>Pacific Coast</h3>
+<p>Surf beaches and tropical sunsets.</p>
+</div>
+</div>
+
+<div class="card">
+<img class="place-img" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+<div class="card-content">
+<h3>Amazon Ecuador</h3>
+<p>Deep rainforest biodiversity hotspot.</p>
+</div>
+</div>
+
+</div>
+
+<footer>
+<h3>Ecuador Travel Guide ✈️</h3>
+<p>Small country. Infinite ecosystems.</p>
+</footer>
+
+</body>
+</html>

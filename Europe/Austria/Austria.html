@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore Austria</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to bottom,#f6f8ff,#dce9ff);
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+
+    background-image:url('https://images.unsplash.com/photo-1516550893923-42d28e5677af?q=80&w=1800&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to bottom,rgba(0,0,0,0.35),rgba(0,0,0,0.68));
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:95px;
+    margin-bottom:25px;
+    letter-spacing:5px;
+    text-shadow:4px 4px 18px rgba(0,0,0,0.7);
+}
+
+.hero p{
+    font-size:24px;
+    max-width:950px;
+    margin:auto;
+    line-height:1.9;
+}
+
+/* TITLES */
+
+.section-title{
+    text-align:center;
+    margin-top:100px;
+    margin-bottom:60px;
+    font-size:50px;
+    color:#204ecf;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:140px;
+    height:5px;
+    background:#5f8dff;
+    display:block;
+    margin:18px auto;
+    border-radius:10px;
+}
+
+/* GRID */
+
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:38px;
+
+    padding:20px 65px 90px;
+
+    max-width:1600px;
+    margin:auto;
+}
+
+/* CARDS */
+
+.card{
+    background:white;
+    border-radius:28px;
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+
+    transition:0.45s;
+}
+
+.card:hover{
+    transform:translateY(-14px) scale(1.04);
+    box-shadow:0 20px 45px rgba(0,0,0,0.22);
+}
+
+.place-img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:24px;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#204ecf;
+    font-size:27px;
+}
+
+.card p{
+    font-size:15px;
+    line-height:1.9;
+    color:#555;
+}
+
+/* FOOTER */
+
+footer{
+    background:#204ecf;
+    color:white;
+    text-align:center;
+    padding:50px;
+    margin-top:50px;
+}
+
+footer h3{
+    margin-bottom:14px;
+    font-size:32px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+.places-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:56px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.places-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Explore Austria 🇦🇹</h1>
+
+<p>
+Step into snowy Alpine villages, Mozart’s musical legacy,
+imperial palaces, dreamy lakes,
+fairytale towns, luxury cafés,
+and breathtaking mountain adventures across Austria.
+</p>
+
+</div>
+
+</section>
+
+<!-- FAIRYTALE ALPS -->
+
+<h2 class="section-title">🏔 Fairytale Alpine Escapes</h2>
+
+<div class="places-container">
+
+<!-- HALLSTATT -->
+
+<div class="card">
+
+<a href="Hallstatt/Hallstatt.html">
+
+<img src="https://images.unsplash.com/photo-1516550893923-42d28e5677af?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Hallstatt</h3>
+
+<p>
+Austria’s iconic fairytale lakeside village
+surrounded by magical Alpine mountains.
+</p>
+
+</div>
+
+</div>
+
+<!-- INNSBRUCK -->
+
+<div class="card">
+
+<a href="Innsbruck/Innsbruck.html">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Innsbruck</h3>
+
+<p>
+Snowy mountain adventures,
+ski resorts,
+and charming Austrian architecture.
+</p>
+
+</div>
+
+</div>
+
+<!-- ZELL AM SEE -->
+
+<div class="card">
+
+<a href="ZellAmSee/ZellAmSee.html">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Zell am See</h3>
+
+<p>
+Crystal-clear Alpine lakes,
+green valleys,
+and peaceful mountain scenery.
+</p>
+
+</div>
+
+</div>
+
+<!-- ST ANTON -->
+
+<div class="card">
+
+<a href="StAnton/StAnton.html">
+
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>St. Anton</h3>
+
+<p>
+Luxury ski resorts,
+snow adventures,
+and vibrant winter nightlife.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- IMPERIAL AUSTRIA -->
+
+<h2 class="section-title">👑 Imperial & Royal Austria</h2>
+
+<div class="places-container">
+
+<!-- VIENNA -->
+
+<div class="card">
+
+<a href="Vienna/Vienna.html">
+
+<img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Vienna</h3>
+
+<p>
+Elegant palaces,
+classical music,
+luxury cafés, and royal Austrian culture.
+</p>
+
+</div>
+
+</div>
+
+<!-- SCHONBRUNN -->
+
+<div class="card">
+
+<a href="Schonbrunn/Schonbrunn.html">
+
+<img src="https://images.unsplash.com/photo-1526481280695-3c4691f8f22c?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Schönbrunn Palace</h3>
+
+<p>
+The magnificent imperial palace
+of Austria’s royal Habsburg dynasty.
+</p>
+
+</div>
+
+</div>
+
+<!-- SALZBURG -->
+
+<div class="card">
+
+<a href="Salzburg/Salzburg.html">
+
+<img src="https://images.unsplash.com/photo-1547981609-4b6bf67db7ff?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Salzburg</h3>
+
+<p>
+Mozart’s birthplace
+filled with baroque beauty and musical heritage.
+</p>
+
+</div>
+
+</div>
+
+<!-- HOFBURG -->
+
+<div class="card">
+
+<a href="Hofburg/Hofburg.html">
+
+<img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Hofburg Palace</h3>
+
+<p>
+Historic imperial residence
+with breathtaking royal interiors and museums.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- UNIQUE AUSTRIA -->
+
+<h2 class="section-title">🎻 Unique Austrian Experiences</h2>
+
+<div class="places-container">
+
+<!-- OPERA -->
+
+<div class="card">
+
+<a href="Opera/Opera.html">
+
+<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Vienna Opera Nights</h3>
+
+<p>
+Experience world-famous classical performances
+inside grand opera halls.
+</p>
+
+</div>
+
+</div>
+
+<!-- CAFE -->
+
+<div class="card">
+
+<a href="CafeCulture/CafeCulture.html">
+
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Austrian Café Culture</h3>
+
+<p>
+Elegant coffee houses,
+Sachertorte desserts,
+and cozy European vibes.
+</p>
+
+</div>
+
+</div>
+
+<!-- ICE CAVES -->
+
+<div class="card">
+
+<a href="IceCaves/IceCaves.html">
+
+<img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Eisriesenwelt Ice Caves</h3>
+
+<p>
+The world’s largest ice cave system
+filled with frozen natural wonders.
+</p>
+
+</div>
+
+</div>
+
+<!-- KRIMML -->
+
+<div class="card">
+
+<a href="Krimml/Krimml.html">
+
+<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Krimml Waterfalls</h3>
+
+<p>
+Austria’s tallest waterfalls
+surrounded by dramatic Alpine scenery.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ROMANTIC -->
+
+<h2 class="section-title">💖 Romantic Austrian Dreams</h2>
+
+<div class="places-container">
+
+<!-- DANUBE -->
+
+<div class="card">
+
+<a href="Danube/Danube.html">
+
+<img src="https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Danube River Cruises</h3>
+
+<p>
+Romantic European river cruises
+through castles and charming villages.
+</p>
+
+</div>
+
+</div>
+
+<!-- ALPBACH -->
+
+<div class="card">
+
+<a href="Alpbach/Alpbach.html">
+
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Alpbach</h3>
+
+<p>
+Flower-covered wooden houses
+and breathtaking mountain romance.
+</p>
+
+</div>
+
+</div>
+
+<!-- GROSSGLOCKNER -->
+
+<div class="card">
+
+<a href="Grossglockner/Grossglockner.html">
+
+<img src="https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Grossglockner Road</h3>
+
+<p>
+Epic scenic drives
+through snowy mountains and glaciers.
+</p>
+
+</div>
+
+</div>
+
+<!-- CHRISTMAS -->
+
+<div class="card">
+
+<a href="ChristmasMarkets/ChristmasMarkets.html">
+
+<img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Christmas Markets</h3>
+
+<p>
+Magical winter markets
+filled with lights, hot chocolate, and festive charm.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>Austria Travel Guide ✈️</h3>
+
+<p>
+Explore Alpine adventures, royal palaces,
+classical music heritage,
+luxury cafés, fairytale villages,
+and unforgettable Austrian winter magic.
+</p>
+
+</footer>
+
+</body>
+</html>

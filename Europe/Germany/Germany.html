@@ -1,0 +1,652 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore Germany</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to bottom,#f5f7ff,#dce5ff);
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* HERO SECTION */
+
+.hero{
+    height:100vh;
+
+    background-image:url('https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=1800&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to bottom,rgba(0,0,0,0.35),rgba(0,0,0,0.72));
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:100px;
+    margin-bottom:25px;
+    letter-spacing:5px;
+    text-shadow:4px 4px 20px rgba(0,0,0,0.7);
+}
+
+.hero p{
+    font-size:24px;
+    max-width:1000px;
+    margin:auto;
+    line-height:1.9;
+}
+
+/* SECTION TITLES */
+
+.section-title{
+    text-align:center;
+    margin-top:100px;
+    margin-bottom:60px;
+    font-size:50px;
+    color:#0d47a1;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:150px;
+    height:5px;
+    background:#1976d2;
+    display:block;
+    margin:18px auto;
+    border-radius:10px;
+}
+
+/* GRID */
+
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:38px;
+
+    padding:20px 65px 90px;
+
+    max-width:1650px;
+    margin:auto;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    border-radius:30px;
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+
+    transition:0.45s;
+}
+
+.card:hover{
+    transform:translateY(-14px) scale(1.04);
+    box-shadow:0 20px 45px rgba(0,0,0,0.24);
+}
+
+.place-img{
+    width:100%;
+    height:270px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:24px;
+}
+
+.card h3{
+    margin-bottom:14px;
+    color:#0d47a1;
+    font-size:28px;
+}
+
+.card p{
+    font-size:15px;
+    line-height:1.9;
+    color:#555;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:55px;
+    margin-top:50px;
+}
+
+footer h3{
+    margin-bottom:15px;
+    font-size:34px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+.places-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:58px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.places-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Explore Germany 🇩🇪</h1>
+
+<p>
+Discover fairytale castles, futuristic cities,
+Christmas markets, Alpine adventures,
+luxury cars, historic streets,
+and magical forests across Germany.
+</p>
+
+</div>
+
+</section>
+
+<!-- FAIRYTALE GERMANY -->
+
+<h2 class="section-title">🏰 Fairytale Germany</h2>
+
+<div class="places-container">
+
+<!-- NEUSCHWANSTEIN -->
+
+<div class="card">
+
+<a href="Neuschwanstein/Neuschwanstein.html">
+
+<img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Neuschwanstein Castle</h3>
+
+<p>
+Germany’s iconic fairytale castle
+that inspired Disney’s magical castles.
+</p>
+
+</div>
+
+</div>
+
+<!-- BLACK FOREST -->
+
+<div class="card">
+
+<a href="BlackForest/BlackForest.html">
+
+<img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Black Forest</h3>
+
+<p>
+Mystical forests,
+wooden villages,
+and scenic mountain roads.
+</p>
+
+</div>
+
+</div>
+
+<!-- ROTHENBURG -->
+
+<div class="card">
+
+<a href="Rothenburg/Rothenburg.html">
+
+<img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Rothenburg</h3>
+
+<p>
+Medieval streets,
+colorful houses,
+and magical old-town vibes.
+</p>
+
+</div>
+
+</div>
+
+<!-- HEIDELBERG -->
+
+<div class="card">
+
+<a href="Heidelberg/Heidelberg.html">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Heidelberg</h3>
+
+<p>
+Romantic riverside castles
+and charming historic university vibes.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- MODERN GERMANY -->
+
+<h2 class="section-title">🌆 Modern Germany & City Energy</h2>
+
+<div class="places-container">
+
+<!-- BERLIN -->
+
+<div class="card">
+
+<a href="Berlin/Berlin.html">
+
+<img src="https://images.unsplash.com/photo-1560969184-10fe8719e047?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Berlin</h3>
+
+<p>
+Street art,
+historic landmarks,
+nightlife, and modern culture.
+</p>
+
+</div>
+
+</div>
+
+<!-- MUNICH -->
+
+<div class="card">
+
+<a href="Munich/Munich.html">
+
+<img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Munich</h3>
+
+<p>
+Luxury cars,
+beer gardens,
+and beautiful Bavarian architecture.
+</p>
+
+</div>
+
+</div>
+
+<!-- HAMBURG -->
+
+<div class="card">
+
+<a href="Hamburg/Hamburg.html">
+
+<img src="https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Hamburg</h3>
+
+<p>
+Waterfront city lights,
+harbor vibes,
+and exciting nightlife.
+</p>
+
+</div>
+
+</div>
+
+<!-- FRANKFURT -->
+
+<div class="card">
+
+<a href="Frankfurt/Frankfurt.html">
+
+<img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Frankfurt</h3>
+
+<p>
+Germany’s futuristic skyline
+mixed with charming old-town streets.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- UNIQUE GERMANY -->
+
+<h2 class="section-title">🍺 Unique German Experiences</h2>
+
+<div class="places-container">
+
+<!-- OKTOBERFEST -->
+
+<div class="card">
+
+<a href="Oktoberfest/Oktoberfest.html">
+
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Oktoberfest</h3>
+
+<p>
+Germany’s world-famous festival
+filled with music, food, and celebration.
+</p>
+
+</div>
+
+</div>
+
+<!-- BMW -->
+
+<div class="card">
+
+<a href="BMWWorld/BMWWorld.html">
+
+<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>BMW World</h3>
+
+<p>
+Luxury car showcases
+and futuristic automotive experiences.
+</p>
+
+</div>
+
+</div>
+
+<!-- CHRISTMAS -->
+
+<div class="card">
+
+<a href="ChristmasMarkets/ChristmasMarkets.html">
+
+<img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Christmas Markets</h3>
+
+<p>
+Magical winter lights,
+hot chocolate,
+and festive European charm.
+</p>
+
+</div>
+
+</div>
+
+<!-- MINIATURE -->
+
+<div class="card">
+
+<a href="MiniatureWonderland/MiniatureWonderland.html">
+
+<img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Miniatur Wunderland</h3>
+
+<p>
+The world’s largest miniature railway
+with mind-blowing tiny worlds.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ALPINE ADVENTURES -->
+
+<h2 class="section-title">🏔 Alpine Adventures & Nature</h2>
+
+<div class="places-container">
+
+<!-- BAVARIAN ALPS -->
+
+<div class="card">
+
+<a href="BavarianAlps/BavarianAlps.html">
+
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Bavarian Alps</h3>
+
+<p>
+Snowy mountains,
+ski resorts,
+and breathtaking Alpine scenery.
+</p>
+
+</div>
+
+</div>
+
+<!-- KONIGSSEE -->
+
+<div class="card">
+
+<a href="Konigssee/Konigssee.html">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Königssee</h3>
+
+<p>
+Crystal-clear lakes
+surrounded by dramatic mountains.
+</p>
+
+</div>
+
+</div>
+
+<!-- SAXON -->
+
+<div class="card">
+
+<a href="SaxonSwitzerland/SaxonSwitzerland.html">
+
+<img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Saxon Switzerland</h3>
+
+<p>
+Epic rock formations
+and breathtaking hiking trails.
+</p>
+
+</div>
+
+</div>
+
+<!-- RHINE -->
+
+<div class="card">
+
+<a href="RhineValley/RhineValley.html">
+
+<img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Rhine Valley</h3>
+
+<p>
+Castle-covered hills,
+vineyards,
+and romantic river cruises.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>Germany Travel Guide ✈️</h3>
+
+<p>
+Explore fairytale castles, luxury cars,
+Christmas magic, Alpine adventures,
+historic cities, and unforgettable German culture.
+</p>
+
+</footer>
+
+</body>
+</html>

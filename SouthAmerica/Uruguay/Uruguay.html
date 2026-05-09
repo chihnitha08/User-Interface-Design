@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Uruguay</title>
+
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(to bottom,#e6faff,#fff0f5);
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+background-image:url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+position:relative;
+}
+
+.overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+}
+
+.hero-content{
+position:relative;
+color:white;
+z-index:2;
+}
+
+.hero h1{font-size:100px;}
+.hero p{font-size:22px;max-width:900px;margin:auto;}
+
+.section-title{
+text-align:center;
+margin:90px 0;
+font-size:48px;
+color:#004c4c;
+}
+
+.places-container{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+padding:30px 60px;
+}
+
+.card{
+background:white;
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+transition:0.4s;
+}
+
+.card:hover{transform:translateY(-10px);}
+
+.place-img{width:100%;height:270px;object-fit:cover;}
+
+.card-content{padding:20px;}
+
+.card h3{color:#004c4c;}
+
+footer{
+background:#004c4c;
+color:white;
+text-align:center;
+padding:50px;
+margin-top:60px;
+}
+
+@media(max-width:900px){
+.places-container{grid-template-columns:1fr;}
+.hero h1{font-size:55px;}
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+<div class="overlay"></div>
+<div class="hero-content">
+<h1>Uruguay 🇺🇾</h1>
+<p>Chill beaches, slow life, colonial towns, football passion, and peaceful South American soul.</p>
+</div>
+</section>
+
+<h2 class="section-title">🌊 Coastal & Culture</h2>
+
+<div class="places-container">
+
+<div class="card">
+<img class="place-img" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+<div class="card-content">
+<h3>Montevideo</h3>
+<p>Relaxed capital with ocean views and culture.</p>
+</div>
+</div>
+
+<div class="card">
+<img class="place-img" src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+<div class="card-content">
+<h3>Punta del Este</h3>
+<p>Luxury beaches and nightlife hotspot.</p>
+</div>
+</div>
+
+<div class="card">
+<img class="place-img" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+<div class="card-content">
+<h3>Colonia del Sacramento</h3>
+<p>Historic colonial streets by the river.</p>
+</div>
+</div>
+
+<div class="card">
+<img class="place-img" src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6">
+<div class="card-content">
+<h3>Football Culture</h3>
+<p>Uruguay’s legendary football passion.</p>
+</div>
+</div>
+
+</div>
+
+<footer>
+<h3>Uruguay Travel Guide ✈️</h3>
+<p>Small country. Big calm energy.</p>
+</footer>
+
+</body>
+</html>
