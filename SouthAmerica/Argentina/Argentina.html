@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore Argentina</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to bottom,#eaf7ff,#d6ecff);
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+
+    background-image:url('https://images.unsplash.com/photo-1589909202802-8f4aadce1849?q=80&w=1800&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to bottom,rgba(0,0,0,0.25),rgba(0,0,0,0.78));
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:110px;
+    margin-bottom:25px;
+    letter-spacing:5px;
+    text-shadow:4px 4px 20px rgba(0,0,0,0.7);
+}
+
+.hero p{
+    font-size:24px;
+    max-width:1100px;
+    margin:auto;
+    line-height:1.9;
+}
+
+/* TITLES */
+
+.section-title{
+    text-align:center;
+    margin-top:100px;
+    margin-bottom:60px;
+    font-size:52px;
+    color:#0077b6;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:170px;
+    height:5px;
+    background:#00b4d8;
+    display:block;
+    margin:18px auto;
+    border-radius:10px;
+}
+
+/* GRID */
+
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:38px;
+
+    padding:20px 65px 90px;
+
+    max-width:1700px;
+    margin:auto;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    border-radius:32px;
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+
+    transition:0.45s;
+}
+
+.card:hover{
+    transform:translateY(-14px) scale(1.04);
+    box-shadow:0 22px 45px rgba(0,0,0,0.24);
+}
+
+.place-img{
+    width:100%;
+    height:290px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:24px;
+}
+
+.card h3{
+    margin-bottom:14px;
+    color:#0077b6;
+    font-size:28px;
+}
+
+.card p{
+    font-size:15px;
+    line-height:1.9;
+    color:#555;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0077b6;
+    color:white;
+    text-align:center;
+    padding:60px;
+    margin-top:50px;
+}
+
+footer h3{
+    margin-bottom:15px;
+    font-size:34px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+.places-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.places-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Explore Argentina 🇦🇷</h1>
+
+<p>
+Discover dramatic Patagonia glaciers,
+passionate football culture,
+vibrant tango nights,
+rainbow mountains,
+massive waterfalls,
+luxury wine regions,
+and unforgettable adventures at the edge of the world.
+</p>
+
+</div>
+
+</section>
+
+<!-- CITY & CULTURE -->
+
+<h2 class="section-title">⚽ Tango & City Culture</h2>
+
+<div class="places-container">
+
+<!-- BUENOS AIRES -->
+
+<div class="card">
+
+<a href="BuenosAires/BuenosAires.html">
+
+<img src="https://images.unsplash.com/photo-1589909202802-8f4aadce1849?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Buenos Aires</h3>
+
+<p>
+European-style streets,
+passionate tango culture,
+nightlife,
+cafés,
+and iconic football energy.
+</p>
+
+</div>
+
+</div>
+
+<!-- LA BOCA -->
+
+<div class="card">
+
+<a href="LaBoca/LaBoca.html">
+
+<img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>La Boca</h3>
+
+<p>
+Colorful streets,
+street performers,
+football history,
+and artistic Argentine vibes.
+</p>
+
+</div>
+
+</div>
+
+<!-- ROSARIO -->
+
+<div class="card">
+
+<a href="Rosario/Rosario.html">
+
+<img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Rosario</h3>
+
+<p>
+Riverfront city famous for culture,
+nightlife,
+and Lionel Messi connections.
+</p>
+
+</div>
+
+</div>
+
+<!-- TANGO -->
+
+<div class="card">
+
+<a href="Tango/Tango.html">
+
+<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Tango Nights</h3>
+
+<p>
+Experience passionate tango performances
+and romantic Argentine music culture.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PATAGONIA -->
+
+<h2 class="section-title">🏔 Patagonia Adventures</h2>
+
+<div class="places-container">
+
+<!-- EL CALAFATE -->
+
+<div class="card">
+
+<a href="ElCalafate/ElCalafate.html">
+
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>El Calafate</h3>
+
+<p>
+Gateway to massive glaciers
+and icy blue Patagonian landscapes.
+</p>
+
+</div>
+
+</div>
+
+<!-- PERITO MORENO -->
+
+<div class="card">
+
+<a href="PeritoMoreno/PeritoMoreno.html">
+
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Perito Moreno Glacier</h3>
+
+<p>
+Witness giant glaciers breaking apart
+with thunder-like sounds.
+</p>
+
+</div>
+
+</div>
+
+<!-- USHUAIA -->
+
+<div class="card">
+
+<a href="Ushuaia/Ushuaia.html">
+
+<img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Ushuaia</h3>
+
+<p>
+The “End of the World”
+with snowy mountains and Arctic adventures.
+</p>
+
+</div>
+
+</div>
+
+<!-- EL CHALTEN -->
+
+<div class="card">
+
+<a href="ElChalten/ElChalten.html">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>El Chaltén</h3>
+
+<p>
+Argentina’s trekking capital
+with dramatic mountain hikes and lakes.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- NATURAL WONDERS -->
+
+<h2 class="section-title">🌊 Natural Wonders</h2>
+
+<div class="places-container">
+
+<!-- IGUAZU -->
+
+<div class="card">
+
+<a href="Iguazu/Iguazu.html">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Iguazú Falls</h3>
+
+<p>
+One of the world’s largest waterfall systems
+surrounded by tropical rainforest.
+</p>
+
+</div>
+
+</div>
+
+<!-- SALINAS -->
+
+<div class="card">
+
+<a href="SalinasGrandes/SalinasGrandes.html">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Salinas Grandes</h3>
+
+<p>
+Massive white salt flats
+that look like another planet.
+</p>
+
+</div>
+
+</div>
+
+<!-- BARILOCHE -->
+
+<div class="card">
+
+<a href="Bariloche/Bariloche.html">
+
+<img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Bariloche</h3>
+
+<p>
+Chocolate town surrounded by lakes,
+mountains,
+and Swiss-style beauty.
+</p>
+
+</div>
+
+</div>
+
+<!-- MENDOZA -->
+
+<div class="card">
+
+<a href="Mendoza/Mendoza.html">
+
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Mendoza</h3>
+
+<p>
+Luxury vineyards,
+wine tasting,
+and beautiful Andes scenery.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- UNIQUE ARGENTINA -->
+
+<h2 class="section-title">🔥 Unique Argentine Experiences</h2>
+
+<div class="places-container">
+
+<!-- FOOTBALL -->
+
+<div class="card">
+
+<a href="Football/Football.html">
+
+<img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Football Culture</h3>
+
+<p>
+Experience the intense passion
+of Argentine football stadiums.
+</p>
+
+</div>
+
+</div>
+
+<!-- ANDES -->
+
+<div class="card">
+
+<a href="Andes/Andes.html">
+
+<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Andes Mountains</h3>
+
+<p>
+Snowy peaks,
+adventure sports,
+and breathtaking landscapes.
+</p>
+
+</div>
+
+</div>
+
+<!-- PATAGONIA TRAIN -->
+
+<div class="card">
+
+<a href="PatagoniaTrain/PatagoniaTrain.html">
+
+<img src="https://images.unsplash.com/photo-1518638150340-f706e86654de?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Patagonian Rail Journeys</h3>
+
+<p>
+Scenic train rides
+through dramatic southern landscapes.
+</p>
+
+</div>
+
+</div>
+
+<!-- STEAK -->
+
+<div class="card">
+
+<a href="ArgentineCuisine/ArgentineCuisine.html">
+
+<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Argentine Cuisine</h3>
+
+<p>
+World-famous steaks,
+empanadas,
+wine,
+and rich Latin flavors.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>Argentina Travel Guide ✈️</h3>
+
+<p>
+Explore Patagonia glaciers, tango culture,
+massive waterfalls,
+wine regions,
+football passion,
+and unforgettable South American adventures.
+</p>
+
+</footer>
+
+</body>
+</html>

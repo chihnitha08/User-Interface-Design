@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore Bolivia</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to bottom,#f3f8ff,#e6f0ff);
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    background-image:url('https://images.unsplash.com/photo-1605640840605-14ac1855827b?q=80&w=1800&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to bottom,rgba(0,0,0,0.25),rgba(0,0,0,0.8));
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:100px;
+    letter-spacing:6px;
+    text-shadow:4px 4px 25px rgba(0,0,0,0.7);
+}
+
+.hero p{
+    font-size:22px;
+    max-width:1000px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* SECTION TITLE */
+
+.section-title{
+    text-align:center;
+    margin-top:100px;
+    margin-bottom:60px;
+    font-size:50px;
+    color:#00509d;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:160px;
+    height:5px;
+    background:#00a6fb;
+    display:block;
+    margin:15px auto;
+    border-radius:10px;
+}
+
+/* GRID */
+
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:35px;
+    padding:20px 65px 90px;
+    max-width:1700px;
+    margin:auto;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    border-radius:28px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+    transition:0.4s ease;
+}
+
+.card:hover{
+    transform:translateY(-12px) scale(1.03);
+    box-shadow:0 25px 50px rgba(0,0,0,0.25);
+}
+
+.place-img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:22px;
+}
+
+.card h3{
+    font-size:26px;
+    color:#00509d;
+    margin-bottom:12px;
+}
+
+.card p{
+    font-size:15px;
+    line-height:1.8;
+    color:#555;
+}
+
+/* FOOTER */
+
+footer{
+    background:#00509d;
+    color:white;
+    text-align:center;
+    padding:60px;
+}
+
+footer h3{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+.places-container{
+    grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+.places-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+<div class="overlay"></div>
+
+<div class="hero-content">
+<h1>Explore Bolivia 🇧🇴</h1>
+<p>
+Land of surreal salt flats, floating islands,
+sky-high cities, rainbow lakes, ancient civilizations,
+Andean peaks, and raw South American magic.
+</p>
+</div>
+
+</section>
+
+<!-- CULTURE -->
+
+<h2 class="section-title">🏛️ Ancient Culture & Cities</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="LaPaz/LaPaz.html">
+<img class="place-img" src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>La Paz</h3>
+<p>
+World’s highest capital city,
+floating between mountains and clouds.
+</p>
+</div>
+</div>
+
+<div class="card">
+<a href="Sucre/Sucre.html">
+<img class="place-img" src="https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Sucre</h3>
+<p>
+White colonial beauty and Bolivia’s constitutional capital.
+</p>
+</div>
+</div>
+
+<div class="card">
+<a href="Potosi/Potosi.html">
+<img class="place-img" src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Potosí</h3>
+<p>
+Historic silver mining city with rich colonial past.
+</p>
+</div>
+</div>
+
+<div class="card">
+<a href="Cochabamba/Cochabamba.html">
+<img class="place-img" src="https://images.unsplash.com/photo-1605640840605-14ac1855827b?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Cochabamba</h3>
+<p>
+Food capital of Bolivia with warm valleys and vibrant life.
+</p>
+</div>
+</div>
+
+</div>
+
+<!-- NATURE -->
+
+<h2 class="section-title">🌄 Nature Wonders</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="Uyuni/Uyuni.html">
+<img class="place-img" src="https://images.unsplash.com/photo-1617196034550-1c7d8b3a5a60?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Salar de Uyuni</h3>
+<p>
+World’s largest salt flat — a mirror of the sky.
+</p>
+</div>
+</div>
+
+<div class="card">
+<a href="LakeTiticaca/Titicaca.html">
+<img class="place-img" src="https://images.unsplash.com/photo-1549887534-6c9c1b6c5d3c?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Lake Titicaca</h3>
+<p>
+Mystical high-altitude lake shared with Peru.
+</p>
+</div>
+</div>
+
+<div class="card">
+<a href="EduardoAvaroa/Avaroa.html">
+<img class="place-img" src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Eduardo Avaroa Reserve</h3>
+<p>
+Red lagoons, flamingos, and alien landscapes.
+</p>
+</div>
+</div>
+
+<div class="card">
+<a href="AmazonBolivia/Amazon.html">
+<img class="place-img" src="https://images.unsplash.com/photo-1508780709619-79562169bc64?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Bolivian Amazon</h3>
+<p>
+Wild rainforests full of biodiversity and adventure.
+</p>
+</div>
+</div>
+
+</div>
+
+<!-- UNIQUE EXPERIENCES -->
+
+<h2 class="section-title">🔥 Unique Bolivia Experiences</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="Andes/Andes.html">
+<img class="place-img" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Andes Trekking</h3>
+<p>
+Extreme mountain trails and breathtaking heights.
+</p>
+</div>
+</div>
+
+<div class="card">
+<a href="Markets/Markets.html">
+<img class="place-img" src="https://images.unsplash.com/photo-1520975922321-3c3a9a5d6a3a?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Witch Markets</h3>
+<p>
+Mystical herbs, traditions, and cultural rituals.
+</p>
+</div>
+</div>
+
+<div class="card">
+<a href="Festivals/Festivals.html">
+<img class="place-img" src="https://images.unsplash.com/photo-1509223197845-458d87318791?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Festivals</h3>
+<p>
+Colorful dances, costumes, and indigenous celebrations.
+</p>
+</div>
+</div>
+
+<div class="card">
+<a href="Cuisine/Cuisine.html">
+<img class="place-img" src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Bolivian Cuisine</h3>
+<p>
+Salteñas, quinoa dishes, and bold Andean flavors.
+</p>
+</div>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+<h3>Bolivia Travel Guide ✈️</h3>
+<p>
+From salt flats to sacred lakes, sky-high cities to ancient cultures —
+Bolivia is raw, real, and unforgettable.
+</p>
+</footer>
+
+</body>
+</html>

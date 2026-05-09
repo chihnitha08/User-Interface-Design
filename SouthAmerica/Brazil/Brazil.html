@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore Brazil</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to bottom,#e8fff3,#e6f0ff);
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    background-image:url('https://images.unsplash.com/photo-1518638150340-f706e86654de?q=80&w=1800&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to bottom,rgba(0,0,0,0.25),rgba(0,0,0,0.85));
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:105px;
+    letter-spacing:6px;
+    text-shadow:4px 4px 25px rgba(0,0,0,0.7);
+}
+
+.hero p{
+    font-size:22px;
+    max-width:1000px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* SECTION TITLE */
+
+.section-title{
+    text-align:center;
+    margin-top:100px;
+    margin-bottom:60px;
+    font-size:52px;
+    color:#0b6e4f;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:170px;
+    height:5px;
+    background:#ffcc00;
+    display:block;
+    margin:15px auto;
+    border-radius:10px;
+}
+
+/* GRID */
+
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:35px;
+    padding:20px 65px 90px;
+    max-width:1700px;
+    margin:auto;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    border-radius:28px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+    transition:0.4s ease;
+}
+
+.card:hover{
+    transform:translateY(-12px) scale(1.03);
+    box-shadow:0 25px 50px rgba(0,0,0,0.25);
+}
+
+.place-img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:22px;
+}
+
+.card h3{
+    font-size:26px;
+    color:#0b6e4f;
+    margin-bottom:12px;
+}
+
+.card p{
+    font-size:15px;
+    line-height:1.8;
+    color:#555;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0b6e4f;
+    color:white;
+    text-align:center;
+    padding:60px;
+}
+
+footer h3{
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+.places-container{
+    grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+.places-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+<div class="overlay"></div>
+
+<div class="hero-content">
+<h1>Explore Brazil 🇧🇷</h1>
+<p>
+A land of carnival chaos, Amazon jungles, golden beaches,
+football madness, samba nights, waterfalls, and endless tropical energy.
+</p>
+</div>
+
+</section>
+
+<!-- CULTURE -->
+
+<h2 class="section-title">🎭 Culture & Iconic Cities</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="Rio/Rio.html">
+<img class="place-img" src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Rio de Janeiro</h3>
+<p>
+Christ the Redeemer, beaches, samba, and electric carnival energy.
+</p>
+</div>
+</div>
+
+<div class="card">
+<a href="SaoPaulo/SaoPaulo.html">
+<img class="place-img" src="https://images.unsplash.com/photo-1549224956-8c6c0c2f4d6a?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>São Paulo</h3>
+<p>
+Brazil’s urban powerhouse — skyscrapers, nightlife, and culture fusion.
+</p>
+</div>
+</div>
+
+<div class="card">
+<a href="Salvador/Salvador.html">
+<img class="place-img" src="https://images.unsplash.com/photo-1558370781-d6196949e317?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Salvador</h3>
+<p>
+Colorful colonial streets and Afro-Brazilian culture heartbeat.
+</p>
+</div>
+</div>
+
+<div class="card">
+<a href="Brasilia/Brasilia.html">
+<img class="place-img" src="https://images.unsplash.com/photo-1589395937772-f6e4f3c9d4b7?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Brasília</h3>
+<p>
+Futuristic capital city designed like a modern architectural dream.
+</p>
+</div>
+</div>
+
+</div>
+
+<!-- NATURE -->
+
+<h2 class="section-title">🌿 Nature Wonders</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="Amazon/Amazon.html">
+<img class="place-img" src="https://images.unsplash.com/photo-1508780709619-79562169bc64?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Amazon Rainforest</h3>
+<p>
+World’s lungs — dense jungle, wildlife, rivers, and mystery.
+</p>
+</div>
+</div>
+
+<div class="card">
+<a href="Iguazu/Iguazu.html">
+<img class="place-img" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Iguazu Falls</h3>
+<p>
+Massive waterfalls splitting Brazil and Argentina — pure power.
+</p>
+</div>
+</div>
+
+<div class="card">
+<a href="Pantanal/Pantanal.html">
+<img class="place-img" src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Pantanal</h3>
+<p>
+Largest tropical wetland on Earth, rich with wildlife.
+</p>
+</div>
+</div>
+
+<div class="card">
+<a href="FernandoNoronha/Noronha.html">
+<img class="place-img" src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Fernando de Noronha</h3>
+<p>
+Crystal-clear waters and paradise islands for diving.
+</p>
+</div>
+</div>
+
+</div>
+
+<!-- EXPERIENCES -->
+
+<h2 class="section-title">🔥 Brazilian Experiences</h2>
+
+<div class="places-container">
+
+<div class="card">
+<a href="Football/Football.html">
+<img class="place-img" src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Football Culture</h3>
+<p>
+Brazil lives football — stadiums full of passion and legends.
+</p>
+</div>
+</div>
+
+<div class="card">
+<a href="Carnival/Carnival.html">
+<img class="place-img" src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Carnival</h3>
+<p>
+World’s biggest festival — samba, costumes, and endless energy.
+</p>
+</div>
+</div>
+
+<div class="card">
+<a href="Samba/Samba.html">
+<img class="place-img" src="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Samba Nights</h3>
+<p>
+Music, dance, and nightlife that never stops.
+</p>
+</div>
+</div>
+
+<div class="card">
+<a href="Cuisine/Cuisine.html">
+<img class="place-img" src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1200&auto=format&fit=crop">
+</a>
+<div class="card-content">
+<h3>Brazilian Cuisine</h3>
+<p>
+Feijoada, grilled meats, tropical fruits, and bold flavors.
+</p>
+</div>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+<h3>Brazil Travel Guide ✈️</h3>
+<p>
+From Amazon jungles to Rio beaches, samba nights to football fever —
+Brazil is pure rhythm, color, and life.
+</p>
+</footer>
+
+</body>
+</html>
