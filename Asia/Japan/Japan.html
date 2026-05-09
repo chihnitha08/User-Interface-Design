@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore Japan</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to bottom,#fff7fb,#ffe3ee);
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* HERO SECTION */
+
+.hero{
+    height:100vh;
+
+    background-image:url('https://images.unsplash.com/photo-1492571350019-22de08371fd3?q=80&w=1800&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:88px;
+    margin-bottom:20px;
+    letter-spacing:4px;
+    text-shadow:3px 3px 15px rgba(0,0,0,0.5);
+}
+
+.hero p{
+    font-size:24px;
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* TITLES */
+
+.section-title{
+    text-align:center;
+    margin-top:90px;
+    margin-bottom:55px;
+    font-size:48px;
+    color:#d81b60;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:130px;
+    height:5px;
+    background:#ff4f81;
+    display:block;
+    margin:15px auto;
+    border-radius:10px;
+}
+
+/* GRID */
+
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:35px;
+
+    padding:20px 60px 80px;
+
+    max-width:1550px;
+    margin:auto;
+}
+
+/* CARDS */
+
+.card{
+    background:white;
+    border-radius:26px;
+    overflow:hidden;
+
+    box-shadow:0 12px 35px rgba(0,0,0,0.15);
+
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-14px) scale(1.03);
+}
+
+.place-img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:22px;
+}
+
+.card h3{
+    margin-bottom:14px;
+    color:#d81b60;
+    font-size:25px;
+}
+
+.card p{
+    font-size:15px;
+    line-height:1.8;
+    color:#555;
+}
+
+/* FOOTER */
+
+footer{
+    background:#d81b60;
+    color:white;
+    text-align:center;
+    padding:45px;
+    margin-top:50px;
+}
+
+footer h3{
+    margin-bottom:12px;
+    font-size:30px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+.places-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:52px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.places-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Explore Japan 🇯🇵</h1>
+
+<p>
+Discover neon anime streets, ancient shrines,
+snowy mountains, magical cherry blossoms,
+onsen villages, futuristic cities,
+and unforgettable cultural adventures across Japan.
+</p>
+
+</div>
+
+</section>
+
+<!-- ANIME & FUTURISTIC JAPAN -->
+
+<h2 class="section-title">🎮 Anime & Futuristic Japan</h2>
+
+<div class="places-container">
+
+<!-- AKIHABARA -->
+
+<div class="card">
+
+<a href="Akihabara/Akihabara.html">
+
+<img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Akihabara</h3>
+
+<p>
+Anime paradise filled with gaming cafés,
+arcades, manga stores,
+and glowing neon streets.
+</p>
+
+</div>
+
+</div>
+
+<!-- SHIBUYA -->
+
+<div class="card">
+
+<a href="Shibuya/Shibuya.html">
+
+<img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Shibuya</h3>
+
+<p>
+Tokyo’s iconic crossing,
+fashion culture,
+nightlife, and futuristic city vibes.
+</p>
+
+</div>
+
+</div>
+
+<!-- ODAIBA -->
+
+<div class="card">
+
+<a href="Odaiba/Odaiba.html">
+
+<img src="https://images.unsplash.com/photo-1513407030348-c983a97b98d8?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Odaiba</h3>
+
+<p>
+Robot attractions, digital art museums,
+and futuristic waterfront entertainment.
+</p>
+
+</div>
+
+</div>
+
+<!-- OSAKA -->
+
+<div class="card">
+
+<a href="Osaka/Osaka.html">
+
+<img src="https://images.unsplash.com/photo-1590559899731-a382839e5549?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Osaka Dotonbori</h3>
+
+<p>
+Massive neon signs,
+street food alleys,
+and unforgettable nightlife energy.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- TRADITIONAL JAPAN -->
+
+<h2 class="section-title">🏯 Traditional & Cultural Japan</h2>
+
+<div class="places-container">
+
+<!-- KYOTO -->
+
+<div class="card">
+
+<a href="Kyoto/Kyoto.html">
+
+<img src="https://images.unsplash.com/photo-1492571350019-22de08371fd3?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Kyoto</h3>
+
+<p>
+Ancient temples, bamboo forests,
+tea houses,
+and beautiful geisha districts.
+</p>
+
+</div>
+
+</div>
+
+<!-- NARA -->
+
+<div class="card">
+
+<a href="Nara/Nara.html">
+
+<img src="https://images.unsplash.com/photo-1526481280695-3c4691f8f22c?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Nara</h3>
+
+<p>
+Friendly deer parks,
+historic shrines,
+and peaceful Japanese heritage.
+</p>
+
+</div>
+
+</div>
+
+<!-- KANAZAWA -->
+
+<div class="card">
+
+<a href="Kanazawa/Kanazawa.html">
+
+<img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Kanazawa</h3>
+
+<p>
+Samurai districts,
+traditional gardens,
+and elegant old-town beauty.
+</p>
+
+</div>
+
+</div>
+
+<!-- TAKAYAMA -->
+
+<div class="card">
+
+<a href="Takayama/Takayama.html">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Takayama</h3>
+
+<p>
+Mountain villages,
+wooden streets,
+and authentic countryside culture.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- NATURE & SEASONS -->
+
+<h2 class="section-title">🌸 Nature & Seasonal Beauty</h2>
+
+<div class="places-container">
+
+<!-- HOKKAIDO -->
+
+<div class="card">
+
+<a href="Hokkaido/Hokkaido.html">
+
+<img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Hokkaido</h3>
+
+<p>
+Snow festivals, lavender fields,
+ski resorts,
+and magical winter landscapes.
+</p>
+
+</div>
+
+</div>
+
+<!-- FUJI -->
+
+<div class="card">
+
+<a href="MountFuji/MountFuji.html">
+
+<img src="https://images.unsplash.com/photo-1570459027561-4b6c1d7fa7d6?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Mount Fuji</h3>
+
+<p>
+Japan’s iconic mountain surrounded by lakes,
+cherry blossoms,
+and breathtaking scenery.
+</p>
+
+</div>
+
+</div>
+
+<!-- ARASHIYAMA -->
+
+<div class="card">
+
+<a href="Arashiyama/Arashiyama.html">
+
+<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Arashiyama</h3>
+
+<p>
+Famous bamboo forests,
+river views,
+and peaceful nature escapes.
+</p>
+
+</div>
+
+</div>
+
+<!-- OKINAWA -->
+
+<div class="card">
+
+<a href="Okinawa/Okinawa.html">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Okinawa</h3>
+
+<p>
+Tropical beaches,
+clear blue waters,
+and relaxing island adventures.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- UNIQUE EXPERIENCES -->
+
+<h2 class="section-title">✨ Unique Japanese Experiences</h2>
+
+<div class="places-container">
+
+<!-- ONSEN -->
+
+<div class="card">
+
+<a href="Hakone/Hakone.html">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Hakone Onsen</h3>
+
+<p>
+Hot spring resorts,
+mountain views,
+and relaxing traditional ryokan stays.
+</p>
+
+</div>
+
+</div>
+
+<!-- UNIVERSAL -->
+
+<div class="card">
+
+<a href="UniversalStudios/UniversalStudios.html">
+
+<img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Universal Studios Japan</h3>
+
+<p>
+Super Nintendo World,
+thrilling rides,
+and magical movie adventures.
+</p>
+
+</div>
+
+</div>
+
+<!-- TEAMLAB -->
+
+<div class="card">
+
+<a href="TeamLab/TeamLab.html">
+
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>teamLab Planets</h3>
+
+<p>
+Immersive digital art rooms,
+interactive lights,
+and futuristic experiences.
+</p>
+
+</div>
+
+</div>
+
+<!-- CHERRY BLOSSOMS -->
+
+<div class="card">
+
+<a href="CherryBlossoms/CherryBlossoms.html">
+
+<img src="https://images.unsplash.com/photo-1522383225653-ed111181a951?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Cherry Blossom Festivals</h3>
+
+<p>
+Dreamy pink sakura trees,
+festival foods,
+and magical springtime beauty.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>Japan Travel Guide ✈️</h3>
+
+<p>
+Explore anime cities, ancient temples,
+onsen villages, cherry blossoms,
+mountain landscapes, and unforgettable Japanese culture.
+</p>
+
+</footer>
+
+</body>
+</html>

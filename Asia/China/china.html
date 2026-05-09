@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore China</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to bottom,#fff6f2,#ffe1d6);
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* HERO SECTION */
+
+.hero{
+    height:100vh;
+
+    background-image:url('https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=1800&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to bottom,rgba(0,0,0,0.35),rgba(0,0,0,0.65));
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:95px;
+    margin-bottom:25px;
+    letter-spacing:5px;
+    text-shadow:4px 4px 20px rgba(0,0,0,0.6);
+}
+
+.hero p{
+    font-size:24px;
+    max-width:950px;
+    margin:auto;
+    line-height:1.9;
+}
+
+/* SECTION TITLES */
+
+.section-title{
+    text-align:center;
+    margin-top:100px;
+    margin-bottom:60px;
+    font-size:50px;
+    color:#c1121f;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:140px;
+    height:5px;
+    background:#ff5a5f;
+    display:block;
+    margin:18px auto;
+    border-radius:10px;
+}
+
+/* GRID */
+
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:38px;
+
+    padding:20px 65px 90px;
+
+    max-width:1600px;
+    margin:auto;
+}
+
+/* CARDS */
+
+.card{
+    background:white;
+    border-radius:28px;
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+
+    transition:0.45s;
+    position:relative;
+}
+
+.card:hover{
+    transform:translateY(-14px) scale(1.04);
+    box-shadow:0 20px 45px rgba(0,0,0,0.2);
+}
+
+.place-img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:24px;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#c1121f;
+    font-size:27px;
+}
+
+.card p{
+    font-size:15px;
+    line-height:1.9;
+    color:#555;
+}
+
+/* FOOTER */
+
+footer{
+    background:#c1121f;
+    color:white;
+    text-align:center;
+    padding:50px;
+    margin-top:50px;
+}
+
+footer h3{
+    margin-bottom:14px;
+    font-size:32px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+.places-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:56px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.places-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Explore China 🇨🇳</h1>
+
+<p>
+Step into a world of glowing megacities,
+ancient dynasties, floating mountains,
+cyberpunk skylines, panda forests,
+lantern towns, and breathtaking adventures across China.
+</p>
+
+</div>
+
+</section>
+
+<!-- CYBERPUNK & FUTURISTIC CHINA -->
+
+<h2 class="section-title">🌃 Cyberpunk & Futuristic China</h2>
+
+<div class="places-container">
+
+<!-- SHANGHAI -->
+
+<div class="card">
+
+<a href="Shanghai/Shanghai.html">
+
+<img src="https://images.unsplash.com/photo-1547981609-4b6bf67db7ff?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Shanghai</h3>
+
+<p>
+Futuristic skyscrapers,
+luxury shopping streets,
+and glowing skyline views along The Bund.
+</p>
+
+</div>
+
+</div>
+
+<!-- SHENZHEN -->
+
+<div class="card">
+
+<a href="Shenzhen/Shenzhen.html">
+
+<img src="https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Shenzhen</h3>
+
+<p>
+China’s futuristic tech capital filled with
+LED skyscrapers,
+robot cafés, and modern architecture.
+</p>
+
+</div>
+
+</div>
+
+<!-- HONG KONG -->
+
+<div class="card">
+
+<a href="HongKong/HongKong.html">
+
+<img src="https://images.unsplash.com/photo-1536599018102-9f803c140fc1?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Hong Kong</h3>
+
+<p>
+Neon-lit streets,
+night markets,
+skyline ferries, and unforgettable nightlife.
+</p>
+
+</div>
+
+</div>
+
+<!-- CHONGQING -->
+
+<div class="card">
+
+<a href="Chongqing/Chongqing.html">
+
+<img src="https://images.unsplash.com/photo-1505765050516-f72dcac9c60b?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Chongqing</h3>
+
+<p>
+The real-life cyberpunk city with glowing bridges,
+layered highways,
+and magical neon night views.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ANCIENT CHINA -->
+
+<h2 class="section-title">🏯 Ancient Dynasties & Culture</h2>
+
+<div class="places-container">
+
+<!-- BEIJING -->
+
+<div class="card">
+
+<a href="Beijing/Beijing.html">
+
+<img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Beijing</h3>
+
+<p>
+The Forbidden City,
+imperial palaces,
+and centuries of Chinese history.
+</p>
+
+</div>
+
+</div>
+
+<!-- XIAN -->
+
+<div class="card">
+
+<a href="Xian/Xian.html">
+
+<img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Xi’an</h3>
+
+<p>
+Home of the Terracotta Army,
+ancient city walls,
+and legendary Silk Road culture.
+</p>
+
+</div>
+
+</div>
+
+<!-- SUZHOU -->
+
+<div class="card">
+
+<a href="Suzhou/Suzhou.html">
+
+<img src="https://images.unsplash.com/photo-1526481280695-3c4691f8f22c?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Suzhou</h3>
+
+<p>
+Classical gardens,
+romantic canals,
+and elegant traditional architecture.
+</p>
+
+</div>
+
+</div>
+
+<!-- LUOYANG -->
+
+<div class="card">
+
+<a href="Luoyang/Luoyang.html">
+
+<img src="https://images.unsplash.com/photo-1492571350019-22de08371fd3?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Luoyang</h3>
+
+<p>
+Ancient temples,
+massive Buddha carvings,
+and one of China’s oldest capitals.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FANTASY NATURE -->
+
+<h2 class="section-title">🌄 Fantasy Landscapes & Nature</h2>
+
+<div class="places-container">
+
+<!-- ZHANGJIAJIE -->
+
+<div class="card">
+
+<a href="Zhangjiajie/Zhangjiajie.html">
+
+<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Zhangjiajie</h3>
+
+<p>
+Floating Avatar mountains,
+glass bridges,
+and unreal fantasy landscapes.
+</p>
+
+</div>
+
+</div>
+
+<!-- GUILIN -->
+
+<div class="card">
+
+<a href="Guilin/Guilin.html">
+
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Guilin</h3>
+
+<p>
+Limestone mountains,
+river cruises,
+and postcard-perfect scenery.
+</p>
+
+</div>
+
+</div>
+
+<!-- JIUZHAIGOU -->
+
+<div class="card">
+
+<a href="Jiuzhaigou/Jiuzhaigou.html">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Jiuzhaigou Valley</h3>
+
+<p>
+Turquoise lakes,
+waterfalls,
+and magical colorful forests.
+</p>
+
+</div>
+
+</div>
+
+<!-- YUNNAN -->
+
+<div class="card">
+
+<a href="Yunnan/Yunnan.html">
+
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Yunnan</h3>
+
+<p>
+Tea mountains,
+flower valleys,
+and peaceful countryside villages.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- UNIQUE EXPERIENCES -->
+
+<h2 class="section-title">✨ Magical China Experiences</h2>
+
+<div class="places-container">
+
+<!-- GREAT WALL -->
+
+<div class="card">
+
+<a href="GreatWall/GreatWall.html">
+
+<img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Great Wall of China</h3>
+
+<p>
+Walk across one of the world’s greatest wonders
+through mountains and ancient watchtowers.
+</p>
+
+</div>
+
+</div>
+
+<!-- CHENGDU -->
+
+<div class="card">
+
+<a href="Chengdu/Chengdu.html">
+
+<img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Chengdu Panda Base</h3>
+
+<p>
+Meet adorable giant pandas,
+lush bamboo forests,
+and relaxing tea-house culture.
+</p>
+
+</div>
+
+</div>
+
+<!-- HARBIN -->
+
+<div class="card">
+
+<a href="Harbin/Harbin.html">
+
+<img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Harbin Ice Festival</h3>
+
+<p>
+Massive glowing ice castles,
+winter lights,
+and magical snow sculptures.
+</p>
+
+</div>
+
+</div>
+
+<!-- WEST LAKE -->
+
+<div class="card">
+
+<a href="WestLake/WestLake.html">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>West Lake</h3>
+
+<p>
+Romantic boat rides,
+misty temples,
+and peaceful legendary beauty.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>China Travel Guide ✈️</h3>
+
+<p>
+Explore cyberpunk megacities, ancient palaces,
+fantasy mountains, panda forests,
+lantern streets, and unforgettable Chinese adventures.
+</p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore UAE</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to bottom,#fff8ef,#ffe6c7);
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+
+    background-image:url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1800&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:85px;
+    margin-bottom:20px;
+    letter-spacing:4px;
+    text-shadow:3px 3px 12px rgba(0,0,0,0.5);
+}
+
+.hero p{
+    font-size:24px;
+    max-width:850px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* TITLES */
+
+.section-title{
+    text-align:center;
+    margin-top:90px;
+    margin-bottom:50px;
+    font-size:48px;
+    color:#d97706;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:120px;
+    height:5px;
+    background:#f59e0b;
+    display:block;
+    margin:15px auto;
+    border-radius:10px;
+}
+
+/* GRID */
+
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:35px;
+
+    padding:20px 60px 80px;
+
+    max-width:1500px;
+    margin:auto;
+}
+
+/* CARDS */
+
+.card{
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+
+    box-shadow:0 12px 30px rgba(0,0,0,0.15);
+
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-12px) scale(1.03);
+}
+
+.place-img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:22px;
+}
+
+.card h3{
+    margin-bottom:14px;
+    color:#d97706;
+    font-size:25px;
+}
+
+.card p{
+    font-size:15px;
+    line-height:1.8;
+    color:#555;
+}
+
+/* FOOTER */
+
+footer{
+    background:#d97706;
+    color:white;
+    text-align:center;
+    padding:40px;
+    margin-top:50px;
+}
+
+footer h3{
+    margin-bottom:12px;
+    font-size:28px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+.places-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:52px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.places-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Explore UAE 🇦🇪</h1>
+
+<p>
+Experience futuristic skylines, golden deserts,
+luxury shopping, beach resorts,
+Arabian culture, and breathtaking adventures
+across the United Arab Emirates.
+</p>
+
+</div>
+
+</section>
+
+<!-- CITY LIFE -->
+
+<h2 class="section-title">🌆 Luxury City Vibes</h2>
+
+<div class="places-container">
+
+<!-- DUBAI -->
+
+<div class="card">
+
+<a href="Dubai/Dubai.html">
+
+<img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Dubai</h3>
+
+<p>
+Skyscrapers, luxury shopping,
+Burj Khalifa views,
+and unforgettable nightlife experiences.
+</p>
+
+</div>
+
+</div>
+
+<!-- ABU DHABI -->
+
+<div class="card">
+
+<a href="AbuDhabi/AbuDhabi.html">
+
+<img src="https://images.unsplash.com/photo-1578894381163-e72c17f2d45f?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Abu Dhabi</h3>
+
+<p>
+Beautiful mosques, cultural landmarks,
+luxury resorts,
+and elegant city charm.
+</p>
+
+</div>
+
+</div>
+
+<!-- SHARJAH -->
+
+<div class="card">
+
+<a href="Sharjah/Sharjah.html">
+
+<img src="https://images.unsplash.com/photo-1526481280695-3c4691f8f22c?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Sharjah</h3>
+
+<p>
+Museums, traditional markets,
+Islamic architecture,
+and rich Emirati heritage.
+</p>
+
+</div>
+
+</div>
+
+<!-- AJMAN -->
+
+<div class="card">
+
+<a href="Ajman/Ajman.html">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Ajman</h3>
+
+<p>
+Relaxing beaches,
+peaceful resorts,
+and calm Arabian coastal beauty.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- NATURE -->
+
+<h2 class="section-title">🏜️ Desert & Nature Escapes</h2>
+
+<div class="places-container">
+
+<!-- LIWA -->
+
+<div class="card">
+
+<a href="Liwa/Liwa.html">
+
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Liwa Desert</h3>
+
+<p>
+Golden sand dunes,
+camel rides,
+and magical desert sunsets.
+</p>
+
+</div>
+
+</div>
+
+<!-- HATTA -->
+
+<div class="card">
+
+<a href="Hatta/Hatta.html">
+
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Hatta</h3>
+
+<p>
+Mountain adventures,
+kayaking lakes,
+and scenic natural landscapes.
+</p>
+
+</div>
+
+</div>
+
+<!-- FUJAIRAH -->
+
+<div class="card">
+
+<a href="Fujairah/Fujairah.html">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Fujairah</h3>
+
+<p>
+Crystal beaches,
+snorkeling spots,
+and beautiful mountain coastlines.
+</p>
+
+</div>
+
+</div>
+
+<!-- RAS AL KHAIMAH -->
+
+<div class="card">
+
+<a href="RAK/RAK.html">
+
+<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Ras Al Khaimah</h3>
+
+<p>
+Adventure mountains,
+luxury desert resorts,
+and thrilling zipline experiences.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOD -->
+
+<h2 class="section-title">🍜 Food & Market Paradise</h2>
+
+<div class="places-container">
+
+<!-- GLOBAL VILLAGE -->
+
+<div class="card">
+
+<a href="GlobalVillage/GlobalVillage.html">
+
+<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Global Village</h3>
+
+<p>
+International food stalls,
+shopping streets,
+and vibrant festival vibes.
+</p>
+
+</div>
+
+</div>
+
+<!-- DEIRA -->
+
+<div class="card">
+
+<a href="Deira/Deira.html">
+
+<img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Deira</h3>
+
+<p>
+Traditional souks,
+Arabic cuisine,
+and authentic Dubai street food culture.
+</p>
+
+</div>
+
+</div>
+
+<!-- AL SEEF -->
+
+<div class="card">
+
+<a href="AlSeef/AlSeef.html">
+
+<img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Al Seef</h3>
+
+<p>
+Waterfront cafés,
+traditional Emirati food,
+and aesthetic Arabian streets.
+</p>
+
+</div>
+
+</div>
+
+<!-- NIGHT MARKET -->
+
+<div class="card">
+
+<a href="NightMarket/NightMarket.html">
+
+<img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Night Markets</h3>
+
+<p>
+Colorful lights,
+desserts,
+street shopping,
+and lively food experiences.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ROMANTIC -->
+
+<h2 class="section-title">💖 Romantic UAE</h2>
+
+<div class="places-container">
+
+<!-- PALM JUMEIRAH -->
+
+<div class="card">
+
+<a href="PalmJumeirah/PalmJumeirah.html">
+
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Palm Jumeirah</h3>
+
+<p>
+Luxury beach resorts,
+romantic dinners,
+and stunning ocean views.
+</p>
+
+</div>
+
+</div>
+
+<!-- MIRACLE GARDEN -->
+
+<div class="card">
+
+<a href="MiracleGarden/MiracleGarden.html">
+
+<img src="https://images.unsplash.com/photo-1522383225653-ed111181a951?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Dubai Miracle Garden</h3>
+
+<p>
+Colorful flower tunnels,
+dreamy pathways,
+and magical romantic scenery.
+</p>
+
+</div>
+
+</div>
+
+<!-- BURJ KHALIFA -->
+
+<div class="card">
+
+<a href="BurjKhalifa/BurjKhalifa.html">
+
+<img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Burj Khalifa</h3>
+
+<p>
+Sky-high city views,
+luxury rooftop dining,
+and unforgettable night lights.
+</p>
+
+</div>
+
+</div>
+
+<!-- JUMEIRAH BEACH -->
+
+<div class="card">
+
+<a href="JumeirahBeach/JumeirahBeach.html">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Jumeirah Beach</h3>
+
+<p>
+Soft sandy beaches,
+luxury vibes,
+and romantic sunset walks by the sea.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>UAE Travel Guide ✈️</h3>
+
+<p>
+Explore futuristic cities, golden deserts,
+luxury shopping, beaches,
+and unforgettable Arabian adventures.
+</p>
+
+</footer>
+
+</body>
+</html>

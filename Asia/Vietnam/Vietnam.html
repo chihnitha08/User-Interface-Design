@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore Vietnam</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to bottom,#f5fff7,#dff7e8);
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* HERO SECTION */
+
+.hero{
+    height:100vh;
+
+    background-image:url('https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=1800&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:85px;
+    margin-bottom:20px;
+    letter-spacing:4px;
+    text-shadow:3px 3px 12px rgba(0,0,0,0.5);
+}
+
+.hero p{
+    font-size:24px;
+    max-width:850px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* SECTION TITLES */
+
+.section-title{
+    text-align:center;
+    margin-top:90px;
+    margin-bottom:50px;
+    font-size:48px;
+    color:#00875a;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:120px;
+    height:5px;
+    background:#00b894;
+    display:block;
+    margin:15px auto;
+    border-radius:10px;
+}
+
+/* GRID */
+
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:35px;
+
+    padding:20px 60px 80px;
+
+    max-width:1500px;
+    margin:auto;
+}
+
+/* CARDS */
+
+.card{
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+
+    box-shadow:0 12px 30px rgba(0,0,0,0.15);
+
+    transition:0.4s;
+    position:relative;
+}
+
+.card:hover{
+    transform:translateY(-12px) scale(1.03);
+}
+
+.place-img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:22px;
+}
+
+.card h3{
+    margin-bottom:14px;
+    color:#00875a;
+    font-size:25px;
+}
+
+.card p{
+    font-size:15px;
+    line-height:1.8;
+    color:#555;
+}
+
+/* FOOTER */
+
+footer{
+    background:#00875a;
+    color:white;
+    text-align:center;
+    padding:40px;
+    margin-top:50px;
+}
+
+footer h3{
+    margin-bottom:12px;
+    font-size:28px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+.places-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.places-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Explore Vietnam 🇻🇳</h1>
+
+<p>
+Discover magical lantern streets, emerald rice fields,
+floating markets, tropical beaches, limestone mountains,
+vibrant cafés, and unforgettable adventures across Vietnam.
+</p>
+
+</div>
+
+</section>
+
+<!-- CITY LIFE -->
+
+<h2 class="section-title">🌆 Vibrant City Life</h2>
+
+<div class="places-container">
+
+<!-- HANOI -->
+
+<div class="card">
+
+<a href="Hanoi/Hanoi.html">
+
+<img src="https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Hanoi</h3>
+
+<p>
+Ancient temples, aesthetic cafés,
+motorbike streets, and rich Vietnamese culture
+in the heart of the capital city.
+</p>
+
+</div>
+
+</div>
+
+<!-- HO CHI MINH -->
+
+<div class="card">
+
+<a href="HoChiMinh/HoChiMinh.html">
+
+<img src="https://images.unsplash.com/photo-1555921015-5532091f6026?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Ho Chi Minh City</h3>
+
+<p>
+Neon nightlife, rooftop bars,
+street food heaven, and energetic city vibes.
+</p>
+
+</div>
+
+</div>
+
+<!-- DA NANG -->
+
+<div class="card">
+
+<a href="DaNang/DaNang.html">
+
+<img src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Da Nang</h3>
+
+<p>
+Golden beaches, modern bridges,
+luxury resorts, and stunning coastal beauty.
+</p>
+
+</div>
+
+</div>
+
+<!-- HAI PHONG -->
+
+<div class="card">
+
+<a href="HaiPhong/HaiPhong.html">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Hai Phong</h3>
+
+<p>
+Bustling port city with colorful streets,
+seafood culture, and ocean adventures.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- NATURE -->
+
+<h2 class="section-title">🌿 Nature & Scenic Escapes</h2>
+
+<div class="places-container">
+
+<!-- HALONG BAY -->
+
+<div class="card">
+
+<a href="HalongBay/HalongBay.html">
+
+<img src="https://images.unsplash.com/photo-1526481280695-3c4691f8f22c?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Ha Long Bay</h3>
+
+<p>
+Emerald waters, limestone islands,
+luxury cruises, and magical sunsets.
+</p>
+
+</div>
+
+</div>
+
+<!-- SAPA -->
+
+<div class="card">
+
+<a href="Sapa/Sapa.html">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Sapa</h3>
+
+<p>
+Dreamy rice terraces,
+misty mountains, and breathtaking trekking adventures.
+</p>
+
+</div>
+
+</div>
+
+<!-- NINH BINH -->
+
+<div class="card">
+
+<a href="NinhBinh/NinhBinh.html">
+
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Ninh Binh</h3>
+
+<p>
+River caves, green valleys,
+and stunning landscapes called “Ha Long Bay on land.”
+</p>
+
+</div>
+
+</div>
+
+<!-- PHONG NHA -->
+
+<div class="card">
+
+<a href="PhongNha/PhongNha.html">
+
+<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Phong Nha</h3>
+
+<p>
+Massive caves, jungle scenery,
+and adventurous underground exploration.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOD -->
+
+<h2 class="section-title">🍜 Vietnamese Food Heaven</h2>
+
+<div class="places-container">
+
+<!-- HOI AN -->
+
+<div class="card">
+
+<a href="HoiAn/HoiAn.html">
+
+<img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Hoi An</h3>
+
+<p>
+Lantern-lit streets, riverside cafés,
+and unforgettable Vietnamese street food.
+</p>
+
+</div>
+
+</div>
+
+<!-- BEN THANH -->
+
+<div class="card">
+
+<a href="BenThanh/BenThanh.html">
+
+<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Ben Thanh Market</h3>
+
+<p>
+Traditional Vietnamese dishes,
+night shopping, and colorful market vibes.
+</p>
+
+</div>
+
+</div>
+
+<!-- HUE -->
+
+<div class="card">
+
+<a href="Hue/Hue.html">
+
+<img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Hue</h3>
+
+<p>
+Imperial city famous for royal cuisine,
+historic temples, and rich traditions.
+</p>
+
+</div>
+
+</div>
+
+<!-- CAN THO -->
+
+<div class="card">
+
+<a href="CanTho/CanTho.html">
+
+<img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Can Tho</h3>
+
+<p>
+Floating markets, tropical fruits,
+and authentic Mekong Delta experiences.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ROMANTIC -->
+
+<h2 class="section-title">💖 Romantic Vietnam</h2>
+
+<div class="places-container">
+
+<!-- DALAT -->
+
+<div class="card">
+
+<a href="Dalat/Dalat.html">
+
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Dalat</h3>
+
+<p>
+Pine forests, flower gardens,
+cool weather, and dreamy honeymoon vibes.
+</p>
+
+</div>
+
+</div>
+
+<!-- PHU QUOC -->
+
+<div class="card">
+
+<a href="PhuQuoc/PhuQuoc.html">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Phu Quoc</h3>
+
+<p>
+Crystal-clear beaches,
+luxury resorts, and tropical sunsets.
+</p>
+
+</div>
+
+</div>
+
+<!-- MUI NE -->
+
+<div class="card">
+
+<a href="MuiNe/MuiNe.html">
+
+<img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Mui Ne</h3>
+
+<p>
+Golden sand dunes,
+beach cafés, and peaceful seaside beauty.
+</p>
+
+</div>
+
+</div>
+
+<!-- TAM DAO -->
+
+<div class="card">
+
+<a href="TamDao/TamDao.html">
+
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Tam Dao</h3>
+
+<p>
+Foggy mountains, scenic resorts,
+and cozy romantic escapes.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>Vietnam Travel Guide ✈️</h3>
+
+<p>
+Explore lantern towns, tropical beaches,
+mountains, floating markets,
+Vietnamese cafés, and unforgettable adventures.
+</p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore Indonesia</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to bottom,#fffaf3,#ffe9d2);
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* HERO SECTION */
+
+.hero{
+    height:100vh;
+
+    background-image:url('https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?q=80&w=1800&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to bottom,rgba(0,0,0,0.35),rgba(0,0,0,0.65));
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:95px;
+    margin-bottom:25px;
+    letter-spacing:5px;
+    text-shadow:4px 4px 18px rgba(0,0,0,0.6);
+}
+
+.hero p{
+    font-size:24px;
+    max-width:950px;
+    margin:auto;
+    line-height:1.9;
+}
+
+/* TITLES */
+
+.section-title{
+    text-align:center;
+    margin-top:100px;
+    margin-bottom:60px;
+    font-size:50px;
+    color:#ff6b00;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:140px;
+    height:5px;
+    background:#ff9f43;
+    display:block;
+    margin:18px auto;
+    border-radius:10px;
+}
+
+/* GRID */
+
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:38px;
+
+    padding:20px 65px 90px;
+
+    max-width:1600px;
+    margin:auto;
+}
+
+/* CARDS */
+
+.card{
+    background:white;
+    border-radius:28px;
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+
+    transition:0.45s;
+}
+
+.card:hover{
+    transform:translateY(-14px) scale(1.04);
+    box-shadow:0 20px 45px rgba(0,0,0,0.22);
+}
+
+.place-img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:24px;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#ff6b00;
+    font-size:27px;
+}
+
+.card p{
+    font-size:15px;
+    line-height:1.9;
+    color:#555;
+}
+
+/* FOOTER */
+
+footer{
+    background:#ff6b00;
+    color:white;
+    text-align:center;
+    padding:50px;
+    margin-top:50px;
+}
+
+footer h3{
+    margin-bottom:14px;
+    font-size:32px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+.places-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:56px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.places-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Explore Indonesia 🇮🇩</h1>
+
+<p>
+Dive into volcanic islands, glowing beach clubs,
+ancient temples, jungle waterfalls,
+floating islands, Komodo dragons,
+and breathtaking tropical adventures across Indonesia.
+</p>
+
+</div>
+
+</section>
+
+<!-- TROPICAL PARADISE -->
+
+<h2 class="section-title">🏝 Tropical Paradise Escapes</h2>
+
+<div class="places-container">
+
+<!-- BALI -->
+
+<div class="card">
+
+<a href="Bali/Bali.html">
+
+<img src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Bali</h3>
+
+<p>
+Luxury beach resorts,
+rice terraces,
+sunset cafés, and magical tropical vibes.
+</p>
+
+</div>
+
+</div>
+
+<!-- GILI -->
+
+<div class="card">
+
+<a href="Gili/Gili.html">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Gili Islands</h3>
+
+<p>
+Crystal-clear waters,
+beach swings,
+and dreamy island relaxation.
+</p>
+
+</div>
+
+</div>
+
+<!-- RAJA AMPAT -->
+
+<div class="card">
+
+<a href="RajaAmpat/RajaAmpat.html">
+
+<img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Raja Ampat</h3>
+
+<p>
+Hidden paradise islands,
+turquoise lagoons,
+and world-famous diving adventures.
+</p>
+
+</div>
+
+</div>
+
+<!-- NUSA PENIDA -->
+
+<div class="card">
+
+<a href="NusaPenida/NusaPenida.html">
+
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Nusa Penida</h3>
+
+<p>
+Massive cliffs,
+iconic beaches,
+and breathtaking ocean viewpoints.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- VOLCANIC & ADVENTURE -->
+
+<h2 class="section-title">🌋 Volcanoes & Wild Adventures</h2>
+
+<div class="places-container">
+
+<!-- BROMO -->
+
+<div class="card">
+
+<a href="MountBromo/MountBromo.html">
+
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Mount Bromo</h3>
+
+<p>
+Epic volcanic sunrise views,
+misty landscapes,
+and unforgettable jeep adventures.
+</p>
+
+</div>
+
+</div>
+
+<!-- IJEN -->
+
+<div class="card">
+
+<a href="Ijen/Ijen.html">
+
+<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Ijen Volcano</h3>
+
+<p>
+Famous blue fire volcano,
+acid lakes,
+and dramatic mountain scenery.
+</p>
+
+</div>
+
+</div>
+
+<!-- KOMODO -->
+
+<div class="card">
+
+<a href="Komodo/Komodo.html">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Komodo Island</h3>
+
+<p>
+Meet legendary Komodo dragons,
+pink beaches,
+and wild tropical landscapes.
+</p>
+
+</div>
+
+</div>
+
+<!-- LOMBOK -->
+
+<div class="card">
+
+<a href="Lombok/Lombok.html">
+
+<img src="https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Lombok</h3>
+
+<p>
+Hidden waterfalls,
+surfing beaches,
+and peaceful island adventures.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- CULTURE -->
+
+<h2 class="section-title">🏯 Ancient Temples & Culture</h2>
+
+<div class="places-container">
+
+<!-- UBUD -->
+
+<div class="card">
+
+<a href="Ubud/Ubud.html">
+
+<img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Ubud</h3>
+
+<p>
+Traditional Balinese culture,
+monkey forests,
+art cafés, and jungle temples.
+</p>
+
+</div>
+
+</div>
+
+<!-- BOROBUDUR -->
+
+<div class="card">
+
+<a href="Borobudur/Borobudur.html">
+
+<img src="https://images.unsplash.com/photo-1492571350019-22de08371fd3?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Borobudur Temple</h3>
+
+<p>
+The world’s largest Buddhist temple
+surrounded by mystical sunrise views.
+</p>
+
+</div>
+
+</div>
+
+<!-- YOGYAKARTA -->
+
+<div class="card">
+
+<a href="Yogyakarta/Yogyakarta.html">
+
+<img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Yogyakarta</h3>
+
+<p>
+Traditional batik culture,
+historic palaces,
+and authentic Indonesian heritage.
+</p>
+
+</div>
+
+</div>
+
+<!-- PRAMBANAN -->
+
+<div class="card">
+
+<a href="Prambanan/Prambanan.html">
+
+<img src="https://images.unsplash.com/photo-1526481280695-3c4691f8f22c?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Prambanan Temple</h3>
+
+<p>
+Ancient Hindu temples,
+dramatic architecture,
+and magical evening performances.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- UNIQUE EXPERIENCES -->
+
+<h2 class="section-title">✨ Magical Indonesia Experiences</h2>
+
+<div class="places-container">
+
+<!-- JAKARTA -->
+
+<div class="card">
+
+<a href="Jakarta/Jakarta.html">
+
+<img src="https://images.unsplash.com/photo-1547981609-4b6bf67db7ff?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Jakarta</h3>
+
+<p>
+Luxury malls,
+sky bars,
+and vibrant Indonesian city nightlife.
+</p>
+
+</div>
+
+</div>
+
+<!-- FLORES -->
+
+<div class="card">
+
+<a href="Flores/Flores.html">
+
+<img src="https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Flores Island</h3>
+
+<p>
+Colorful crater lakes,
+mountain villages,
+and hidden natural beauty.
+</p>
+
+</div>
+
+</div>
+
+<!-- TANAH LOT -->
+
+<div class="card">
+
+<a href="TanahLot/TanahLot.html">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Tanah Lot</h3>
+
+<p>
+Iconic sea temple sunsets
+with dramatic ocean waves and golden skies.
+</p>
+
+</div>
+
+</div>
+
+<!-- BANDA ISLANDS -->
+
+<div class="card">
+
+<a href="Banda/Banda.html">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Banda Islands</h3>
+
+<p>
+Remote paradise islands,
+historic spice routes,
+and untouched tropical beaches.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>Indonesia Travel Guide ✈️</h3>
+
+<p>
+Explore volcanic adventures, tropical islands,
+ancient temples, jungle escapes,
+luxury beach clubs, and magical Indonesian culture.
+</p>
+
+</footer>
+
+</body>
+</html>
