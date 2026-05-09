@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore Maldives</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to bottom,#f2ffff,#dffcff);
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+
+    background-image:url('https://images.unsplash.com/photo-1573843981267-be1999ff37cd?q=80&w=1800&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to bottom,rgba(0,0,0,0.35),rgba(0,0,0,0.65));
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:95px;
+    margin-bottom:25px;
+    letter-spacing:5px;
+    text-shadow:4px 4px 18px rgba(0,0,0,0.6);
+}
+
+.hero p{
+    font-size:24px;
+    max-width:950px;
+    margin:auto;
+    line-height:1.9;
+}
+
+/* TITLES */
+
+.section-title{
+    text-align:center;
+    margin-top:100px;
+    margin-bottom:60px;
+    font-size:50px;
+    color:#0096c7;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:140px;
+    height:5px;
+    background:#48cae4;
+    display:block;
+    margin:18px auto;
+    border-radius:10px;
+}
+
+/* GRID */
+
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:38px;
+
+    padding:20px 65px 90px;
+
+    max-width:1600px;
+    margin:auto;
+}
+
+/* CARDS */
+
+.card{
+    background:white;
+    border-radius:28px;
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+
+    transition:0.45s;
+}
+
+.card:hover{
+    transform:translateY(-14px) scale(1.04);
+    box-shadow:0 20px 45px rgba(0,0,0,0.22);
+}
+
+.place-img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:24px;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#0096c7;
+    font-size:27px;
+}
+
+.card p{
+    font-size:15px;
+    line-height:1.9;
+    color:#555;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0096c7;
+    color:white;
+    text-align:center;
+    padding:50px;
+    margin-top:50px;
+}
+
+footer h3{
+    margin-bottom:14px;
+    font-size:32px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+.places-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:56px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.places-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Explore Maldives 🇲🇻</h1>
+
+<p>
+Escape into crystal-clear lagoons, glowing beaches,
+luxury water villas, underwater restaurants,
+tropical marine adventures, and dreamy island paradise experiences
+across the Maldives.
+</p>
+
+</div>
+
+</section>
+
+<!-- LUXURY ESCAPES -->
+
+<h2 class="section-title">🏝 Luxury Island Escapes</h2>
+
+<div class="places-container">
+
+<!-- OVERWATER VILLAS -->
+
+<div class="card">
+
+<a href="WaterVillas/WaterVillas.html">
+
+<img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Overwater Villas</h3>
+
+<p>
+Private infinity pools,
+glass floors,
+and breathtaking turquoise ocean views.
+</p>
+
+</div>
+
+</div>
+
+<!-- PRIVATE ISLANDS -->
+
+<div class="card">
+
+<a href="PrivateIslands/PrivateIslands.html">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Private Island Resorts</h3>
+
+<p>
+Exclusive tropical escapes
+with luxury spas, beaches,
+and romantic sunset dinners.
+</p>
+
+</div>
+
+</div>
+
+<!-- NORTH MALE -->
+
+<div class="card">
+
+<a href="NorthMale/NorthMale.html">
+
+<img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>North Malé Atoll</h3>
+
+<p>
+Luxury resorts,
+beautiful lagoons,
+and exciting island adventures.
+</p>
+
+</div>
+
+</div>
+
+<!-- SOUTH ARI -->
+
+<div class="card">
+
+<a href="SouthAri/SouthAri.html">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>South Ari Atoll</h3>
+
+<p>
+World-famous island paradise
+with crystal waters and luxury beach experiences.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- MARINE ADVENTURES -->
+
+<h2 class="section-title">🐠 Underwater Adventures</h2>
+
+<div class="places-container">
+
+<!-- SCUBA -->
+
+<div class="card">
+
+<a href="Scuba/Scuba.html">
+
+<img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Scuba Diving</h3>
+
+<p>
+Explore coral reefs,
+shipwrecks,
+and vibrant tropical marine life.
+</p>
+
+</div>
+
+</div>
+
+<!-- WHALE SHARK -->
+
+<div class="card">
+
+<a href="WhaleSharks/WhaleSharks.html">
+
+<img src="https://images.unsplash.com/photo-1560275619-4662e36fa65c?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Whale Shark Encounters</h3>
+
+<p>
+Swim beside giant whale sharks
+in the clear blue waters of the Maldives.
+</p>
+
+</div>
+
+</div>
+
+<!-- UNDERWATER RESTAURANT -->
+
+<div class="card">
+
+<a href="UnderwaterDining/UnderwaterDining.html">
+
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Underwater Restaurants</h3>
+
+<p>
+Dine beneath the ocean
+surrounded by tropical fish and coral reefs.
+</p>
+
+</div>
+
+</div>
+
+<!-- SNORKELING -->
+
+<div class="card">
+
+<a href="Snorkeling/Snorkeling.html">
+
+<img src="https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Snorkeling Lagoons</h3>
+
+<p>
+Discover colorful coral gardens
+and crystal-clear shallow lagoons.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- UNIQUE MALDIVES -->
+
+<h2 class="section-title">✨ Unique Maldives Experiences</h2>
+
+<div class="places-container">
+
+<!-- GLOWING BEACH -->
+
+<div class="card">
+
+<a href="Vaadhoo/Vaadhoo.html">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Vaadhoo Glowing Beach</h3>
+
+<p>
+Witness the magical Sea of Stars
+where bioluminescent waves glow at night.
+</p>
+
+</div>
+
+</div>
+
+<!-- SANDBANK -->
+
+<div class="card">
+
+<a href="Sandbank/Sandbank.html">
+
+<img src="https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Sandbank Picnics</h3>
+
+<p>
+Relax on tiny white-sand islands
+surrounded by endless turquoise waters.
+</p>
+
+</div>
+
+</div>
+
+<!-- DOLPHIN -->
+
+<div class="card">
+
+<a href="DolphinCruise/DolphinCruise.html">
+
+<img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Dolphin Cruises</h3>
+
+<p>
+Watch playful dolphins
+during magical sunset boat rides.
+</p>
+
+</div>
+
+</div>
+
+<!-- WATER SPORTS -->
+
+<div class="card">
+
+<a href="WaterSports/WaterSports.html">
+
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Water Sports</h3>
+
+<p>
+Jet skiing,
+parasailing,
+kayaking, and exciting ocean adventures.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ROMANTIC -->
+
+<h2 class="section-title">💖 Romantic Paradise</h2>
+
+<div class="places-container">
+
+<!-- SUNSET DINING -->
+
+<div class="card">
+
+<a href="SunsetDining/SunsetDining.html">
+
+<img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Sunset Dining</h3>
+
+<p>
+Candlelight dinners
+on private beaches under golden skies.
+</p>
+
+</div>
+
+</div>
+
+<!-- SPA -->
+
+<div class="card">
+
+<a href="SpaRetreats/SpaRetreats.html">
+
+<img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Ocean Spa Retreats</h3>
+
+<p>
+Relaxing luxury spa treatments
+with breathtaking sea views.
+</p>
+
+</div>
+
+</div>
+
+<!-- SUNSET CRUISE -->
+
+<div class="card">
+
+<a href="SunsetCruise/SunsetCruise.html">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Sunset Cruises</h3>
+
+<p>
+Romantic yacht cruises
+through glowing tropical waters.
+</p>
+
+</div>
+
+</div>
+
+<!-- FLOATING BREAKFAST -->
+
+<div class="card">
+
+<a href="FloatingBreakfast/FloatingBreakfast.html">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Floating Breakfasts</h3>
+
+<p>
+Luxury breakfast experiences
+served directly in private infinity pools.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>Maldives Travel Guide ✈️</h3>
+
+<p>
+Explore glowing beaches, underwater adventures,
+luxury water villas,
+marine life experiences, and unforgettable island paradise escapes.
+</p>
+
+</footer>
+
+</body>
+</html>

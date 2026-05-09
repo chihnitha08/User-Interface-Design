@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nami Island Tourism</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:#f4fff4;
+    color:#333;
+}
+
+header{
+    background:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1600&auto=format&fit=crop')
+    no-repeat center center/cover;
+
+    height:420px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    text-shadow:2px 2px 8px black;
+}
+
+header h1{
+    font-size:60px;
+    background:rgba(0,0,0,0.5);
+    padding:15px 35px;
+    border-radius:12px;
+}
+
+nav{
+    background:#588157;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#d8f3dc;
+}
+
+section{
+    padding:50px;
+}
+
+h2{
+    color:#588157;
+}
+
+.places{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.card{
+    width:320px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+
+    box-shadow:0px 5px 15px rgba(0,0,0,0.2);
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+button{
+    background:#588157;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#3a5a40;
+}
+
+footer{
+    background:#588157;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Explore Nami Island 🍁</h1>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#places">Attractions</a>
+    <a href="#tips">Travel Tips</a>
+</nav>
+
+<section id="about">
+
+<h2>About Nami Island</h2>
+
+<p>
+    Nami Island is one of South Korea’s most romantic destinations,
+    famous for tree-lined roads, autumn scenery, and peaceful nature.
+</p>
+
+</section>
+
+<section id="places">
+
+<h2>Top Attractions</h2>
+
+<div class="places">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop">
+
+<div class="card-content">
+
+<h3>Tree Roads</h3>
+
+<p>
+    Walk through beautiful tree tunnels filled with
+    dreamy seasonal colors.
+</p>
+
+<button>Explore</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1200&auto=format&fit=crop">
+
+<div class="card-content">
+
+<h3>Nature Walks</h3>
+
+<p>
+    Peaceful walking paths surrounded by forests,
+    rivers, and calm landscapes.
+</p>
+
+<button>Explore</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1522383225653-ed111181a951?q=80&w=1200&auto=format&fit=crop">
+
+<div class="card-content">
+
+<h3>Autumn Scenery</h3>
+
+<p>
+    Experience magical orange and red leaves during
+    the famous Korean autumn season.
+</p>
+
+<button>Explore</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="tips">
+
+<h2>Travel Tips</h2>
+
+<p>
+Best time to visit: Autumn and Spring.<br><br>
+
+Take a ferry ride to the island.<br><br>
+
+Perfect destination for couples and photography lovers.
+</p>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Nami Island Tourism | South Korea
+</p>
+
+</footer>
+
+</body>
+</html>

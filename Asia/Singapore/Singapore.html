@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore Singapore</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to bottom,#f2fff9,#d9fff0);
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+
+    background-image:url('https://images.unsplash.com/photo-1525625293386-3f8f99389edd?q=80&w=1800&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:85px;
+    margin-bottom:20px;
+    letter-spacing:4px;
+    text-shadow:3px 3px 12px rgba(0,0,0,0.5);
+}
+
+.hero p{
+    font-size:24px;
+    max-width:850px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* TITLES */
+
+.section-title{
+    text-align:center;
+    margin-top:90px;
+    margin-bottom:50px;
+    font-size:48px;
+    color:#009966;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:120px;
+    height:5px;
+    background:#00cc88;
+    display:block;
+    margin:15px auto;
+    border-radius:10px;
+}
+
+/* GRID */
+
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:35px;
+
+    padding:20px 60px 80px;
+
+    max-width:1500px;
+    margin:auto;
+}
+
+/* CARDS */
+
+.card{
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+
+    box-shadow:0 12px 30px rgba(0,0,0,0.15);
+
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-12px) scale(1.03);
+}
+
+.place-img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:22px;
+}
+
+.card h3{
+    margin-bottom:14px;
+    color:#009966;
+    font-size:25px;
+}
+
+.card p{
+    font-size:15px;
+    line-height:1.8;
+    color:#555;
+}
+
+/* FOOTER */
+
+footer{
+    background:#009966;
+    color:white;
+    text-align:center;
+    padding:40px;
+    margin-top:50px;
+}
+
+footer h3{
+    margin-bottom:12px;
+    font-size:28px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+.places-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.places-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Explore Singapore 🇸🇬</h1>
+
+<p>
+Experience futuristic skylines, glowing gardens,
+luxury shopping streets, tropical attractions,
+world-famous food markets, and vibrant city adventures
+across beautiful Singapore.
+</p>
+
+</div>
+
+</section>
+
+<!-- CITY LIFE -->
+
+<h2 class="section-title">🌆 Futuristic City Vibes</h2>
+
+<div class="places-container">
+
+<!-- MARINA BAY -->
+
+<div class="card">
+
+<a href="MarinaBay/MarinaBay.html">
+
+<img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Marina Bay</h3>
+
+<p>
+Luxury skyline views,
+iconic architecture,
+and magical city lights by the waterfront.
+</p>
+
+</div>
+
+</div>
+
+<!-- ORCHARD ROAD -->
+
+<div class="card">
+
+<a href="OrchardRoad/OrchardRoad.html">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Orchard Road</h3>
+
+<p>
+Luxury shopping malls,
+stylish cafés,
+and vibrant modern city energy.
+</p>
+
+</div>
+
+</div>
+
+<!-- CLARKE QUAY -->
+
+<div class="card">
+
+<a href="ClarkeQuay/ClarkeQuay.html">
+
+<img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Clarke Quay</h3>
+
+<p>
+Colorful riverside nightlife,
+music spots,
+and glowing evening vibes.
+</p>
+
+</div>
+
+</div>
+
+<!-- CHINATOWN -->
+
+<div class="card">
+
+<a href="Chinatown/Chinatown.html">
+
+<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Chinatown</h3>
+
+<p>
+Lantern streets,
+traditional markets,
+and cultural city experiences.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- NATURE -->
+
+<h2 class="section-title">🌿 Nature & Scenic Escapes</h2>
+
+<div class="places-container">
+
+<!-- GARDENS BY THE BAY -->
+
+<div class="card">
+
+<a href="GardensByTheBay/GardensByTheBay.html">
+
+<img src="https://images.unsplash.com/photo-1508964942454-1a56651d54ac?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Gardens By The Bay</h3>
+
+<p>
+Futuristic supertrees,
+glowing gardens,
+and breathtaking night shows.
+</p>
+
+</div>
+
+</div>
+
+<!-- SENTOSA -->
+
+<div class="card">
+
+<a href="Sentosa/Sentosa.html">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Sentosa Island</h3>
+
+<p>
+Beach resorts,
+theme parks,
+and tropical island adventures.
+</p>
+
+</div>
+
+</div>
+
+<!-- BOTANIC GARDENS -->
+
+<div class="card">
+
+<a href="BotanicGardens/BotanicGardens.html">
+
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Singapore Botanic Gardens</h3>
+
+<p>
+Peaceful greenery,
+beautiful orchids,
+and relaxing nature walks.
+</p>
+
+</div>
+
+</div>
+
+<!-- MACRITCHIE -->
+
+<div class="card">
+
+<a href="MacRitchie/MacRitchie.html">
+
+<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>MacRitchie Reservoir</h3>
+
+<p>
+Forest trails,
+treetop walks,
+and scenic outdoor adventures.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOD -->
+
+<h2 class="section-title">🍜 Singapore Food Heaven</h2>
+
+<div class="places-container">
+
+<!-- MAXWELL -->
+
+<div class="card">
+
+<a href="Maxwell/Maxwell.html">
+
+<img src="https://images.unsplash.com/photo-1553163147-622ab57be1c7?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Maxwell Food Centre</h3>
+
+<p>
+Famous hawker stalls,
+Hainanese chicken rice,
+and authentic Singapore flavors.
+</p>
+
+</div>
+
+</div>
+
+<!-- LAU PA SAT -->
+
+<div class="card">
+
+<a href="LauPaSat/LauPaSat.html">
+
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Lau Pa Sat</h3>
+
+<p>
+Satay streets,
+night food markets,
+and delicious local dishes.
+</p>
+
+</div>
+
+</div>
+
+<!-- LITTLE INDIA -->
+
+<div class="card">
+
+<a href="LittleIndia/LittleIndia.html">
+
+<img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Little India</h3>
+
+<p>
+Colorful streets,
+Indian cuisine,
+and vibrant cultural food experiences.
+</p>
+
+</div>
+
+</div>
+
+<!-- BUGIS -->
+
+<div class="card">
+
+<a href="Bugis/Bugis.html">
+
+<img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Bugis Street</h3>
+
+<p>
+Street shopping,
+desserts,
+and trendy café experiences.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ROMANTIC -->
+
+<h2 class="section-title">💖 Romantic Singapore</h2>
+
+<div class="places-container">
+
+<!-- MERLION -->
+
+<div class="card">
+
+<a href="Merlion/Merlion.html">
+
+<img src="https://images.unsplash.com/photo-1496939376851-89342e90adcd?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Merlion Park</h3>
+
+<p>
+Beautiful skyline views,
+waterfront walks,
+and dreamy evening scenery.
+</p>
+
+</div>
+
+</div>
+
+<!-- JEWEL CHANGI -->
+
+<div class="card">
+
+<a href="JewelChangi/JewelChangi.html">
+
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Jewel Changi</h3>
+
+<p>
+Indoor waterfalls,
+luxury attractions,
+and magical futuristic beauty.
+</p>
+
+</div>
+
+</div>
+
+<!-- HELIX BRIDGE -->
+
+<div class="card">
+
+<a href="HelixBridge/HelixBridge.html">
+
+<img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Helix Bridge</h3>
+
+<p>
+Glowing bridge lights,
+romantic night walks,
+and stunning marina views.
+</p>
+
+</div>
+
+</div>
+
+<!-- EAST COAST -->
+
+<div class="card">
+
+<a href="EastCoast/EastCoast.html">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>East Coast Park</h3>
+
+<p>
+Beach sunsets,
+cycling paths,
+and peaceful romantic seaside vibes.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>Singapore Travel Guide ✈️</h3>
+
+<p>
+Explore futuristic gardens, luxury skylines,
+hawker food markets,
+island adventures, and unforgettable city experiences.
+</p>
+
+</footer>
+
+</body>
+</html>

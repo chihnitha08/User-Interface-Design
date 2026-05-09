@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore Philippines</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to bottom,#fff8f0,#ffe6d5);
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+
+    background-image:url('https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?q=80&w=1800&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to bottom,rgba(0,0,0,0.35),rgba(0,0,0,0.65));
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:95px;
+    margin-bottom:25px;
+    letter-spacing:5px;
+    text-shadow:4px 4px 18px rgba(0,0,0,0.6);
+}
+
+.hero p{
+    font-size:24px;
+    max-width:950px;
+    margin:auto;
+    line-height:1.9;
+}
+
+/* TITLES */
+
+.section-title{
+    text-align:center;
+    margin-top:100px;
+    margin-bottom:60px;
+    font-size:50px;
+    color:#ff5e00;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:140px;
+    height:5px;
+    background:#ff9f43;
+    display:block;
+    margin:18px auto;
+    border-radius:10px;
+}
+
+/* GRID */
+
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:38px;
+
+    padding:20px 65px 90px;
+
+    max-width:1600px;
+    margin:auto;
+}
+
+/* CARDS */
+
+.card{
+    background:white;
+    border-radius:28px;
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+
+    transition:0.45s;
+}
+
+.card:hover{
+    transform:translateY(-14px) scale(1.04);
+    box-shadow:0 20px 45px rgba(0,0,0,0.22);
+}
+
+.place-img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:24px;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#ff5e00;
+    font-size:27px;
+}
+
+.card p{
+    font-size:15px;
+    line-height:1.9;
+    color:#555;
+}
+
+/* FOOTER */
+
+footer{
+    background:#ff5e00;
+    color:white;
+    text-align:center;
+    padding:50px;
+    margin-top:50px;
+}
+
+footer h3{
+    margin-bottom:14px;
+    font-size:32px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+.places-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:56px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.places-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Explore Philippines 🇵🇭</h1>
+
+<p>
+Discover turquoise lagoons, hidden tropical islands,
+volcanic landscapes, glowing beaches,
+colorful jeepneys, underwater adventures,
+and breathtaking paradise experiences across the Philippines.
+</p>
+
+</div>
+
+</section>
+
+<!-- ISLAND PARADISE -->
+
+<h2 class="section-title">🏝 Tropical Island Paradise</h2>
+
+<div class="places-container">
+
+<!-- PALAWAN -->
+
+<div class="card">
+
+<a href="Palawan/Palawan.html">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Palawan</h3>
+
+<p>
+Hidden lagoons,
+dramatic limestone cliffs,
+and crystal-clear turquoise waters.
+</p>
+
+</div>
+
+</div>
+
+<!-- BORACAY -->
+
+<div class="card">
+
+<a href="Boracay/Boracay.html">
+
+<img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Boracay</h3>
+
+<p>
+White sand beaches,
+sunset parties,
+and vibrant tropical nightlife.
+</p>
+
+</div>
+
+</div>
+
+<!-- SIARGAO -->
+
+<div class="card">
+
+<a href="Siargao/Siargao.html">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Siargao</h3>
+
+<p>
+Surfing paradise,
+coconut tree roads,
+and chill island café vibes.
+</p>
+
+</div>
+
+</div>
+
+<!-- CEBU -->
+
+<div class="card">
+
+<a href="Cebu/Cebu.html">
+
+<img src="https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Cebu</h3>
+
+<p>
+Waterfalls,
+whale shark encounters,
+and exciting island adventures.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ADVENTURE -->
+
+<h2 class="section-title">🌋 Wild Adventures & Nature</h2>
+
+<div class="places-container">
+
+<!-- BOHOL -->
+
+<div class="card">
+
+<a href="Bohol/Bohol.html">
+
+<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Bohol</h3>
+
+<p>
+Chocolate Hills,
+tiny tarsier monkeys,
+and lush jungle adventures.
+</p>
+
+</div>
+
+</div>
+
+<!-- MAYON -->
+
+<div class="card">
+
+<a href="Mayon/Mayon.html">
+
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Mayon Volcano</h3>
+
+<p>
+Perfect cone volcano views
+and thrilling ATV lava trail adventures.
+</p>
+
+</div>
+
+</div>
+
+<!-- SAGADA -->
+
+<div class="card">
+
+<a href="Sagada/Sagada.html">
+
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Sagada</h3>
+
+<p>
+Mountain caves,
+hanging coffins,
+and mystical foggy landscapes.
+</p>
+
+</div>
+
+</div>
+
+<!-- CAMIGUIN -->
+
+<div class="card">
+
+<a href="Camiguin/Camiguin.html">
+
+<img src="https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Camiguin Island</h3>
+
+<p>
+Volcanoes,
+hot springs,
+waterfalls, and peaceful tropical escapes.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- UNIQUE PHILIPPINES -->
+
+<h2 class="section-title">✨ Unique Philippines Experiences</h2>
+
+<div class="places-container">
+
+<!-- JEEPNEY -->
+
+<div class="card">
+
+<a href="Jeepney/Jeepney.html">
+
+<img src="https://images.unsplash.com/photo-1547981609-4b6bf67db7ff?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Colorful Jeepneys</h3>
+
+<p>
+Ride the Philippines’ iconic colorful street transport
+filled with vibrant local culture.
+</p>
+
+</div>
+
+</div>
+
+<!-- UNDERGROUND RIVER -->
+
+<div class="card">
+
+<a href="UndergroundRiver/UndergroundRiver.html">
+
+<img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Puerto Princesa Underground River</h3>
+
+<p>
+Explore magical cave rivers
+hidden beneath limestone mountains.
+</p>
+
+</div>
+
+</div>
+
+<!-- VIGAN -->
+
+<div class="card">
+
+<a href="Vigan/Vigan.html">
+
+<img src="https://images.unsplash.com/photo-1526481280695-3c4691f8f22c?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Vigan</h3>
+
+<p>
+Spanish colonial streets,
+horse carriages,
+and timeless old-world charm.
+</p>
+
+</div>
+
+</div>
+
+<!-- MANILA -->
+
+<div class="card">
+
+<a href="Manila/Manila.html">
+
+<img src="https://images.unsplash.com/photo-1536599018102-9f803c140fc1?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Manila</h3>
+
+<p>
+Skyline rooftop bars,
+nightlife,
+street food, and modern city energy.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ROMANTIC -->
+
+<h2 class="section-title">💖 Dreamy Romantic Escapes</h2>
+
+<div class="places-container">
+
+<!-- EL NIDO -->
+
+<div class="card">
+
+<a href="ElNido/ElNido.html">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>El Nido</h3>
+
+<p>
+Kayaking through hidden lagoons
+with magical tropical sunsets.
+</p>
+
+</div>
+
+</div>
+
+<!-- CORON -->
+
+<div class="card">
+
+<a href="Coron/Coron.html">
+
+<img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Coron</h3>
+
+<p>
+Turquoise lakes,
+shipwreck diving,
+and peaceful island romance.
+</p>
+
+</div>
+
+</div>
+
+<!-- BANTAYAN -->
+
+<div class="card">
+
+<a href="Bantayan/Bantayan.html">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Bantayan Island</h3>
+
+<p>
+Quiet beaches,
+crystal waters,
+and relaxing island paradise vibes.
+</p>
+
+</div>
+
+</div>
+
+<!-- APO -->
+
+<div class="card">
+
+<a href="ApoIsland/ApoIsland.html">
+
+<img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1200&auto=format&fit=crop"
+class="place-img">
+
+</a>
+
+<div class="card-content">
+
+<h3>Apo Island</h3>
+
+<p>
+Swim beside sea turtles
+in beautiful coral reef waters.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>Philippines Travel Guide ✈️</h3>
+
+<p>
+Explore tropical islands, volcano adventures,
+underwater wonders,
+colorful culture, surfing escapes,
+and unforgettable paradise experiences across the Philippines.
+</p>
+
+</footer>
+
+</body>
+</html>
