@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Madang</title>
+<style>
+body{margin:0;font-family:Segoe UI;background:#f4fff9;}
+header{
+height:60vh;
+background:url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21');
+background-size:cover;
+display:flex;align-items:center;justify-content:center;
+color:white;position:relative;
+}
+header::after{content:'';position:absolute;width:100%;height:100%;background:rgba(0,50,40,0.6);}
+header h1{position:relative;font-size:60px;}
+
+nav{text-align:center;background:#145c3a;padding:15px;}
+nav a{color:white;margin:10px;text-decoration:none;}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:40px;}
+.card{background:white;padding:10px;border-radius:10px;}
+.card img{width:100%;height:180px;object-fit:cover;}
+
+footer{background:#145c3a;color:white;text-align:center;padding:20px;}
+</style>
+</head>
+<body>
+
+<header><h1>Madang 🇵🇬</h1></header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#attractions">Attractions</a>
+<a href="#tips">Tips</a>
+</nav>
+
+<section style="padding:40px;">
+<p>Madang is a coastal paradise with lagoons, islands, and rich marine life.</p>
+</section>
+
+<section>
+<div class="cards">
+<div class="card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"><h3>Lagoon Views</h3></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2"><h3>Dive Sites</h3></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"><h3>Island Hopping</h3></div>
+</div>
+</section>
+
+<footer>Madang Guide</footer>
+
+</body>
+</html>

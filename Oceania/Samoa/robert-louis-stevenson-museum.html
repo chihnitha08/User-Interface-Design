@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Robert Louis Stevenson Museum</title>
+
+<style>
+body{margin:0;font-family:Segoe UI;background:#f1fff7;}
+
+header{
+height:60vh;
+background:url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429');
+background-size:cover;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+position:relative;
+}
+
+header::after{
+content:'';
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,50,70,0.6);
+}
+
+h1{position:relative;font-size:50px;}
+
+nav{background:#0b5d4b;padding:15px;text-align:center;}
+nav a{color:white;margin:10px;text-decoration:none;}
+
+.section{padding:40px;}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+
+.card{background:white;padding:15px;border-radius:10px;}
+
+.card img{width:100%;border-radius:10px;}
+
+footer{background:#0b5d4b;color:white;text-align:center;padding:20px;}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>R.L. Stevenson Museum</h1>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#attractions">Attractions</a>
+<a href="#tips">Tips</a>
+</nav>
+
+<section class="section">
+<p>Historic home of writer Robert Louis Stevenson overlooking Mount Vaea.</p>
+</section>
+
+<section class="section">
+<div class="cards">
+<div class="card"><img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66"><p>Museum House</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"><p>Gardens</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"><p>Viewpoint</p></div>
+</div>
+</section>
+
+<section class="section">
+<ul>
+<li>Guided tours available</li>
+<li>Learn Samoan literary history</li>
+<li>Great panoramic views</li>
+</ul>
+</section>
+
+<footer>Stevenson Museum 📚</footer>
+
+</body>
+</html>
