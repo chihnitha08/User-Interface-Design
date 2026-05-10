@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Bangkok</title>
+
+<style>
+body{margin:0;font-family:Arial;background:#eef8ff;}
+header{
+background:url('https://images.unsplash.com/photo-1508009603885-50cf7c579365?q=80&w=1600&auto=format&fit=crop')
+center/cover;height:400px;display:flex;justify-content:center;align-items:center;color:white;
+text-shadow:2px 2px 8px black;
+}
+header h1{background:rgba(0,0,0,0.5);padding:15px 30px;border-radius:10px;font-size:55px;}
+nav{background:#d35400;text-align:center;padding:15px;}
+nav a{color:white;margin:15px;text-decoration:none;font-weight:bold;}
+section{padding:40px;}
+h2{color:#d35400;}
+.places{display:flex;gap:20px;flex-wrap:wrap;}
+.card{width:300px;background:white;border-radius:10px;overflow:hidden;box-shadow:0 4px 10px rgba(0,0,0,0.2);}
+.card img{width:100%;height:200px;object-fit:cover;}
+.card-content{padding:15px;}
+footer{background:#d35400;color:white;text-align:center;padding:20px;}
+</style>
+</head>
+
+<body>
+
+<header><h1>Bangkok 🌆</h1></header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#places">Attractions</a>
+<a href="#tips">Tips</a>
+</nav>
+
+<section id="about">
+<h2>About Bangkok</h2>
+<p>Thailand’s capital full of nightlife, temples, shopping malls and street food energy.</p>
+</section>
+
+<section id="places">
+<h2>Top Attractions</h2>
+
+<div class="places">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1547981609-4b6c6b1c3f3d">
+<div class="card-content">
+<h3>Grand Palace</h3>
+<p>Royal architecture and sacred history.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1528181304800-259b08848526">
+<div class="card-content">
+<h3>Wat Arun</h3>
+<p>Temple of Dawn by the river.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365">
+<div class="card-content">
+<h3>Chatuchak Market</h3>
+<p>Huge weekend shopping paradise.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="tips">
+<h2>Travel Tips</h2>
+<p>Try street food, use BTS Skytrain, visit temples early morning.</p>
+</section>
+
+<footer>© Bangkok Travel Guide</footer>
+
+</body>
+</html>
