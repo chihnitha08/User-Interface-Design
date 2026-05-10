@@ -246,23 +246,7 @@
   <p class="map-section-title">
     Or explore by region — click a continent on the map below
   </p>
-  <div class="map-container">
-    <img src="IMAGES/WorldMap.png" usemap="#image-map" id="WorldMap">
-  </div>
-  <map name="image-map">
-    <area target="_self" alt="North America"  title="North America"  href="NorthAmerica/North America.html" coords="52,308,79,142,207,180,448,74,435,143,500,286,505,371,420,459,447,495,406,511,403,542,227,595" shape="poly">
-    <area target="_self" alt="South America"  title="South America"  href="SouthAmerica/South America.html" coords="296,615,481,496,597,609,513,756,428,872" shape="poly">
-    <area target="_self" alt="Europe"         title="Europe"         href="Europe/Europe.html"               coords="654,320,766,188,926,204,937,261,863,398,774,432,661,438" shape="poly">
-    <area target="_self" alt="Asia"           title="Asia"           href="Asia/asia.html"                   coords="839,417,881,397,1025,97,1418,185,1089,593,994,568,859,524" shape="poly">
-    <area target="_self" alt="Africa"         title="Africa"         href="Africa/Africa.html"               coords="638,455,815,440,854,531,876,569,908,707,796,736,752,741,621,534" shape="poly">
-    <area target="_self" alt="Oceania"        title="Oceania"        href="Oceania/Oceania.html"             coords="952,727,1273,438,1448,704,1403,890,1178,981" shape="poly">
-  </map>
-
-  <script src="js/script.js"></script>
-  <script src="https://unpkg.com/image-map-resizer/js/imageMapResizer.min.js"></script>
-  <script>
-    window.addEventListener("load", function () { imageMapResize(); });
-
+ <script>
     // Quick mood tab filter (without page reload)
     function filterByMood(mood) {
       // Update active tab styling
@@ -300,6 +284,12 @@
     <area target="_self" alt="Africa"         href="Africa/Africa.html"               coords="638,455,815,440,854,531,876,569,908,707,796,736,752,741,621,534" shape="poly">
     <area target="_self" alt="Oceania"        href="Oceania/Oceania.html"             coords="952,727,1273,438,1448,704,1403,890,1178,981" shape="poly">
   </map>
-</section>
+  </section>
+  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/image-map-resizer/js/imageMapResizer.min.js"></script>
+  <script>
+    window.addEventListener("load", function () { imageMapResize(); });
+</script>
+
 </body>
 </html>
