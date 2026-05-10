@@ -1,86 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
 <title>Lalomanu Beach</title>
 
 <style>
-body{margin:0;font-family:Segoe UI;background:#f0fff8;}
+body{margin:0;font-family:Arial;background:#f0fbff;color:#333;}
 
 header{
-height:60vh;
-background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
-background-size:cover;
-display:flex;
-align-items:center;
-justify-content:center;
-color:white;
-position:relative;
+background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop')
+center/cover;height:400px;
+display:flex;justify-content:center;align-items:center;
+color:white;text-shadow:2px 2px 8px black;
 }
 
-header::after{
-content:'';
-position:absolute;
-width:100%;
-height:100%;
-background:rgba(0,60,80,0.5);
-}
+header h1{font-size:55px;background:rgba(0,0,0,0.5);padding:15px;border-radius:10px;}
 
-h1{position:relative;font-size:55px;}
+nav{background:#009688;text-align:center;padding:15px;}
+nav a{color:white;margin:20px;text-decoration:none;font-weight:bold;}
 
-nav{
-background:#00796b;
-padding:15px;
-text-align:center;
-}
+section{padding:40px;}
+h2{color:#009688;}
 
-nav a{color:white;margin:10px;text-decoration:none;}
+.places{display:flex;flex-wrap:wrap;gap:25px;}
 
-.section{padding:40px;}
+.card{width:300px;background:white;border-radius:12px;overflow:hidden;}
 
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.card img{width:100%;height:200px;object-fit:cover;}
+.card-content{padding:20px;}
 
-.card{background:white;padding:15px;border-radius:10px;}
+button{background:#ff7043;color:white;border:none;padding:10px 18px;border-radius:5px;}
 
-.card img{width:100%;border-radius:10px;}
-
-footer{background:#00796b;color:white;text-align:center;padding:20px;}
+footer{background:#009688;color:white;text-align:center;padding:20px;}
 </style>
+
 </head>
 
 <body>
 
-<header>
-<h1>Lalomanu Beach</h1>
-</header>
+<header><h1>Lalomanu Beach 🏖️</h1></header>
 
 <nav>
 <a href="#about">About</a>
-<a href="#attractions">Attractions</a>
+<a href="#places">Attractions</a>
 <a href="#tips">Tips</a>
 </nav>
 
-<section class="section" id="about">
-<p>One of Samoa’s most beautiful beaches with crystal clear water and white sand.</p>
+<section id="about">
+<h2>About Lalomanu Beach</h2>
+<p>
+One of Samoa’s most beautiful beaches with crystal clear water,
+white sand, and palm-lined shores.
+</p>
 </section>
 
-<section class="section" id="attractions">
-<div class="cards">
-<div class="card"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"><p>Lagoon View</p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2"><p>Coral Reef</p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e"><p>Beach Huts</p></div>
+<section id="places">
+
+<h2>Top Attractions</h2>
+
+<div class="places">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+<div class="card-content">
+<h3>Beachfront View</h3>
+<p>Relax with stunning turquoise ocean views.</p>
+<button>Explore</button>
 </div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2">
+<div class="card-content">
+<h3>Coral Reefs</h3>
+<p>Snorkel among colorful marine life.</p>
+<button>Explore</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+<div class="card-content">
+<h3>Beach Huts</h3>
+<p>Traditional seaside fale huts for relaxation.</p>
+<button>Explore</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+<div class="card-content">
+<h3>Sunrise Point</h3>
+<p>Perfect spot for early morning views.</p>
+<button>Explore</button>
+</div>
+</div>
+
+</div>
+
 </section>
 
-<section class="section">
-<ul>
-<li>Best sunrise spot in Samoa</li>
-<li>Snorkeling recommended</li>
-<li>Stay in beach fales</li>
-</ul>
+<section id="tips">
+<h2>Travel Tips</h2>
+<p>Bring reef-safe sunscreen and visit during calm tide hours.</p>
 </section>
 
-<footer>Lalomanu Paradise 🌊</footer>
+<footer><p>© Samoa Beaches</p></footer>
 
 </body>
 </html>

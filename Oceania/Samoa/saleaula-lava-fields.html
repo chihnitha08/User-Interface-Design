@@ -2,75 +2,44 @@
 <html>
 <head>
 <title>Saleaula Lava Fields</title>
+
 <style>
-body{margin:0;font-family:Segoe UI;background:#f5f5f5;}
-
-header{
-height:60vh;
-background:url('https://images.unsplash.com/photo-1501785888041-af3ef285d2b2');
-background-size:cover;
-display:flex;
-justify-content:center;
-align-items:center;
-color:white;
-position:relative;
-}
-
-header::after{
-content:'';
-position:absolute;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.5);
-}
-
-h1{position:relative;font-size:55px;}
-
-nav{background:#424242;padding:15px;text-align:center;}
-nav a{color:white;margin:10px;text-decoration:none;}
-
-.section{padding:40px;}
-
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-
-.card{background:white;padding:15px;border-radius:10px;}
-
-.card img{width:100%;border-radius:10px;}
-
-footer{background:#424242;color:white;text-align:center;padding:20px;}
+body{margin:0;font-family:Arial;background:#f3fbff;}
+header{background:url('https://images.unsplash.com/photo-1482192596544-9eb780fc7f66') center/cover;height:400px;display:flex;justify-content:center;align-items:center;color:white;text-shadow:2px 2px 8px black;}
+header h1{font-size:55px;background:rgba(0,0,0,0.5);padding:15px;border-radius:10px;}
+nav{background:#6d4c41;text-align:center;padding:15px;}
+nav a{color:white;margin:20px;text-decoration:none;font-weight:bold;}
+section{padding:40px;}
+h2{color:#6d4c41;}
+.places{display:flex;flex-wrap:wrap;gap:25px;}
+.card{width:300px;background:white;border-radius:12px;overflow:hidden;}
+.card img{width:100%;height:200px;object-fit:cover;}
+.card-content{padding:20px;}
+button{background:#ff7043;color:white;border:none;padding:10px 18px;border-radius:5px;}
+footer{background:#6d4c41;color:white;text-align:center;padding:20px;}
 </style>
 </head>
 <body>
 
-<header><h1>Saleaula Lava Fields</h1></header>
+<header><h1>Saleaula Lava Fields 🌋</h1></header>
 
-<nav>
-<a href="#about">About</a>
-<a href="#attractions">Attractions</a>
-<a href="#tips">Tips</a>
-</nav>
+<nav><a href="#about">About</a><a href="#places">Attractions</a><a href="#tips">Tips</a></nav>
 
-<section class="section">
-<p>Volcanic lava landscapes covering ancient villages.</p>
-</section>
+<section id="about"><h2>About</h2><p>Volcanic lava landscapes formed by past eruptions.</p></section>
 
-<section class="section">
-<div class="cards">
-<div class="card"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"><p>Lava Rock</p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"><p>Coast View</p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e"><p>Ruins</p></div>
+<section id="places">
+<h2>Top Attractions</h2>
+<div class="places">
+<div class="card"><img src="https://images.unsplash.com/photo-1500375592092"><div class="card-content"><h3>Lava Ruins</h3><button>Explore</button></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1507525428034"><div class="card-content"><h3>Buried Church</h3><button>Explore</button></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1501785888041"><div class="card-content"><h3>Black Rock Fields</h3><button>Explore</button></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1470770841072"><div class="card-content"><h3>Coastal Lava</h3><button>Explore</button></div></div>
 </div>
 </section>
 
-<section class="section">
-<ul>
-<li>Wear shoes for rough terrain</li>
-<li>Respect sacred areas</li>
-<li>Bring water</li>
-</ul>
-</section>
+<section id="tips"><h2>Tips</h2><p>Wear sun protection as area is open and hot.</p></section>
 
-<footer>Lava Fields 🌋</footer>
+<footer>© Samoa Volcano Trails</footer>
 
 </body>
 </html>

@@ -2,68 +2,108 @@
 <html>
 <head>
 <title>To Sua Ocean Trench</title>
+
 <style>
-body{margin:0;font-family:Segoe UI;background:#eefcff;}
+body{margin:0;font-family:Arial;background:#f3fbff;color:#333;}
+
 header{
-height:60vh;
-background:url('https://images.unsplash.com/photo-1501785888041-af3ef285d2b2');
-background-size:cover;
-display:flex;
-justify-content:center;
-align-items:center;
-color:white;
-position:relative;
+background:url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1600&auto=format&fit=crop')
+center/cover;height:400px;
+display:flex;justify-content:center;align-items:center;
+color:white;text-shadow:2px 2px 8px black;
 }
-header::after{
-content:'';
-position:absolute;
-background:rgba(0,40,60,0.6);
-width:100%;height:100%;
-}
-h1{position:relative;font-size:55px;}
-nav{background:#00695c;padding:15px;text-align:center;}
-nav a{color:white;margin:10px;text-decoration:none;}
-.section{padding:40px;}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-.card{background:white;padding:15px;border-radius:10px;}
-.card img{width:100%;border-radius:10px;}
+
+header h1{font-size:55px;background:rgba(0,0,0,0.5);padding:15px;border-radius:10px;}
+
+nav{background:#00695c;text-align:center;padding:15px;}
+nav a{color:white;margin:20px;text-decoration:none;font-weight:bold;}
+
+section{padding:40px;}
+h2{color:#00695c;}
+
+.places{display:flex;flex-wrap:wrap;gap:25px;}
+
+.card{width:300px;background:white;border-radius:12px;overflow:hidden;}
+
+.card img{width:100%;height:200px;object-fit:cover;}
+.card-content{padding:20px;}
+
+button{background:#ff5722;color:white;border:none;padding:10px 18px;border-radius:5px;}
+
 footer{background:#00695c;color:white;text-align:center;padding:20px;}
 </style>
+
 </head>
 
 <body>
 
-<header>
-<h1>To Sua Ocean Trench</h1>
-</header>
+<header><h1>To Sua Ocean Trench 🌊</h1></header>
 
 <nav>
 <a href="#about">About</a>
-<a href="#attractions">Attractions</a>
+<a href="#places">Attractions</a>
 <a href="#tips">Tips</a>
 </nav>
 
-<section class="section">
-<p>Natural swimming hole formed by volcanic activity, one of Samoa’s most iconic spots.</p>
+<section id="about">
+<h2>About To Sua Ocean Trench</h2>
+<p>
+A natural swimming hole inside a giant volcanic crater filled with crystal clear ocean water.
+</p>
 </section>
 
-<section class="section">
-<div class="cards">
-<div class="card"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"><p>Cliff Ladder</p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"><p>Blue Lagoon</p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"><p>Ocean Waves</p></div>
+<section id="places">
+
+<h2>Top Attractions</h2>
+
+<div class="places">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+<div class="card-content">
+<h3>Swimming Hole</h3>
+<p>Stunning turquoise water inside lava pit.</p>
+<button>Explore</button>
 </div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+<div class="card-content">
+<h3>Lava Cliff Ladder</h3>
+<p>Wooden ladder leading into the trench.</p>
+<button>Explore</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2">
+<div class="card-content">
+<h3>Ocean Blowhole</h3>
+<p>Nearby coastal rock formations.</p>
+<button>Explore</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+<div class="card-content">
+<h3>Cliff Gardens</h3>
+<p>Surrounding tropical gardens and views.</p>
+<button>Explore</button>
+</div>
+</div>
+
+</div>
+
 </section>
 
-<section class="section">
-<ul>
-<li>Use ladder carefully</li>
-<li>Best in calm weather</li>
-<li>Bring waterproof shoes</li>
-</ul>
+<section id="tips">
+<h2>Travel Tips</h2>
+<p>Be careful while climbing ladder; best visited in calm weather.</p>
 </section>
 
-<footer>To Sua Adventure 🌋</footer>
+<footer><p>© Samoa Nature Spots</p></footer>
 
 </body>
 </html>

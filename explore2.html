@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore – Interactive Travel Explorer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="maps.css">
+
+  <!-- Inline styles specific to the explore suggestion grid -->
+  <style>
+    /* ── Explore page heading ── */
+    .explore-header {
+      text-align: center;
+      padding: 40px 20px 10px;
+    }
+    .explore-header h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .filter-badges {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .badge {
+      background: #3a86ff;
+      color: #fff;
+      border-radius: 20px;
+      padding: 5px 16px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .btn-clear {
+      background: transparent;
+      border: 1px solid #aaa;
+      border-radius: 20px;
+      padding: 5px 16px;
+      font-size: 13px;
+      cursor: pointer;
+      color: #555;
+    }
+    .btn-clear:hover { background: #f0f0f0; }
+
+    /* ── Mood quick-filter tabs ── */
+    .mood-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      padding: 10px 20px 20px;
+    }
+    .mood-tab {
+      padding: 7px 18px;
+      border-radius: 30px;
+      border: 2px solid #3a86ff;
+      background: transparent;
+      color: #3a86ff;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .mood-tab:hover,
+    .mood-tab.active {
+      background: #3a86ff;
+      color: #fff;
+    }
+
+    /* ── Destination cards grid ── */
+    #exploreGrid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+      padding: 20px 40px 60px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .dest-card {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,.1);
+      background: #fff;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .dest-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 30px rgba(0,0,0,.18);
+    }
+    .dest-img-wrap {
+      position: relative;
+    }
+    .dest-img-wrap img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+    }
+    .mood-tag {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(58,134,255,.85);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+    .dest-info {
+      padding: 16px;
+    }
+    .dest-info h3 {
+      margin: 0 0 4px;
+      font-size: 1.15rem;
+    }
+    .dest-country {
+      color: #888;
+      font-size: 13px;
+      margin: 0 0 8px;
+    }
+    .dest-desc {
+      font-size: 13px;
+      color: #555;
+      line-height: 1.5;
+      margin-bottom: 14px;
+    }
+    .dest-actions {
+      display: flex;
+      gap: 8px;
+    }
+    .btn-view {
+      flex: 1;
+      padding: 9px;
+      background: #3a86ff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background .2s;
+    }
+    .btn-view:hover { background: #2563eb; }
+    .btn-save {
+      padding: 9px 14px;
+      background: #fff;
+      border: 2px solid #e74c3c;
+      border-radius: 8px;
+      color: #e74c3c;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .btn-save:hover {
+      background: #e74c3c;
+      color: #fff;
+    }
+
+    /* ── No results ── */
+    .no-results {
+      grid-column: 1/-1;
+      text-align: center;
+      padding: 60px 20px;
+      color: #666;
+    }
+    .no-results button {
+      margin-top: 14px;
+      padding: 10px 24px;
+      background: #3a86ff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    /* ── Map section ── */
+    .map-section-title {
+      text-align: center;
+      font-family: papyrus;
+      font-size: 1.2rem;
+      color: #444;
+      padding: 10px 20px 4px;
+      margin: 0;
+    }
+
+    /* ── Fade-in ── */
+    @keyframes fadeIn { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
+    .fade-in { animation: fadeIn .4s ease both; }
+    .map-section { background: var(--white); border-top: 1px solid var(--border); padding: 60px 40px; text-align: center; }
+    .map-label {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: #f0fdf4; border: 1px solid #bbf7d0; color: var(--teal);
+      font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
+      padding: 6px 16px; border-radius: 30px; margin-bottom: 14px;
+    }
+    .map-section h2 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--navy); margin-bottom: 8px; }
+    .map-section p { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+    .map-wrap { max-width: 900px; margin: 0 auto; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+    .map-wrap img { width: 100%; display: block; }
+  </style>
+</head>
+
+<body onload="initExplore(); updateWishCount();">
+
+  <!-- NAVBAR -->
+  <header>
+    <h1>🌍 Interactive Travel Explorer</h1>
+    <nav>
+      <a href="index.html" style="color: black;">🏚️Home</a>
+      <a href="search.html" style="color: black;">🔍 Search</a>
+      <a href="wishlist.html" style="color: black;">❤️Wishlist(<span id="wishCount">0</span>)</a>
+    </nav>
+  </header>
+
+  <!-- EXPLORE HEADING & BADGES -->
+  <div class="explore-header">
+    <h1 id="exploreHeading">✈️ Destinations Just for You</h1>
+    <div class="filter-badges">
+      <span class="badge"  id="moodBadge"      style="display:none"></span>
+      <span class="badge"  id="companionBadge" style="display:none"></span>
+      <button class="btn-clear" onclick="clearFilters()">✕ Clear filters</button>
+    </div>
+  </div>
+
+  <!-- QUICK MOOD TABS -->
+  <div class="mood-tabs">
+    <button class="mood-tab" onclick="filterByMood('')">All</button>
+    <button class="mood-tab" onclick="filterByMood('Adventurous')">🏔 Adventurous</button>
+    <button class="mood-tab" onclick="filterByMood('Relaxing')">🌴 Relaxing</button>
+    <button class="mood-tab" onclick="filterByMood('Cultural')">🏛 Cultural</button>
+    <button class="mood-tab" onclick="filterByMood('Romantic')">💕 Romantic</button>
+    <button class="mood-tab" onclick="filterByMood('Foodie')">🍜 Foodie</button>
+  </div>
+
+  <!-- SUGGESTION GRID -->
+  <div id="exploreGrid"></div>
+
+  <!-- DIVIDER -->
+  <hr style="max-width:900px; margin:0 auto; border:none; border-top:1px solid #e0e0e0;">
+
+  <!-- WORLD MAP (original feature kept) -->
+  <p class="map-section-title">
+    Or explore by region — click a continent on the map below
+  </p>
+  <div class="map-container">
+    <img src="IMAGES/WorldMap.png" usemap="#image-map" id="WorldMap">
+  </div>
+  <map name="image-map">
+    <area target="_self" alt="North America"  title="North America"  href="NorthAmerica/North America.html" coords="52,308,79,142,207,180,448,74,435,143,500,286,505,371,420,459,447,495,406,511,403,542,227,595" shape="poly">
+    <area target="_self" alt="South America"  title="South America"  href="SouthAmerica/South America.html" coords="296,615,481,496,597,609,513,756,428,872" shape="poly">
+    <area target="_self" alt="Europe"         title="Europe"         href="Europe/Europe.html"               coords="654,320,766,188,926,204,937,261,863,398,774,432,661,438" shape="poly">
+    <area target="_self" alt="Asia"           title="Asia"           href="Asia/asia.html"                   coords="839,417,881,397,1025,97,1418,185,1089,593,994,568,859,524" shape="poly">
+    <area target="_self" alt="Africa"         title="Africa"         href="Africa/Africa.html"               coords="638,455,815,440,854,531,876,569,908,707,796,736,752,741,621,534" shape="poly">
+    <area target="_self" alt="Oceania"        title="Oceania"        href="Oceania/Oceania.html"             coords="952,727,1273,438,1448,704,1403,890,1178,981" shape="poly">
+  </map>
+
+  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/image-map-resizer/js/imageMapResizer.min.js"></script>
+  <script>
+    window.addEventListener("load", function () { imageMapResize(); });
+
+    // Quick mood tab filter (without page reload)
+    function filterByMood(mood) {
+      // Update active tab styling
+      document.querySelectorAll(".mood-tab").forEach(btn => {
+        btn.classList.toggle("active",
+          btn.textContent.includes(mood) || (mood === "" && btn.textContent === "All")
+        );
+      });
+
+      // Update badge
+      const badge = document.getElementById("moodBadge");
+      badge.textContent   = mood ? "Mood: " + mood : "";
+      badge.style.display = mood ? "inline-block" : "none";
+
+      // Update heading
+      document.getElementById("exploreHeading").textContent =
+        mood ? `✈️ ${mood} Destinations` : "✈️ All Destinations";
+
+      // Re-render grid
+      renderExploreGrid(mood, "");
+    }
+  </script>
+  <section class="map-section">
+  <span class="map-label" ">🗺 Interactive Map</span>
+  <h2 ">Explore by Region</h2>
+  <p ">Click any continent to dive into local destinations.</p>
+  <div class="map-wrap">
+    <img src="IMAGES/WorldMap.png" usemap="#image-map" id="WorldMap" alt="World Map">
+  </div>
+  <map name="image-map">
+    <area target="_self" alt="North America"  href="NorthAmerica/North America.html" coords="52,308,79,142,207,180,448,74,435,143,500,286,505,371,420,459,447,495,406,511,403,542,227,595" shape="poly">
+    <area target="_self" alt="South America"  href="SouthAmerica/South America.html" coords="296,615,481,496,597,609,513,756,428,872" shape="poly">
+    <area target="_self" alt="Europe"         href="Europe/Europe.html"               coords="654,320,766,188,926,204,937,261,863,398,774,432,661,438" shape="poly">
+    <area target="_self" alt="Asia"           href="Asia/asia.html"                   coords="839,417,881,397,1025,97,1418,185,1089,593,994,568,859,524" shape="poly">
+    <area target="_self" alt="Africa"         href="Africa/Africa.html"               coords="638,455,815,440,854,531,876,569,908,707,796,736,752,741,621,534" shape="poly">
+    <area target="_self" alt="Oceania"        href="Oceania/Oceania.html"             coords="952,727,1273,438,1448,704,1403,890,1178,981" shape="poly">
+  </map>
+</section>
+</body>
+</html>

@@ -2,55 +2,117 @@
 <html>
 <head>
 <title>Sepik River</title>
+
 <style>
-body{margin:0;font-family:Segoe UI;background:#f0fff9;}
+body{margin:0;font-family:Arial;background:#f3fbff;}
+
 header{
-height:60vh;
-background:url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21');
-background-size:cover;
-display:flex;align-items:center;justify-content:center;
-color:white;position:relative;
+background:url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1600&auto=format&fit=crop')
+center/cover;height:400px;
+display:flex;justify-content:center;align-items:center;
+color:white;text-shadow:2px 2px 8px black;
 }
-header::after{content:'';position:absolute;width:100%;height:100%;background:rgba(0,40,20,0.6);}
-header h1{position:relative;font-size:60px;}
 
-nav{background:#145a32;text-align:center;padding:15px;}
-nav a{color:white;margin:10px;text-decoration:none;}
+header h1{
+font-size:55px;
+background:rgba(0,0,0,0.5);
+padding:15px;
+border-radius:10px;
+}
 
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:40px;}
-.card{background:white;padding:10px;border-radius:10px;}
-.card img{width:100%;height:180px;object-fit:cover;}
+nav{background:#006064;text-align:center;padding:15px;}
+nav a{color:white;margin:20px;text-decoration:none;font-weight:bold;}
 
-footer{background:#145a32;color:white;text-align:center;padding:20px;}
+section{padding:40px;}
+h2{color:#006064;}
+
+.places{display:flex;flex-wrap:wrap;gap:25px;}
+
+.card{width:300px;background:white;border-radius:12px;overflow:hidden;}
+
+.card img{width:100%;height:200px;object-fit:cover;}
+
+.card-content{padding:20px;}
+
+button{background:#ff7043;color:white;border:none;padding:10px 18px;border-radius:5px;}
+
+footer{background:#006064;color:white;text-align:center;padding:20px;}
 </style>
 </head>
+
 <body>
 
-<header><h1>Sepik River 🇵🇬</h1></header>
+<header>
+<h1>Sepik River 🌊</h1>
+</header>
 
 <nav>
 <a href="#about">About</a>
-<a href="#attractions">Attractions</a>
+<a href="#places">Attractions</a>
 <a href="#tips">Tips</a>
 </nav>
 
-<section id="about" style="padding:40px;">
-<p>One of the longest river systems, known for tribal culture and carvings.</p>
+<section id="about">
+<h2>About</h2>
+<p>
+The Sepik River is one of the longest rivers in PNG, home to tribal communities and ancient traditions.
+</p>
 </section>
 
-<section id="attractions">
-<div class="cards">
-<div class="card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"><h3>River Villages</h3></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2"><h3>Wood Carving Art</h3></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"><h3>Rainforest Banks</h3></div>
+<section id="places">
+<h2>Top Attractions</h2>
+
+<div class="places">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500530855697">
+<div class="card-content">
+<h3>River Villages</h3>
+<p>Traditional stilt houses along the river.</p>
+<button>Explore</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1501785888041">
+<div class="card-content">
+<h3>Canoe Culture</h3>
+<p>River transportation and lifestyle.</p>
+<button>Explore</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1482192596544">
+<div class="card-content">
+<h3>Wood Carving Art</h3>
+<p>Famous Sepik tribal carvings.</p>
+<button>Explore</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500375592092">
+<div class="card-content">
+<h3>Jungle Riverbanks</h3>
+<p>Dense rainforest scenery.</p>
+<button>Explore</button>
+</div>
+</div>
+
 </div>
 </section>
 
-<section id="tips" style="padding:40px;">
-<p>Travel with guides due to remote jungle terrain.</p>
+<section id="tips">
+<h2>Travel Tips</h2>
+<p>
+Travel by boat with guides and respect tribal customs.
+</p>
 </section>
 
-<footer>Sepik River Guide</footer>
+<footer>
+<p>© Papua New Guinea Travel Guide</p>
+</footer>
 
 </body>
 </html>

@@ -2,51 +2,117 @@
 <html>
 <head>
 <title>Kokoda Track</title>
+
 <style>
-body{margin:0;font-family:Segoe UI;background:#f2fff6;}
+body{margin:0;font-family:Arial;background:#f3fbff;}
+
 header{
-height:60vh;
-background:url('https://images.unsplash.com/photo-1501785888041-af3ef285d2b2');
-background-size:cover;
-display:flex;align-items:center;justify-content:center;
-color:white;position:relative;
+background:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop')
+center/cover;height:400px;
+display:flex;justify-content:center;align-items:center;
+color:white;text-shadow:2px 2px 8px black;
 }
-header::after{content:'';position:absolute;width:100%;height:100%;background:rgba(0,30,20,0.6);}
-header h1{position:relative;font-size:60px;}
 
-nav{text-align:center;background:#1a4d3a;padding:15px;}
-nav a{color:white;margin:10px;text-decoration:none;}
+header h1{
+font-size:55px;
+background:rgba(0,0,0,0.5);
+padding:15px;
+border-radius:10px;
+}
 
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:40px;}
-.card{background:white;padding:10px;border-radius:10px;}
-.card img{width:100%;height:180px;object-fit:cover;}
+nav{background:#37474f;text-align:center;padding:15px;}
+nav a{color:white;margin:20px;text-decoration:none;font-weight:bold;}
 
-footer{background:#1a4d3a;color:white;text-align:center;padding:20px;}
+section{padding:40px;}
+h2{color:#37474f;}
+
+.places{display:flex;flex-wrap:wrap;gap:25px;}
+
+.card{width:300px;background:white;border-radius:12px;overflow:hidden;}
+
+.card img{width:100%;height:200px;object-fit:cover;}
+
+.card-content{padding:20px;}
+
+button{background:#ff7043;color:white;border:none;padding:10px 18px;border-radius:5px;}
+
+footer{background:#37474f;color:white;text-align:center;padding:20px;}
 </style>
 </head>
+
 <body>
 
-<header><h1>Kokoda Track 🇵🇬</h1></header>
+<header>
+<h1>Kokoda Track 🥾</h1>
+</header>
 
 <nav>
 <a href="#about">About</a>
-<a href="#attractions">Attractions</a>
+<a href="#places">Attractions</a>
 <a href="#tips">Tips</a>
 </nav>
 
-<section style="padding:40px;">
-<p>Historic WWII trekking route through mountains and jungle.</p>
+<section id="about">
+<h2>About</h2>
+<p>
+A historic WWII trekking route through dense jungle and mountains in Papua New Guinea.
+</p>
 </section>
 
-<section>
-<div class="cards">
-<div class="card"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"><h3>Jungle Trails</h3></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"><h3>War Memorials</h3></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66"><h3>Mountain Passes</h3></div>
+<section id="places">
+<h2>Top Attractions</h2>
+
+<div class="places">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500375592092">
+<div class="card-content">
+<h3>Jungle Trail</h3>
+<p>Historic trekking path.</p>
+<button>Explore</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1501785888041">
+<div class="card-content">
+<h3>War Memorials</h3>
+<p>Honoring WWII soldiers.</p>
+<button>Explore</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1482192596544">
+<div class="card-content">
+<h3>Mountain Pass</h3>
+<p>Challenging hiking terrain.</p>
+<button>Explore</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1470770841072">
+<div class="card-content">
+<h3>River Crossings</h3>
+<p>Natural jungle rivers.</p>
+<button>Explore</button>
+</div>
+</div>
+
 </div>
 </section>
 
-<footer>Kokoda Guide</footer>
+<section id="tips">
+<h2>Travel Tips</h2>
+<p>
+Requires fitness and guided trekking only.
+</p>
+</section>
+
+<footer>
+<p>© Papua New Guinea Travel Guide</p>
+</footer>
 
 </body>
 </html>

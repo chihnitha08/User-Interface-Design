@@ -2,55 +2,117 @@
 <html>
 <head>
 <title>Milne Bay</title>
+
 <style>
-body{margin:0;font-family:Segoe UI;background:#f0fff8;}
+body{margin:0;font-family:Arial;background:#f3fbff;}
+
 header{
-height:60vh;
-background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
-background-size:cover;
-display:flex;align-items:center;justify-content:center;
-color:white;position:relative;
+background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop')
+center/cover;height:400px;
+display:flex;justify-content:center;align-items:center;
+color:white;text-shadow:2px 2px 8px black;
 }
-header::after{content:'';position:absolute;width:100%;height:100%;background:rgba(0,40,60,0.6);}
-header h1{position:relative;font-size:60px;}
 
-nav{text-align:center;background:#0e5c4a;padding:15px;}
-nav a{color:white;margin:10px;text-decoration:none;}
+header h1{
+font-size:55px;
+background:rgba(0,0,0,0.5);
+padding:15px;
+border-radius:10px;
+}
 
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:40px;}
-.card{background:white;padding:10px;border-radius:10px;}
-.card img{width:100%;height:180px;object-fit:cover;}
+nav{background:#00695c;text-align:center;padding:15px;}
+nav a{color:white;margin:20px;text-decoration:none;font-weight:bold;}
 
-footer{background:#0e5c4a;color:white;text-align:center;padding:20px;}
+section{padding:40px;}
+h2{color:#00695c;}
+
+.places{display:flex;flex-wrap:wrap;gap:25px;}
+
+.card{width:300px;background:white;border-radius:12px;overflow:hidden;}
+
+.card img{width:100%;height:200px;object-fit:cover;}
+
+.card-content{padding:20px;}
+
+button{background:#ff7043;color:white;border:none;padding:10px 18px;border-radius:5px;}
+
+footer{background:#00695c;color:white;text-align:center;padding:20px;}
 </style>
 </head>
+
 <body>
 
-<header><h1>Milne Bay 🇵🇬</h1></header>
+<header>
+<h1>Milne Bay 🏝️</h1>
+</header>
 
 <nav>
 <a href="#about">About</a>
-<a href="#attractions">Attractions</a>
+<a href="#places">Attractions</a>
 <a href="#tips">Tips</a>
 </nav>
 
-<section style="padding:40px;">
-<p>Milne Bay is a tropical paradise known for diving, coral reefs, and WWII history.</p>
+<section id="about">
+<h2>About</h2>
+<p>
+Milne Bay is a tropical paradise known for diving, coral reefs, and crystal-clear waters.
+</p>
 </section>
 
-<section>
-<div class="cards">
-<div class="card"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"><h3>Diving Spots</h3></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2"><h3>Coral Reefs</h3></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"><h3>Island Villages</h3></div>
+<section id="places">
+<h2>Top Attractions</h2>
+
+<div class="places">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+<div class="card-content">
+<h3>Diving Spots</h3>
+<p>World-class coral reef diving.</p>
+<button>Explore</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500375592092">
+<div class="card-content">
+<h3>Island Hopping</h3>
+<p>Explore remote tropical islands.</p>
+<button>Explore</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1501785888041">
+<div class="card-content">
+<h3>Coral Reefs</h3>
+<p>Colorful underwater ecosystems.</p>
+<button>Explore</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1470770841072">
+<div class="card-content">
+<h3>Lagoon Views</h3>
+<p>Peaceful turquoise waters.</p>
+<button>Explore</button>
+</div>
+</div>
+
 </div>
 </section>
 
-<section style="padding:40px;">
-<p>Best for snorkeling and marine exploration.</p>
+<section id="tips">
+<h2>Travel Tips</h2>
+<p>
+Best for snorkeling and diving enthusiasts.
+</p>
 </section>
 
-<footer>Milne Bay Guide</footer>
+<footer>
+<p>© Papua New Guinea Travel Guide</p>
+</footer>
 
 </body>
 </html>
