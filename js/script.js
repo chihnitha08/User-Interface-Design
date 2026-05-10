@@ -17,7 +17,7 @@ const destinations = [
   { id:8,  name:"Kerala",      country:"India",        continent:"Asia",   mood:"Relaxing",    companion:["Family","Couple","Solo"],          img:"IMAGES/kerela.webp",  description:"Serene backwaters, spice-scented air, houseboat sunsets and Ayurvedic retreats." },
   { id:9,  name:"Dubai",       country:"UAE",          continent:"Asia",   mood:"Adventurous", companion:["Friends","Family","Couple"],       img:"IMAGES/dubai.webp",   description:"Desert dunes, record-breaking skyscrapers, indoor ski slopes and luxury shopping." },
   { id:10, name:"Seoul",       country:"South Korea",  continent:"Asia",   mood:"Foodie",      companion:["Friends","Solo"],                  img:"IMAGES/seoul.jpg",   description:"K-BBQ alleys, 24-hour street food stalls and a buzzing youth culture like no other." },
- 
+
   // ── EUROPE ────────────────────────────────────────────────
   { id:11, name:"Swiss Alps",  country:"Switzerland",  continent:"Europe", mood:"Adventurous", companion:["Friends","Family"],                img:"IMAGES/swiss.jpeg",   description:"Dramatic mountain peaks, glacier hikes and the world's most scenic train routes." },
   { id:12, name:"Paris",       country:"France",       continent:"Europe", mood:"Romantic",    companion:["Couple","Partner","Friends"],      img:"IMAGES/paris.jpg",   description:"The city of love — Eiffel Tower sunsets, candlelit bistros and Louvre masterpieces." },
@@ -26,32 +26,47 @@ const destinations = [
   { id:15, name:"Santorini",   country:"Greece",       continent:"Europe", mood:"Romantic",    companion:["Couple","Partner"],                img:"IMAGES/santorini.jpg",description:"Whitewashed clifftop villages, volcanic sunsets and Aegean blue everywhere you look." },
   { id:16, name:"Amsterdam",   country:"Netherlands",  continent:"Europe", mood:"Cultural",    companion:["Friends","Solo","Couple"],         img:"IMAGES/amsterdam.jpg",description:"Canal-laced streets, world-class museums, cycling culture and liberal charm." },
   { id:17, name:"Vienna",      country:"Austria",      continent:"Europe", mood:"Cultural",    companion:["Solo","Couple","Family"],          img:"IMAGES/vienna.jpg",  description:"Imperial palaces, Mozart concerts, Sachertorte and Europe's grandest coffee houses." },
- 
+
   // ── AFRICA ────────────────────────────────────────────────
   { id:18, name:"Serengeti",   country:"Tanzania",     continent:"Africa", mood:"Adventurous", companion:["Friends","Family","Couple"],       img:"IMAGES/serengeti.webp",description:"Witness the Great Migration — millions of wildebeest crossing vast golden plains." },
   { id:19, name:"Marrakech",   country:"Morocco",      continent:"Africa", mood:"Cultural",    companion:["Friends","Couple","Solo"],         img:"IMAGES/marrakech.webp",description:"Maze-like souks, spice markets, rooftop riads and the magic of Djemaa el-Fna." },
   { id:20, name:"Cape Town",   country:"South Africa", continent:"Africa", mood:"Adventurous", companion:["Friends","Solo","Couple"],         img:"IMAGES/capetown.webp", description:"Table Mountain hikes, penguin beaches, world-class wine routes and ocean sunsets." },
- 
+
   // ── NORTH AMERICA ─────────────────────────────────────────
   { id:21, name:"New York",    country:"USA",          continent:"North America", mood:"Cultural",    companion:["Solo","Friends","Family"],  img:"IMAGES/newyork.jpg",  description:"The city that never sleeps — Broadway shows, iconic skyline and global street food." },
   { id:22, name:"Banff",       country:"Canada",       continent:"North America", mood:"Adventurous", companion:["Friends","Family","Couple"],img:"IMAGES/banff.jpg",    description:"Turquoise glacier lakes, elk-dotted meadows and the Canadian Rockies at their finest." },
   { id:23, name:"Cancún",      country:"Mexico",       continent:"North America", mood:"Relaxing",    companion:["Friends","Couple","Family"],img:"IMAGES/banff.webp",   description:"Caribbean blue waters, ancient Mayan ruins and all-inclusive beach bliss." },
- 
+
   // ── SOUTH AMERICA ─────────────────────────────────────────
   { id:24, name:"Machu Picchu",country:"Peru",         continent:"South America", mood:"Adventurous", companion:["Solo","Friends","Couple"], img:"IMAGES/machupicchu.jpg",description:"The Lost City of the Incas — misty mountain citadel surrounded by Andean peaks." },
-  { id:25, name:"Rio de Janeiro",country:"Brazil",     continent:"South America", mood:"Foodie",      companion:["Friends","Couple"],        img:"IMAGES/riodejaneiro.jpg",      description:"Samba rhythms, Copacabana sunsets, açaí bowls and Christ the Redeemer above it all." },
- 
+  { id:25, name:"Rio de Janeiro",country:"Brazil",     continent:"South America", mood:"Foodie",      companion:["Friends","Couple"],        img:"IMAGES/riodejaneiro.jpg",description:"Samba rhythms, Copacabana sunsets, açaí bowls and Christ the Redeemer above it all." },
+
   // ── OCEANIA ───────────────────────────────────────────────
   { id:26, name:"Sydney",      country:"Australia",    continent:"Oceania",       mood:"Adventurous", companion:["Friends","Family","Solo"], img:"IMAGES/sydney.jpg",   description:"Opera House, Bondi Beach surf, harbour bridge climbs and laid-back Aussie culture." },
   { id:27, name:"Queenstown",  country:"New Zealand",  continent:"Oceania",       mood:"Adventurous", companion:["Friends","Solo","Couple"], img:"IMAGES/queenstown.jpg",description:"The adventure capital of the world — bungee jumping, skiing and fjord boat rides." },
+
+  // ── EXTRA DESTINATIONS (NEW ADDITIONS) ────────────────────
+  { id:28, name:"Istanbul",    country:"Turkey",       continent:"Europe/Asia", mood:"Cultural",    companion:["Friends","Solo","Couple"], img:"IMAGES/istanbul.webp", description:"Where East meets West — grand mosques, bazaars and Bosphorus sunsets." },
+  { id:29, name:"Prague",      country:"Czech Republic",continent:"Europe",     mood:"Romantic",    companion:["Couple","Solo"],          img:"IMAGES/prague.webp",   description:"Fairy-tale castles, medieval streets and magical river views." },
+  { id:30, name:"Hanoi",       country:"Vietnam",      continent:"Asia",       mood:"Cultural",    companion:["Solo","Friends"],         img:"IMAGES/hanoi.webp",    description:"Chaotic charm, street food culture and serene lakes blending old and new." },
+  { id:31, name:"Reykjavik",   country:"Iceland",     continent:"Europe",     mood:"Adventurous", companion:["Solo","Friends"],         img:"IMAGES/reykjavik.webp",description:"Northern lights, volcanic landscapes and surreal geothermal lagoons." },
+  { id:32, name:"Petra",       country:"Jordan",      continent:"Asia",       mood:"Cultural",    companion:["Solo","Friends","Couple"], img:"IMAGES/petra.webp",    description:"Ancient rose-red city carved into stone cliffs — a wonder of the world." },
+  { id:33, name:"Hawaii",      country:"USA",         continent:"North America", mood:"Relaxing", companion:["Couple","Family","Friends"], img:"IMAGES/hawai.webp", description:"Volcanic islands, tropical beaches and laid-back island culture." },
+
+
+  { id:34, name:"Cappadocia",   country:"Turkey", continent:"Asia/Europe", mood:"Romantic", companion:["Couple","Solo"], img:"IMAGES/cappadocia.webp", description:"Hot air balloons over surreal rock valleys and ancient cave dwellings at sunrise." },
+  { id:35, name:"Dubai Desert", country:"UAE", continent:"Asia", mood:"Adventurous", companion:["Friends","Couple"], img:"IMAGES/dubaidesert.jpg", description:"Golden dunes, dune bashing, camel rides and magical desert sunsets." },
+  { id:36, name:"Osaka",        country:"Japan", continent:"Asia", mood:"Foodie", companion:["Friends","Solo"], img:"IMAGES/osaka.webp", description:"Japan’s street food capital — takoyaki, neon streets and lively nightlife." },
+  { id:37, name:"Hong Kong",    country:"China", continent:"Asia", mood:"Cultural", companion:["Solo","Friends"], img:"IMAGES/hongkong.webp", description:"Skyline skyscrapers, harbor views, dim sum culture and mountain hikes." },
+  { id:38, name:"Lisbon",       country:"Portugal", continent:"Europe", mood:"Relaxing", companion:["Couple","Solo","Friends"], img:"IMAGES/lisbon.jpg", description:"Colorful streets, trams, ocean breeze and soulful Fado music." },
+  { id:39, name:"Edinburgh",    country:"Scotland", continent:"Europe", mood:"Cultural", companion:["Solo","Friends","Family"], img:"IMAGES/edinburgh.webp", description:"Medieval castles, misty hills and historic charm in every corner." },
+  { id:40, name:"Zanzibar",     country:"Tanzania", continent:"Africa", mood:"Relaxing", companion:["Couple","Friends"], img:"IMAGES/zanzibar.webp", description:"Turquoise beaches, spice islands and Swahili coastal culture." },
+  { id:41, name:"Victoria Falls",country:"Zambia/Zimbabwe", continent:"Africa", mood:"Adventurous", companion:["Friends","Family"], img:"IMAGES/victoriafalls.webp", description:"One of the world’s largest waterfalls — thunderous, misty and breathtaking." },
+  { id:42, name:"Buenos Aires", country:"Argentina", continent:"South America", mood:"Cultural", companion:["Friends","Solo","Couple"], img:"IMAGES/buenosaires.webp", description:"Tango streets, European-style architecture and vibrant nightlife." },
+  { id:43, name:"Patagonia",    country:"Argentina/Chile", continent:"South America", mood:"Adventurous", companion:["Solo","Friends"], img:"IMAGES/patagonia.webp", description:"Raw wilderness, glaciers, mountains and untouched landscapes." },
+  { id:44, name:"Bora Bora",    country:"French Polynesia", continent:"Oceania", mood:"Romantic", companion:["Couple"], img:"IMAGES/borabora.jpeg", description:"Crystal lagoons, luxury overwater villas and dreamlike island beauty." },
+  { id:45, name:"Fiji",         country:"Fiji", continent:"Oceania", mood:"Relaxing", companion:["Family","Couple","Friends"], img:"IMAGES/fiji.webp", description:"Friendly island culture, coral reefs and pure tropical relaxation." }
 ];
- 
- 
-// ════════════════════════════════════════════════════════════
-//  HOME PAGE
-// ════════════════════════════════════════════════════════════
- 
-// Form submit on index.html (handled in home.js — but kept here as fallback)
 document.getElementById("moodForm")?.addEventListener("submit", function (e) {
   e.preventDefault();
   localStorage.setItem("selectedMood",      document.getElementById("mood").value);

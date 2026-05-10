@@ -6,10 +6,7 @@
   <title>Explore – Interactive Travel Explorer</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="maps.css">
-
-  <!-- Inline styles specific to the explore suggestion grid -->
   <style>
-    /* ── Explore page heading ── */
     .explore-header {
       text-align: center;
       padding: 40px 20px 10px;
@@ -43,8 +40,6 @@
       color: #555;
     }
     .btn-clear:hover { background: #f0f0f0; }
-
-    /* ── Mood quick-filter tabs ── */
     .mood-tabs {
       display: flex;
       justify-content: center;
@@ -68,8 +63,6 @@
       background: #3a86ff;
       color: #fff;
     }
-
-    /* ── Destination cards grid ── */
     #exploreGrid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -159,8 +152,6 @@
       background: #e74c3c;
       color: #fff;
     }
-
-    /* ── No results ── */
     .no-results {
       grid-column: 1/-1;
       text-align: center;
@@ -176,8 +167,6 @@
       border-radius: 8px;
       cursor: pointer;
     }
-
-    /* ── Map section ── */
     .map-section-title {
       text-align: center;
       font-family: papyrus;
@@ -186,8 +175,6 @@
       padding: 10px 20px 4px;
       margin: 0;
     }
-
-    /* ── Fade-in ── */
     @keyframes fadeIn { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
     .fade-in { animation: fadeIn .4s ease both; }
     .map-section { background: var(--white); border-top: 1px solid var(--border); padding: 60px 40px; text-align: center; }
@@ -205,8 +192,6 @@
 </head>
 
 <body onload="initExplore(); updateWishCount();">
-
-  <!-- NAVBAR -->
   <header>
     <h1>🌍 Interactive Travel Explorer</h1>
     <nav>
@@ -215,8 +200,6 @@
       <a href="wishlist.html" style="color: black;">❤️Wishlist(<span id="wishCount">0</span>)</a>
     </nav>
   </header>
-
-  <!-- EXPLORE HEADING & BADGES -->
   <div class="explore-header">
     <h1 id="exploreHeading">✈️ Destinations Just for You</h1>
     <div class="filter-badges">
@@ -225,8 +208,6 @@
       <button class="btn-clear" onclick="clearFilters()">✕ Clear filters</button>
     </div>
   </div>
-
-  <!-- QUICK MOOD TABS -->
   <div class="mood-tabs">
     <button class="mood-tab" onclick="filterByMood('')">All</button>
     <button class="mood-tab" onclick="filterByMood('Adventurous')">🏔 Adventurous</button>
@@ -235,21 +216,14 @@
     <button class="mood-tab" onclick="filterByMood('Romantic')">💕 Romantic</button>
     <button class="mood-tab" onclick="filterByMood('Foodie')">🍜 Foodie</button>
   </div>
-
-  <!-- SUGGESTION GRID -->
   <div id="exploreGrid"></div>
-
-  <!-- DIVIDER -->
   <hr style="max-width:900px; margin:0 auto; border:none; border-top:1px solid #e0e0e0;">
-
-  <!-- WORLD MAP (original feature kept) -->
   <p class="map-section-title">
     Or explore by region — click a continent on the map below
   </p>
  <script>
     // Quick mood tab filter (without page reload)
     function filterByMood(mood) {
-      // Update active tab styling
       document.querySelectorAll(".mood-tab").forEach(btn => {
         btn.classList.toggle("active",
           btn.textContent.includes(mood) || (mood === "" && btn.textContent === "All")
