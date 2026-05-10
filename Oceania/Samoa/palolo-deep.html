@@ -1,76 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Palolo Deep Marine Reserve</title>
+<title>Palolo Deep</title>
 <style>
-body{margin:0;font-family:Segoe UI;background:#eefcff;}
-
-header{
-height:60vh;
-background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
-background-size:cover;
-display:flex;
-justify-content:center;
-align-items:center;
-color:white;
-position:relative;
-}
-
-header::after{
-content:'';
-position:absolute;
-width:100%;
-height:100%;
-background:rgba(0,40,70,0.6);
-}
-
-h1{position:relative;font-size:55px;}
-
-nav{background:#00695c;padding:15px;text-align:center;}
-nav a{color:white;margin:10px;text-decoration:none;}
-
-.section{padding:40px;}
-
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-
-.card{background:white;padding:15px;border-radius:10px;}
-
-.card img{width:100%;border-radius:10px;}
-
-footer{background:#00695c;color:white;text-align:center;padding:20px;}
+body{margin:0;font-family:Arial;background:#f0fbff;}
+header{background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover;height:400px;display:flex;justify-content:center;align-items:center;color:white;text-shadow:2px 2px 8px black;}
+header h1{font-size:55px;background:rgba(0,0,0,0.5);padding:15px;border-radius:10px;}
+nav{background:#0288d1;text-align:center;padding:15px;}
+nav a{color:white;margin:20px;text-decoration:none;font-weight:bold;}
+section{padding:40px;}
+h2{color:#0288d1;}
+.places{display:flex;flex-wrap:wrap;gap:25px;}
+.card{width:300px;background:white;border-radius:12px;overflow:hidden;}
+.card img{width:100%;height:200px;object-fit:cover;}
+.card-content{padding:20px;}
+button{background:#ff7043;color:white;border:none;padding:10px 18px;border-radius:5px;}
+footer{background:#0288d1;color:white;text-align:center;padding:20px;}
 </style>
 </head>
 <body>
 
-<header><h1>Palolo Deep Marine Reserve</h1></header>
+<header><h1>Palolo Deep 🌊</h1></header>
 
-<nav>
-<a href="#about">About</a>
-<a href="#attractions">Attractions</a>
-<a href="#tips">Tips</a>
-</nav>
+<nav><a href="#about">About</a><a href="#places">Attractions</a><a href="#tips">Tips</a></nav>
 
-<section class="section">
-<p>One of Samoa’s best snorkeling spots with coral reefs and marine life.</p>
+<section id="about">
+<h2>About</h2><p>Marine reserve famous for snorkeling and coral reefs.</p>
 </section>
 
-<section class="section">
-<div class="cards">
-<div class="card"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2"><p>Coral Reef</p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"><p>Blue Waters</p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e"><p>Marine Life</p></div>
+<section id="places">
+<h2>Top Attractions</h2>
+<div class="places">
+<div class="card"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285d2b2"><div class="card-content"><h3>Coral Reef</h3><button>Explore</button></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e"><div class="card-content"><h3>Snorkeling Spot</h3><button>Explore</button></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"><div class="card-content"><h3>Marine Life</h3><button>Explore</button></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"><div class="card-content"><h3>Blue Lagoon</h3><button>Explore</button></div></div>
 </div>
 </section>
 
-<section class="section">
-<ul>
-<li>Bring snorkeling gear</li>
-<li>Avoid stepping on coral</li>
-<li>Best visibility morning time</li>
-</ul>
-</section>
+<section id="tips"><h2>Tips</h2><p>Best snorkeling visibility in morning hours.</p></section>
 
-<footer>Marine Reserve 🌊</footer>
+<footer>© Samoa Marine</footer>
 
 </body>
 </html>

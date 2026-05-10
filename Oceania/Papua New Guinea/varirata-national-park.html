@@ -2,55 +2,117 @@
 <html>
 <head>
 <title>Varirata National Park</title>
+
 <style>
-body{margin:0;font-family:Segoe UI;background:#f0fff5;}
+body{margin:0;font-family:Arial;background:#f3fbff;}
+
 header{
-height:60vh;
-background:url('https://images.unsplash.com/photo-1501785888041-af3ef285d2b2');
-background-size:cover;
-display:flex;align-items:center;justify-content:center;
-color:white;position:relative;
+background:url('https://images.unsplash.com/photo-1500530855697?q=80&w=1600&auto=format&fit=crop')
+center/cover;height:400px;
+display:flex;justify-content:center;align-items:center;
+color:white;text-shadow:2px 2px 8px black;
 }
-header::after{content:'';position:absolute;width:100%;height:100%;background:rgba(0,60,40,0.6);}
-header h1{position:relative;font-size:60px;}
 
-nav{text-align:center;background:#1a5c3a;padding:15px;}
-nav a{color:white;margin:10px;text-decoration:none;}
+header h1{
+font-size:55px;
+background:rgba(0,0,0,0.5);
+padding:15px;
+border-radius:10px;
+}
 
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:40px;}
-.card{background:white;padding:10px;border-radius:10px;}
-.card img{width:100%;height:180px;object-fit:cover;}
+nav{background:#1565c0;text-align:center;padding:15px;}
+nav a{color:white;margin:20px;text-decoration:none;font-weight:bold;}
 
-footer{background:#1a5c3a;color:white;text-align:center;padding:20px;}
+section{padding:40px;}
+h2{color:#1565c0;}
+
+.places{display:flex;flex-wrap:wrap;gap:25px;}
+
+.card{width:300px;background:white;border-radius:12px;overflow:hidden;}
+
+.card img{width:100%;height:200px;object-fit:cover;}
+
+.card-content{padding:20px;}
+
+button{background:#ff7043;color:white;border:none;padding:10px 18px;border-radius:5px;}
+
+footer{background:#1565c0;color:white;text-align:center;padding:20px;}
 </style>
 </head>
+
 <body>
 
-<header><h1>Varirata National Park 🇵🇬</h1></header>
+<header>
+<h1>Varirata National Park 🌳</h1>
+</header>
 
 <nav>
 <a href="#about">About</a>
-<a href="#attractions">Attractions</a>
+<a href="#places">Attractions</a>
 <a href="#tips">Tips</a>
 </nav>
 
-<section id="about" style="padding:40px;">
-<p>Popular rainforest park near Port Moresby with birdwatching trails.</p>
+<section id="about">
+<h2>About</h2>
+<p>
+Varirata National Park is a rainforest park near Port Moresby known for birdwatching, hiking trails, and scenic viewpoints.
+</p>
 </section>
 
-<section id="attractions">
-<div class="cards">
-<div class="card"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"><h3>Bird Watching</h3></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"><h3>Forest Trails</h3></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"><h3>Scenic Viewpoints</h3></div>
+<section id="places">
+<h2>Top Attractions</h2>
+
+<div class="places">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500375592092">
+<div class="card-content">
+<h3>Bird Watching</h3>
+<p>Rare birds of paradise sightings.</p>
+<button>Explore</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1501785888041">
+<div class="card-content">
+<h3>Forest Trails</h3>
+<p>Walking paths through rainforest.</p>
+<button>Explore</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1482192596544">
+<div class="card-content">
+<h3>Viewpoints</h3>
+<p>Panoramic views of Port Moresby.</p>
+<button>Explore</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500530855697">
+<div class="card-content">
+<h3>Wildlife</h3>
+<p>Kangaroos, birds, and native species.</p>
+<button>Explore</button>
+</div>
+</div>
+
 </div>
 </section>
 
-<section id="tips" style="padding:40px;">
-<p>Best visited early morning for wildlife sightings.</p>
+<section id="tips">
+<h2>Travel Tips</h2>
+<p>
+Best visited early morning for wildlife spotting.
+</p>
 </section>
 
-<footer>Varirata Guide</footer>
+<footer>
+<p>© Papua New Guinea Travel Guide</p>
+</footer>
 
 </body>
 </html>
